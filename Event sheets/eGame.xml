@@ -7,7 +7,11 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="165535938350565" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="-8" name="Set angle" sid="170384418835248" type="Particles">
+                    <param id="0" name="Angle">9</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

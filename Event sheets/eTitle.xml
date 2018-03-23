@@ -10,7 +10,11 @@
                     <param id="1" name="Angle 2">0</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-16" name="Set opacity" sid="714198326253957" type="Particles">
+                    <param id="0" name="Opacity">9</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

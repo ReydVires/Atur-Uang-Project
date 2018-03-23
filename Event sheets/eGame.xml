@@ -14,6 +14,9 @@
                 <action id="-16" name="Set opacity" sid="447425786042930" type="Particles">
                     <param id="0" name="Opacity">0</param>
                 </action>
+                <action id="-15" name="Set visible" sid="282003331554431" type="Particles">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
     </events>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>inGame</name>
     <sid>470133791770245</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>eGame</event-sheet>
     <size>
         <width>1280</width>
         <height>1024</height>

@@ -10,6 +10,7 @@
     <unique-id>2hjgu6jh5cjww</unique-id>
     <saved-with-version>25500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -26,6 +27,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Title</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -90,7 +92,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="btn_play2" sid="566601610613013">
+        <object-type name="btn_back" sid="566601610613013">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="onTap" sid="801110850928233" type="boolean" />
@@ -102,6 +104,45 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="214475645835371" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_exit" sid="889476882415032">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="453499229401022">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597463138944100" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="384866689339190">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="btn_type" sid="308697794610109">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="onTap" sid="377560053287359" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="957074818497924">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847546394633086" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="1" y="0" />
@@ -127,6 +168,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Browser" uid="6" />
     </global-instances>
     <sounds-folder />
     <music-folder />

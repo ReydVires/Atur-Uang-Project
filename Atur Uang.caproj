@@ -41,9 +41,11 @@
     <families />
     <layout-folder>
         <layout>Title.xml</layout>
+        <layout>inGame.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>eTitle.xml</event-sheet>
+        <event-sheet>eGame.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />

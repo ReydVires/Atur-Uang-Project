@@ -45,6 +45,7 @@
     </layout-folder>
     <event-folder>
         <event-sheet>eGame.xml</event-sheet>
+        <event-sheet>eTitle.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />

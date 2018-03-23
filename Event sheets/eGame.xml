@@ -11,6 +11,9 @@
                 <action id="-8" name="Set angle" sid="170384418835248" type="Particles">
                     <param id="0" name="Angle">9</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="447425786042930" type="Particles">
+                    <param id="0" name="Opacity">0</param>
+                </action>
             </actions>
         </event-block>
     </events>

@@ -12,7 +12,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">inGame</layout>
         <layout order="2">Title</layout>
+<<<<<<< HEAD
         <event-sheet active="1" order="1">eGame</event-sheet>
+=======
+        <event-sheet order="1">eGame</event-sheet>
+        <event-sheet active="1" order="3">eTitle</event-sheet>
+>>>>>>> 4f4c6f34a42a05898ac3fceea4ee1e59ae79a7ec
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

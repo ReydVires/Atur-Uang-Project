@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
+    <name>Atur Uang</name>
     <description></description>
     <version>1.0.0.0</version>
     <author></author>
     <author-email></author-email>
     <author-website>http://</author-website>
-    <app-id>com.mycompany.myapp</app-id>
+    <app-id>com.dassarwa.aturuang</app-id>
     <unique-id>12dwf6d5i0y9e</unique-id>
     <saved-with-version>25500</saved-with-version>
     <used-plugins />
@@ -33,17 +33,17 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Edge</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder />
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Title.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>eTitle.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />

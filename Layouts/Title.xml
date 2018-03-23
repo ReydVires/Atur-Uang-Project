@@ -4,14 +4,14 @@
     <sid>640846281166529</sid>
     <event-sheet>eTitle</event-sheet>
     <size>
-        <width>1000</width>
-        <height>1000</height>
+        <width>480</width>
+        <height>800</height>
     </size>
     <margins>
         <horizontal>1000</horizontal>
         <vertical>1000</vertical>
     </margins>
-    <unbounded-scrolling>0</unbounded-scrolling>
+    <unbounded-scrolling>1</unbounded-scrolling>
     <layers>
         <layer name="BG" sid="940210530406913">
             <initially-visible>1</initially-visible>
@@ -28,7 +28,83 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="bg" uid="1">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>480</width>
+                        <height>800</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bg2" uid="3">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>481</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>480</width>
+                        <height>800</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btn_play2" uid="4">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <onTap>false</onTap>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>720</x>
+                        <y>440</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="UI" sid="679635232346509">
@@ -46,7 +122,36 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="btn_play" uid="2">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <onTap>false</onTap>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>440</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="Entity" sid="333549327287334">

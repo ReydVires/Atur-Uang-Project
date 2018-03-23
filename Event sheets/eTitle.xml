@@ -2,5 +2,76 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eTitle</name>
-    <events />
+    <events>
+        <event-block sid="811695903824140">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="365692989319304" type="btn_play">
+                    <param id="0" name="Instance variable">onTap</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="605475940175395" type="bg2">
+                    <param id="0" name="Pin to">bg</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="831891824544430" type="btn_play">
+                    <param id="0" name="Pin to">bg</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="944098889765309" type="btn_play2">
+                    <param id="0" name="Pin to">bg</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="259748910637261" type="bg">
+                    <param id="0" name="X">lerp(Self.X, -480, 0.2) - 0.25</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="496163295589997">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="818973773264518" type="btn_play2">
+                    <param id="0" name="Instance variable">onTap</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="177037734054783" type="bg">
+                    <param id="0" name="X">lerp(Self.X, 0, 0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="702625469641796">
+            <conditions>
+                <condition id="3" name="On touched object" sid="865504217007626" type="Touch">
+                    <param id="0" name="Object">btn_play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="563921139878976" type="btn_play">
+                    <param id="0" name="Instance variable">onTap</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="445381567597704" type="btn_play2">
+                    <param id="0" name="Instance variable">onTap</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="731597937316604">
+            <conditions>
+                <condition id="3" name="On touched object" sid="869203820851022" type="Touch">
+                    <param id="0" name="Object">btn_play2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="889038616996102" type="btn_play2">
+                    <param id="0" name="Instance variable">onTap</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="480689356019341" type="btn_play">
+                    <param id="0" name="Instance variable">onTap</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

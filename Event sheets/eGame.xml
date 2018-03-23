@@ -2,5 +2,12 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eGame</name>
-    <events />
+    <events>
+        <event-block sid="820968279497651">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="165535938350565" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
 </c2eventsheet>

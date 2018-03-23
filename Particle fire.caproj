@@ -41,7 +41,7 @@
     <families />
     <layout-folder>
         <layout>inGame.xml</layout>
-        <layout>Title.xml</layout>
+        <layout>title.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>eGame.xml</event-sheet>

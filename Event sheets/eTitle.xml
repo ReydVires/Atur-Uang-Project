@@ -13,11 +13,35 @@
                     <param id="0" name="X">240</param>
                     <param id="1" name="Y">400</param>
                 </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="436373495711729" type="btn_back">
-                    <param id="0" name="Pin to">bg2</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
             </actions>
+            <sub-events>
+                <event-block sid="905695792782835">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="472401043666217" type="btn_back">
+                            <param id="0" name="Unique ID">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="436373495711729" type="btn_back">
+                            <param id="0" name="Pin to">bg2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="685542142079384">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="369257317734687" type="btn_back">
+                            <param id="0" name="Unique ID">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="751634021868587" type="btn_back">
+                            <param id="0" name="Pin to">bg3</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <comment>Button: exit</comment>
         <event-block sid="934214043790465">
@@ -60,6 +84,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-1" name="Set X" sid="486580073256197" type="bg3">
+                    <param id="0" name="X">960</param>
+                </action>
+                <action id="-2" name="Set Y" sid="139085826410844" type="bg2">
+                    <param id="0" name="Y">0</param>
+                </action>
                 <action id="-1" name="Set X" sid="200396842854640" type="camera">
                     <param id="0" name="X">ceil(lerp(Self.X, 720, 0.2))</param>
                 </action>
@@ -94,8 +124,22 @@
                     <param id="0" name="X">floor(lerp(Self.X, 240, 0.2))</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="609050571579701">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="612507263334925" type="btn_type">
+                            <param id="0" name="Unique ID">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="169708116988406" type="btn_type">
+                            <param id="0" name="Instance variable">onTap</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
-        <comment>Button: about</comment>
         <event-block sid="395372972109101">
             <conditions>
                 <condition id="3" name="On touched object" sid="570591752483529" type="Touch">
@@ -104,6 +148,7 @@
             </conditions>
             <actions />
             <sub-events>
+                <comment>Button: about</comment>
                 <event-block sid="463810491444072">
                     <conditions>
                         <condition id="-14" name="Pick by unique ID" sid="354287064151234" type="btn_type">
@@ -124,22 +169,34 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Button: theme</comment>
+                <event-block sid="688882982243862">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="191901209606069" type="btn_type">
+                            <param id="0" name="Unique ID">11</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="525394001766931" type="win_about">
+                            <param id="0" name="Instance variable">isShow</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="914651917744547" type="btn_type">
+                            <param id="0" name="Instance variable">onTap</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="503454787784656" type="btn_back">
+                            <param id="0" name="Instance variable">onTap</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="215155152323572" type="bg2">
+                            <param id="0" name="Y">800</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="594479547785260" type="bg3">
+                            <param id="0" name="X">480</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="420952936312162">
-            <conditions>
-                <condition id="-8" name="Is boolean instance variable set" sid="550461018734345" type="btn_type">
-                    <param id="0" name="Instance variable">onTap</param>
-                </condition>
-                <condition id="-14" name="Pick by unique ID" sid="740755829987930" type="btn_type">
-                    <param id="0" name="Unique ID">7</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Set Y" sid="599217745588470" type="win_about">
-                    <param id="0" name="Y">lerp(Self.Y, 380, 0.2)</param>
-                </action>
-            </actions>
         </event-block>
         <event-block sid="745708580285537">
             <conditions>
@@ -178,6 +235,36 @@
             <actions>
                 <action id="-2" name="Set Y" sid="977870275142144" type="win_about">
                     <param id="0" name="Y">lerp(Self.Y, 1030, 0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="420952936312162">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="550461018734345" type="btn_type">
+                    <param id="0" name="Instance variable">onTap</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="740755829987930" type="btn_type">
+                    <param id="0" name="Unique ID">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="599217745588470" type="win_about">
+                    <param id="0" name="Y">lerp(Self.Y, 380, 0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="426321016884714">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="432625997847218" type="btn_type">
+                    <param id="0" name="Instance variable">onTap</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="682874315421146" type="btn_type">
+                    <param id="0" name="Unique ID">11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="886931907721539" type="camera">
+                    <param id="0" name="X">ceil(lerp(Self.X, 720, 0.2))</param>
                 </action>
             </actions>
         </event-block>

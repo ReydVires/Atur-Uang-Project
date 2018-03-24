@@ -203,9 +203,11 @@
     <families />
     <layout-folder>
         <layout>Title.xml</layout>
+        <layout>InGame.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>eTitle.xml</event-sheet>
+        <event-sheet>eInGame.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="0">

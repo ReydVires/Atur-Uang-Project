@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eTitle</name>
+    <events>
+        <comment>Initialization</comment>
+        <event-block sid="403216638217922">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="186793614236758" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="834346548837886" type="camera">
+                    <param id="0" name="X">240</param>
+                    <param id="1" name="Y">400</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="436373495711729" type="btn_back">
+                    <param id="0" name="Pin to">bg2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Button: exit</comment>
+        <event-block sid="934214043790465">
+            <conditions>
+                <condition id="3" name="On touched object" sid="930249335824329" type="Touch">
+                    <param id="0" name="Object">btn_exit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="724850940831491" type="Browser">
+                    <param id="0" name="Javascript">&quot;let acc = confirm(&apos;Anda yakin ingin keluar?&apos;);&#x0D;&#x0A;if (acc){&#x0D;&#x0A;close();&#x0D;&#x0A;}&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Button: play</comment>
+        <event-block sid="447333304174578">
+            <conditions>
+                <condition id="3" name="On touched object" sid="186577604327996" type="Touch">
+                    <param id="0" name="Object">btn_play</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="156240167541344" type="win_about">
+                    <param id="0" name="Instance variable">isShow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="370959413928795" type="btn_play">
+                    <param id="0" name="Instance variable">onTap</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="738052140536871" type="btn_back">
+                    <param id="0" name="Instance variable">onTap</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="188516644029536">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="565796366428470" type="btn_play">
+                    <param id="0" name="Instance variable">onTap</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="200396842854640" type="camera">
+                    <param id="0" name="X">ceil(lerp(Self.X, 720, 0.2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Button: back</comment>
+        <event-block sid="833435754059582">
+            <conditions>
+                <condition id="3" name="On touched object" sid="774673216761842" type="Touch">
+                    <param id="0" name="Object">btn_back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="789979615994575" type="btn_back">
+                    <param id="0" name="Instance variable">onTap</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="751788685962445" type="btn_play">
+                    <param id="0" name="Instance variable">onTap</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="849392242331192">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="462405376106213" type="btn_back">
+                    <param id="0" name="Instance variable">onTap</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="875861633145859" type="camera">
+                    <param id="0" name="X">floor(lerp(Self.X, 240, 0.2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Button: about</comment>
+        <event-block sid="395372972109101">
+            <conditions>
+                <condition id="3" name="On touched object" sid="570591752483529" type="Touch">
+                    <param id="0" name="Object">btn_type</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="463810491444072">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="354287064151234" type="btn_type">
+                            <param id="0" name="Unique ID">7</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="814461082287367" type="win_about">
+                            <param id="0" name="Instance variable">isShow</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="195808254189999" type="btn_type">
+                            <param id="0" name="Instance variable">onTap</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="960999383681744" type="win_about">
+                            <param id="0" name="Instance variable">isShow</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="420952936312162">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="550461018734345" type="btn_type">
+                    <param id="0" name="Instance variable">onTap</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="740755829987930" type="btn_type">
+                    <param id="0" name="Unique ID">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="599217745588470" type="win_about">
+                    <param id="0" name="Y">lerp(Self.Y, 380, 0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="745708580285537">
+            <conditions>
+                <condition id="3" name="On touched object" sid="102997131397218" type="Touch">
+                    <param id="0" name="Object">win_about</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="548926893013867" type="win_about">
+                    <param id="0" name="Instance variable">isShow</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="796967344368176">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="477519399585310" type="btn_type">
+                            <param id="0" name="Unique ID">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="303907308979100" type="btn_type">
+                            <param id="0" name="Instance variable">onTap</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="106203781729000">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="337460783899076" type="win_about">
+                    <param id="0" name="Instance variable">isShow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="977870275142144" type="win_about">
+                    <param id="0" name="Y">lerp(Self.Y, 1030, 0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

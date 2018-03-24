@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="bg" uid="1">
+                <instance type="bg_title" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bg2" uid="3">
+                <instance type="bg_pickLevel" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -213,7 +213,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bg3" uid="12">
+                <instance type="bg_theme" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

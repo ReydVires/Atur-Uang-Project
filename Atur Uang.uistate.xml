@@ -28,15 +28,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/bg/" />
+        <folder expanded="1" path="animation-folder/bg_title/" />
         <folder expanded="1" path="animation-folder/btn_play/" />
-        <folder expanded="1" path="animation-folder/bg2/" />
+        <folder expanded="1" path="animation-folder/bg_pickLevel/" />
         <folder expanded="1" path="animation-folder/btn_back/" />
         <folder expanded="1" path="animation-folder/btn_exit/" />
         <folder expanded="1" path="animation-folder/btn_type/" />
         <folder expanded="1" path="animation-folder/camera/" />
         <folder expanded="1" path="animation-folder/global/" />
         <folder expanded="1" path="animation-folder/win_about/" />
-        <folder expanded="1" path="animation-folder/bg3/" />
+        <folder expanded="1" path="animation-folder/bg_theme/" />
     </folders-expanded>
 </c2uistate>

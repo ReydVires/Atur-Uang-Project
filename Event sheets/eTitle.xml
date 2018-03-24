@@ -23,7 +23,7 @@
                     </conditions>
                     <actions>
                         <action behavior="Pin" id="0" name="Pin to object" sid="436373495711729" type="btn_back">
-                            <param id="0" name="Pin to">bg2</param>
+                            <param id="0" name="Pin to">bg_pickLevel</param>
                             <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
@@ -36,7 +36,7 @@
                     </conditions>
                     <actions>
                         <action behavior="Pin" id="0" name="Pin to object" sid="751634021868587" type="btn_back">
-                            <param id="0" name="Pin to">bg3</param>
+                            <param id="0" name="Pin to">bg_theme</param>
                             <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
@@ -84,10 +84,10 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-1" name="Set X" sid="486580073256197" type="bg3">
+                <action id="-1" name="Set X" sid="486580073256197" type="bg_theme">
                     <param id="0" name="X">960</param>
                 </action>
-                <action id="-2" name="Set Y" sid="139085826410844" type="bg2">
+                <action id="-2" name="Set Y" sid="139085826410844" type="bg_pickLevel">
                     <param id="0" name="Y">0</param>
                 </action>
                 <action id="-1" name="Set X" sid="200396842854640" type="camera">
@@ -188,10 +188,10 @@
                             <param id="0" name="Instance variable">onTap</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="215155152323572" type="bg2">
+                        <action id="-2" name="Set Y" sid="215155152323572" type="bg_pickLevel">
                             <param id="0" name="Y">800</param>
                         </action>
-                        <action id="-1" name="Set X" sid="594479547785260" type="bg3">
+                        <action id="-1" name="Set X" sid="594479547785260" type="bg_theme">
                             <param id="0" name="X">480</param>
                         </action>
                     </actions>

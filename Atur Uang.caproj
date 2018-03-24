@@ -48,7 +48,7 @@
         <object-type name="Touch" sid="305348189638254">
             <plugin id="Touch" />
         </object-type>
-        <object-type name="bg" sid="288827934938646">
+        <object-type name="bg_title" sid="288827934938646">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="716723586055057" speed="5">
@@ -79,7 +79,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="bg2" sid="109680538258621">
+        <object-type name="bg_pickLevel" sid="109680538258621">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Pin" sid="899250170287082">
@@ -186,7 +186,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="bg3" sid="686891597581426">
+        <object-type name="bg_theme" sid="686891597581426">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Pin" sid="789293749926487">

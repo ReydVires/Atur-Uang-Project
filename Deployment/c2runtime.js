@@ -18665,8 +18665,8 @@ cr.getObjectRefTable = function () { return [
 	cr.behaviors.scrollto,
 	cr.system_object.prototype.cnds.OnLayoutStart,
 	cr.plugins_.Sprite.prototype.acts.SetPos,
-	cr.plugins_.Sprite.prototype.cnds.PickByUID,
 	cr.behaviors.Pin.prototype.acts.Pin,
+	cr.plugins_.Sprite.prototype.cnds.PickByUID,
 	cr.plugins_.Touch.prototype.cnds.OnTouchObject,
 	cr.plugins_.Browser.prototype.acts.ExecJs,
 	cr.plugins_.Sprite.prototype.cnds.IsBoolInstanceVarSet,
@@ -18677,5 +18677,6 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.exps.lerp,
 	cr.plugins_.Sprite.prototype.exps.X,
 	cr.system_object.prototype.exps.floor,
-	cr.plugins_.Sprite.prototype.exps.Y
+	cr.plugins_.Sprite.prototype.exps.Y,
+	cr.behaviors.Pin.prototype.acts.Unpin
 ];};

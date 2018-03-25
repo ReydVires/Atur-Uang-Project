@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1521891813,
+	"version": 1521936756,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -15,6 +15,10 @@
 		"images/global-sheet0.png",
 		"images/win_about-sheet0.png",
 		"images/bg_theme-sheet0.png",
+		"images/btn_diff-sheet0.png",
+		"images/win_choicetheme-sheet0.png",
+		"images/btn_arrowleft-sheet0.png",
+		"images/btn_arrowright-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",

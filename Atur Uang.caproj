@@ -170,6 +170,11 @@
         </object-type>
         <object-type global="1" name="global" sid="447600549389432">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="1-7" name="level" sid="858611298589584" type="number" />
+                <instance-variable comment="easy = 0, med = 1, hard = 2" name="difficult" sid="427329955916593" type="number" />
+                <instance-variable name="money" sid="861839602084745" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="275094598482802" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -197,6 +202,88 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614406603709497" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_diff" sid="816294315891162">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="onTap" sid="455605666715636" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="819688442297752">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881453185818779" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="win_choicetheme" sid="856453915449762">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="562052726213523">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475459415925680" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_arrowLeft" sid="937815965532474">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="isTap" sid="732530484292306" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="276154316632097">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431587612896418" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.59" y="0.75" />
+                            <point x="0" y="0.66" />
+                            <point x="0" y="0.39" />
+                            <point x="0.56" y="0.07" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_arrowRight" sid="843483161119381">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="isTap" sid="818273741237454" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="176796624345964">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306291481302020" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.44" y="0.07" />
+                            <point x="1" y="0.39" />
+                            <point x="1" y="0.66" />
+                            <point x="0.41" y="0.75" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

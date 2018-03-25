@@ -13,6 +13,22 @@
                     <param id="0" name="X">240</param>
                     <param id="1" name="Y">400</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="427512451739735" type="btn_diff">
+                    <param id="0" name="Pin to">bg_pickLevel</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="614300528682697" type="win_choicetheme">
+                    <param id="0" name="Pin to">bg_theme</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="528715737022281" type="btn_arrowLeft">
+                    <param id="0" name="Pin to">bg_theme</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="368597708031444" type="btn_arrowRight">
+                    <param id="0" name="Pin to">bg_theme</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="905695792782835">
@@ -112,6 +128,28 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="986890863421587">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="188643511968106" type="btn_back">
+                            <param id="0" name="Unique ID">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="648400195459132" type="btn_arrowRight">
+                            <param id="0" name="Instance variable">isTap</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="654750245628654" type="win_choicetheme">
+                            <param id="0" name="X">480</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="746106269639394" type="win_choicetheme">
+                            <param id="0" name="Pin to">bg_theme</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="849392242331192">
             <conditions>
@@ -265,6 +303,101 @@
             <actions>
                 <action id="-1" name="Set X" sid="886931907721539" type="camera">
                     <param id="0" name="X">ceil(lerp(Self.X, 720, 0.2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="979773424498021">
+            <conditions>
+                <condition id="3" name="On touched object" sid="947840678055515" type="Touch">
+                    <param id="0" name="Object">btn_diff</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Level: Mudah</comment>
+                <event-block sid="928444749354037">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="480293308316302" type="btn_diff">
+                            <param id="0" name="Unique ID">14</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="570119719736494">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="752532191783677" type="btn_diff">
+                            <param id="0" name="Unique ID">15</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="213578620177293">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="520575446416226" type="btn_diff">
+                            <param id="0" name="Unique ID">14</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="671617972327186">
+            <conditions>
+                <condition id="3" name="On touched object" sid="321596058118796" type="Touch">
+                    <param id="0" name="Object">btn_arrowLeft</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="1" name="Unpin" sid="111850343700810" type="win_choicetheme" />
+                <action id="-13" name="Set boolean" sid="128698769075760" type="btn_arrowRight">
+                    <param id="0" name="Instance variable">isTap</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="708890040920549" type="btn_arrowLeft">
+                    <param id="0" name="Instance variable">isTap</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="101224514600750">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="242595033176579" type="btn_arrowLeft">
+                    <param id="0" name="Instance variable">isTap</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="235272448155141" type="win_choicetheme">
+                    <param id="0" name="X">lerp(Self.X, 480, 0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="583979414658154">
+            <conditions>
+                <condition id="3" name="On touched object" sid="823619401728064" type="Touch">
+                    <param id="0" name="Object">btn_arrowRight</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="1" name="Unpin" sid="542580071833550" type="win_choicetheme" />
+                <action id="-13" name="Set boolean" sid="573221967954690" type="btn_arrowLeft">
+                    <param id="0" name="Instance variable">isTap</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="730089089052231" type="btn_arrowRight">
+                    <param id="0" name="Instance variable">isTap</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="309003244888575">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="957736903980965" type="btn_arrowRight">
+                    <param id="0" name="Instance variable">isTap</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="124915989288838" type="win_choicetheme">
+                    <param id="0" name="X">lerp(Self.X, 160, 0.2)</param>
                 </action>
             </actions>
         </event-block>

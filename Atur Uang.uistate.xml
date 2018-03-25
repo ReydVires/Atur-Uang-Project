@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Title</layout>
-        <event-sheet active="1" order="1">eTitle</event-sheet>
+        <layout active="1" order="0">Title</layout>
+        <event-sheet order="1">eTitle</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -38,5 +38,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/global/" />
         <folder expanded="1" path="animation-folder/win_about/" />
         <folder expanded="1" path="animation-folder/bg_theme/" />
+        <folder expanded="1" path="animation-folder/btn_diff/" />
+        <folder expanded="1" path="animation-folder/win_choicetheme/" />
+        <folder expanded="1" path="animation-folder/btn_arrowLeft/" />
+        <folder expanded="1" path="animation-folder/btn_arrowRight/" />
     </folders-expanded>
 </c2uistate>

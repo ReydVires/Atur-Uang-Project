@@ -3,7 +3,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.dassarwa.aturuang"
     versionCode = "10"
-    version     = "0.2.0" >
+    version     = "0.3.0" >
 
 <!-- versionCode is optional and Android only -->
 
@@ -14,9 +14,11 @@
   </description>
 
   <author href="https://build.phonegap.com" email="ahmad.fire@gmail.com">
-      Hardeep Shoker
+      Dassarwa Team
   </author>
   
   <platform name="android" />
+  
+  <icon src="icon-128.png" />
 
 </widget>

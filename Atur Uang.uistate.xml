@@ -10,8 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Title</layout>
-        <event-sheet order="1">eTitle</event-sheet>
+        <layout active="1" order="0">Menu</layout>
+        <layout order="2">Level 1</layout>
+        <event-sheet order="1">eMenu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,19 +29,22 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/bg_title/" />
+        <folder expanded="1" path="animation-folder/bg1/" />
+        <folder expanded="1" path="animation-folder/bg2/" />
+        <folder expanded="1" path="animation-folder/bg3/" />
         <folder expanded="1" path="animation-folder/btn_play/" />
-        <folder expanded="1" path="animation-folder/bg_pickLevel/" />
-        <folder expanded="1" path="animation-folder/btn_back/" />
-        <folder expanded="1" path="animation-folder/btn_exit/" />
-        <folder expanded="1" path="animation-folder/btn_type/" />
+        <folder expanded="1" path="animation-folder/btn_theme/" />
         <folder expanded="1" path="animation-folder/camera/" />
-        <folder expanded="1" path="animation-folder/global/" />
+        <folder expanded="1" path="animation-folder/btn_about/" />
         <folder expanded="1" path="animation-folder/win_about/" />
-        <folder expanded="1" path="animation-folder/bg_theme/" />
-        <folder expanded="1" path="animation-folder/btn_diff/" />
-        <folder expanded="1" path="animation-folder/win_choicetheme/" />
-        <folder expanded="1" path="animation-folder/btn_arrowLeft/" />
-        <folder expanded="1" path="animation-folder/btn_arrowRight/" />
+        <folder expanded="1" path="animation-folder/btn_back/" />
+        <folder expanded="1" path="animation-folder/global/" />
+        <folder expanded="1" path="animation-folder/btn_level1/" />
+        <folder expanded="1" path="animation-folder/btn_level2/" />
+        <folder expanded="1" path="animation-folder/btn_level3/" />
+        <folder expanded="1" path="animation-folder/btn_audio/" />
+        <folder expanded="1" path="animation-folder/theme1/" />
+        <folder expanded="1" path="animation-folder/theme2/" />
+        <folder expanded="1" path="animation-folder/theme3/" />
     </folders-expanded>
 </c2uistate>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Level 1</name>
-    <sid>954727380985269</sid>
-    <event-sheet>Game Manager</event-sheet>
+    <sid>212012698969655</sid>
+    <event-sheet>eLevel 1</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="197162860862413">
+        <layer name="Layer 0" sid="960707005515653">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>

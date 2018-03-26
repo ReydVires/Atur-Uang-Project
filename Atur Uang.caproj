@@ -2,15 +2,14 @@
 <c2project>
     <name>Atur Uang</name>
     <description>Atur Uang Project</description>
-    <version>0.0.0.1</version>
+    <version>0.0.6.0</version>
     <author>Dassarwa Team</author>
-    <author-email></author-email>
+    <author-email>ahmad.fire@gmail.com</author-email>
     <author-website>http://</author-website>
     <app-id>com.dassarwa.aturuang</app-id>
-    <unique-id>2hjgu6jh5cjww</unique-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>25500</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -28,196 +27,178 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Title</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
-        <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
-        <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">Edge</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Touch" sid="305348189638254">
+        <object-type name="bg1" sid="636883634746702">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663289086722025" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg2" sid="599602773106606">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852291010721763" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg3" sid="613791018020890">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="170036516340504" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_play" sid="993035362203700">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="328312672387553" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_theme" sid="670851042025363">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="893472882139877" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="678522628585383">
             <plugin id="Touch" />
         </object-type>
-        <object-type name="bg_title" sid="288827934938646">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="716723586055057" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="btn_play" sid="764110996328363">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="onTap" sid="856219438585050" type="boolean" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Pin" sid="846017037371878">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863844303820821" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="bg_pickLevel" sid="109680538258621">
+        <object-type name="camera" sid="443770792963290">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Pin" sid="899250170287082">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="177609978381737" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="btn_back" sid="566601610613013">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="onTap" sid="801110850928233" type="boolean" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Pin" sid="275428318406062">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="214475645835371" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="btn_exit" sid="889476882415032">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="453499229401022">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597463138944100" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Browser" sid="384866689339190">
-            <plugin id="Browser" />
-        </object-type>
-        <object-type name="btn_type" sid="308697794610109">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="onTap" sid="377560053287359" type="boolean" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Pin" sid="957074818497924">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847546394633086" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="camera" sid="866451103964165">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="ScrollTo" sid="937568814094307">
+                <behavior-type name="ScrollTo" sid="339937798405685">
                     <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="986554657436676" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363226028533752" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type global="1" name="global" sid="447600549389432">
+        <object-type name="btn_about" sid="379260692054424">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable comment="1-7" name="level" sid="858611298589584" type="number" />
-                <instance-variable comment="easy = 0, med = 1, hard = 2" name="difficult" sid="427329955916593" type="number" />
-                <instance-variable name="money" sid="861839602084745" type="number" />
-            </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="275094598482802" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="630317889020047" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="win_about" sid="912595745348717">
+        <object-type name="win_about" sid="813502041501885">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="isShow" sid="188522713685116" type="boolean" />
-            </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459235968143466" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501099" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220035098652379" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="bg_theme" sid="686891597581426">
+        <object-type name="btn_back" sid="109489470665522">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Pin" sid="789293749926487">
+                <behavior-type name="Pin" sid="505115297076352">
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614406603709497" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="651584528818531" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="btn_diff" sid="816294315891162">
+        <object-type global="1" name="global" sid="533811982273889">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="onTap" sid="455605666715636" type="boolean" />
+                <instance-variable name="sound" sid="247561563540017" type="boolean" />
+                <instance-variable name="state" sid="559316802646646" type="number" />
             </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222962385953116" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_level1" sid="571343441560447">
+            <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Pin" sid="819688442297752">
+                <behavior-type name="Pin" sid="540404848338154">
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881453185818779" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="927889870067801" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_level2" sid="975775964947319">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="415317699343668">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="178138133462863" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_level3" sid="168265508898975">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="837572690870095">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762711679702898" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_audio" sid="792746558569884">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="448194219785061" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Off" pingpong="0" repeatcount="1" repeatto="0" sid="135025620135640" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="theme1" sid="547703498651307">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="799077874444122">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373497299892244" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502">
                         <collision-poly>
                             <point x="1" y="0" />
                             <point x="1" y="1" />
@@ -228,60 +209,41 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="win_choicetheme" sid="856453915449762">
+        <object-type name="theme2" sid="695594132760670">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Pin" sid="562052726213523">
+                <behavior-type name="Pin" sid="599950314646188">
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475459415925680" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="btn_arrowLeft" sid="937815965532474">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="isTap" sid="732530484292306" type="boolean" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Pin" sid="276154316632097">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431587612896418" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="926512839155959" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502">
                         <collision-poly>
-                            <point x="0.59" y="0.75" />
-                            <point x="0" y="0.66" />
-                            <point x="0" y="0.39" />
-                            <point x="0.56" y="0.07" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="btn_arrowRight" sid="843483161119381">
+        <object-type name="theme3" sid="873804592377733">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="isTap" sid="818273741237454" type="boolean" />
-            </instance-variables>
             <behaviors>
-                <behavior-type name="Pin" sid="176796624345964">
+                <behavior-type name="Pin" sid="626533667600359">
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306291481302020" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="104034046500610" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502">
                         <collision-poly>
-                            <point x="0.44" y="0.07" />
-                            <point x="1" y="0.39" />
-                            <point x="1" y="0.66" />
-                            <point x="0.41" y="0.75" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -290,20 +252,19 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Title.xml</layout>
+        <layout>Menu.xml</layout>
         <layout>Level 1.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>eTitle.xml</event-sheet>
-        <event-sheet>Game Manager.xml</event-sheet>
+        <event-sheet>eMenu.xml</event-sheet>
+        <event-sheet>eLevel 1.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="0">
+        <global-instance type="Touch" uid="5">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Browser" uid="6" />
     </global-instances>
     <sounds-folder />
     <music-folder />

@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eMenu</name>
+    <events>
+        <event-block sid="780998784555002">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="678924837601452" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="508047923304701" type="camera">
+                    <param id="0" name="X">240</param>
+                    <param id="1" name="Y">320</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="555984618090781" type="btn_level1">
+                    <param id="0" name="Pin to">bg2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="883482388533329" type="btn_level2">
+                    <param id="0" name="Pin to">bg2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="972467340516499" type="btn_level3">
+                    <param id="0" name="Pin to">bg2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="807866107363914" type="theme1">
+                    <param id="0" name="Pin to">bg3</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="642154905516380" type="theme2">
+                    <param id="0" name="Pin to">bg3</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="421032284647702" type="theme3">
+                    <param id="0" name="Pin to">bg3</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="677480495109162">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="501652708357562" type="btn_back">
+                            <param id="0" name="Unique ID">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="664040015866354" type="btn_back">
+                            <param id="0" name="Pin to">bg2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="285271953919854">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="115671421589168" type="btn_back">
+                            <param id="0" name="Unique ID">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="711693662766813" type="btn_back">
+                            <param id="0" name="Pin to">bg3</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="549390159407744">
+            <conditions>
+                <condition id="3" name="On touched object" sid="477389125703066" type="Touch">
+                    <param id="0" name="Object">btn_play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="959629531867206" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="655804336846292">
+            <conditions>
+                <condition id="3" name="On touched object" sid="841148409574267" type="Touch">
+                    <param id="0" name="Object">btn_theme</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="810952683302825" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="603768902487249">
+            <conditions>
+                <condition id="3" name="On touched object" sid="925709278534117" type="Touch">
+                    <param id="0" name="Object">btn_about</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="810307644207735" type="win_about">
+                    <param id="0" name="Object">btn_about</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="724970689076613" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="474414093771999">
+            <conditions>
+                <condition id="3" name="On touched object" sid="901061824964524" type="Touch">
+                    <param id="0" name="Object">win_about</param>
+                </condition>
+                <condition id="3" name="On touched object" sid="270417633843996" type="Touch">
+                    <param id="0" name="Object">btn_back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="338709007522470" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="324456521664896">
+            <conditions>
+                <condition id="3" name="On touched object" sid="261767363516428" type="Touch">
+                    <param id="0" name="Object">btn_audio</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="342137391567917" type="win_about">
+                    <param id="0" name="Object">btn_audio</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="937649645142275">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="826928205951633" type="global">
+                            <param id="0" name="Instance variable">sound</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="571518253853779" type="btn_audio">
+                            <param id="0" name="Animation">&quot;Off&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="741868179445033" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="878150214065976" type="global">
+                            <param id="0" name="Instance variable">sound</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="384541738863912">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="272013458277114" type="global">
+                            <param id="0" name="Instance variable">sound</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="616526521317065" type="btn_audio">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="349567600778380" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="220991289230323" type="global">
+                            <param id="0" name="Instance variable">sound</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="222780206422298">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="110785171977174" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="123026783138562" type="camera">
+                    <param id="0" name="X">lerp(Self.X, 240, 0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="388028691577603">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="900709322462084" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="306083799775672" type="bg2">
+                    <param id="0" name="Y">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="933563808314157" type="bg3">
+                    <param id="0" name="X">960</param>
+                </action>
+                <action id="-1" name="Set X" sid="935909200436707" type="camera">
+                    <param id="0" name="X">lerp(Self.X, 240*3, 0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="322520355710381">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="656852719265045" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="796233047702404" type="bg2">
+                    <param id="0" name="Y">930</param>
+                </action>
+                <action id="-1" name="Set X" sid="730295926509666" type="bg3">
+                    <param id="0" name="X">480</param>
+                </action>
+                <action id="-1" name="Set X" sid="950655620384090" type="camera">
+                    <param id="0" name="X">lerp(Self.X, 240*3, 0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="604783962636568">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="511993213747002" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="774735051348896" type="win_about">
+                    <param id="0" name="Y">lerp(Self.Y, 320, 0.25)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="837349475511262">
+            <conditions>
+                <condition id="-22" name="Else" sid="677314902735402" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="744055438449983" type="win_about">
+                    <param id="0" name="Y">lerp(Self.Y, 980, 0.25)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

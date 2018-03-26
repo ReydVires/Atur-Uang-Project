@@ -21,8 +21,6 @@
   
   <icon src="icon-128.png" />
   
-  <preference name="Orientation" value="landscape" />
-  
-  <preference name="BackgroundColor" value="0x22313F"/>
+  <preference name="Orientation" value="portrait" />
 
 </widget>

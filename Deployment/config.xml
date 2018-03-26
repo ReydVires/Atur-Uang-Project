@@ -10,15 +10,13 @@
   <name>Atur Uang</name>
 
   <description>
-      Atur Uang Project.
+      Atur Uang Peoject
   </description>
 
   <author href="https://build.phonegap.com" email="ahmad.fire@gmail.com">
-      Dassarwa
+      Hardeep Shoker
   </author>
   
   <platform name="android" />
-  
-  <icon src="icon-128.png" />
 
 </widget>

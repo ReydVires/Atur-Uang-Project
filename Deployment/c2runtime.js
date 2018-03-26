@@ -17843,8 +17843,8 @@ cr.behaviors.scrollto = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Sprite,
 	cr.plugins_.Touch,
+	cr.plugins_.Sprite,
 	cr.behaviors.scrollto,
 	cr.behaviors.Pin,
 	cr.system_object.prototype.cnds.OnLoadFinished,

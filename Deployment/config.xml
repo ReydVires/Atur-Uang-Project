@@ -20,5 +20,10 @@
   <platform name="android" />
   
   <icon src="icon-128.png" />
+  
+  <!-- Testing: Fullscreen, Orientation, KeepRunning -->
+  <preference name="Fullscreen" value="true" />
+  <preference name="Orientation" value="portrait" />
+  <preference name="KeepRunning" value="false" />
 
 </widget>

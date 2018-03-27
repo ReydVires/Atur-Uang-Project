@@ -10,6 +10,7 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>25500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -134,6 +135,7 @@
                 <instance-variable name="sound" sid="247561563540017" type="boolean" />
                 <instance-variable name="state" sid="559316802646646" type="number" />
                 <instance-variable name="gameStart" sid="834968415127385" type="boolean" />
+                <instance-variable name="money" sid="100849633578465" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222962385953116" speed="5">
@@ -264,6 +266,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Function" sid="157558800251310">
+            <plugin id="Function" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -280,6 +285,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Function" uid="20" />
     </global-instances>
     <sounds-folder />
     <music-folder />

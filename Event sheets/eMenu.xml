@@ -197,7 +197,7 @@
             </conditions>
             <actions>
                 <action id="-1" name="Set X" sid="123026783138562" type="camera">
-                    <param id="0" name="X">lerp(Self.X, 240, 0.2)</param>
+                    <param id="0" name="X">floor(lerp(Self.X, 240, 0.2))</param>
                 </action>
             </actions>
         </event-block>
@@ -217,7 +217,7 @@
                     <param id="0" name="X">960</param>
                 </action>
                 <action id="-1" name="Set X" sid="935909200436707" type="camera">
-                    <param id="0" name="X">lerp(Self.X, 240*3, 0.2)</param>
+                    <param id="0" name="X">ceil(lerp(Self.X, 240*3, 0.2))</param>
                 </action>
             </actions>
         </event-block>
@@ -237,7 +237,7 @@
                     <param id="0" name="X">480</param>
                 </action>
                 <action id="-1" name="Set X" sid="950655620384090" type="camera">
-                    <param id="0" name="X">lerp(Self.X, 240*3, 0.2)</param>
+                    <param id="0" name="X">ceil(lerp(Self.X, 240*3, 0.2))</param>
                 </action>
             </actions>
         </event-block>
@@ -251,7 +251,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Set Y" sid="774735051348896" type="win_about">
-                    <param id="0" name="Y">lerp(Self.Y, 320, 0.25)</param>
+                    <param id="0" name="Y">floor(lerp(Self.Y, 320, 0.25))</param>
                 </action>
             </actions>
         </event-block>
@@ -261,7 +261,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Set Y" sid="744055438449983" type="win_about">
-                    <param id="0" name="Y">lerp(Self.Y, 980, 0.25)</param>
+                    <param id="0" name="Y">ceil(lerp(Self.Y, 980, 0.25))</param>
                 </action>
             </actions>
         </event-block>
@@ -271,6 +271,54 @@
                 <condition id="3" name="On touched object" sid="600634451226802" type="Touch">
                     <param id="0" name="Object">btn_level1</param>
                 </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="828958273054806" type="global">
+                    <param id="0" name="Instance variable">gameStart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="132315723752057" type="Function">
+                    <param id="0" name="Name">&quot;StartLevel&quot;</param>
+                    <param id="1" name="Parameter {n}">300000</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="294710521829550">
+            <conditions>
+                <condition id="3" name="On touched object" sid="591751721852617" type="Touch">
+                    <param id="0" name="Object">btn_level2</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="575670085311280" type="global">
+                    <param id="0" name="Instance variable">gameStart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="719319316147269" type="Function">
+                    <param id="0" name="Name">&quot;StartLevel&quot;</param>
+                    <param id="1" name="Parameter {n}">130000</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="410749146967553">
+            <conditions>
+                <condition id="3" name="On touched object" sid="254207326633159" type="Touch">
+                    <param id="0" name="Object">btn_level3</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="975682748195746" type="global">
+                    <param id="0" name="Instance variable">gameStart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="978325043645736" type="Function">
+                    <param id="0" name="Name">&quot;StartLevel&quot;</param>
+                    <param id="1" name="Parameter {n}">75000</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="728233071900517">
+            <conditions>
+                <condition id="0" name="On function" sid="114658424904869" type="Function">
+                    <param id="0" name="Name">&quot;StartLevel&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Set Y" sid="146610345650979" type="bg4">
@@ -279,6 +327,10 @@
                 <action id="-13" name="Set boolean" sid="146162065776103" type="global">
                     <param id="0" name="Instance variable">gameStart</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="786357005260281" type="global">
+                    <param id="0" name="Instance variable">money</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
                 </action>
                 <action behavior="Fade" id="1" name="Start fade" sid="472709493156981" type="bg4" />
             </actions>

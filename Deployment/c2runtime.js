@@ -15143,6 +15143,205 @@ cr.system_object.prototype.loadFromJSON = function (o)
 cr.shaders = {};
 ;
 ;
+cr.plugins_.Function = function(runtime)
+{
+	this.runtime = runtime;
+};
+(function ()
+{
+	var pluginProto = cr.plugins_.Function.prototype;
+	pluginProto.Type = function(plugin)
+	{
+		this.plugin = plugin;
+		this.runtime = plugin.runtime;
+	};
+	var typeProto = pluginProto.Type.prototype;
+	typeProto.onCreate = function()
+	{
+	};
+	pluginProto.Instance = function(type)
+	{
+		this.type = type;
+		this.runtime = type.runtime;
+	};
+	var instanceProto = pluginProto.Instance.prototype;
+	var funcStack = [];
+	var funcStackPtr = -1;
+	var isInPreview = false;	// set in onCreate
+	function FuncStackEntry()
+	{
+		this.name = "";
+		this.retVal = 0;
+		this.params = [];
+	};
+	function pushFuncStack()
+	{
+		funcStackPtr++;
+		if (funcStackPtr === funcStack.length)
+			funcStack.push(new FuncStackEntry());
+		return funcStack[funcStackPtr];
+	};
+	function getCurrentFuncStack()
+	{
+		if (funcStackPtr < 0)
+			return null;
+		return funcStack[funcStackPtr];
+	};
+	function getOneAboveFuncStack()
+	{
+		if (!funcStack.length)
+			return null;
+		var i = funcStackPtr + 1;
+		if (i >= funcStack.length)
+			i = funcStack.length - 1;
+		return funcStack[i];
+	};
+	function popFuncStack()
+	{
+;
+		funcStackPtr--;
+	};
+	instanceProto.onCreate = function()
+	{
+		isInPreview = (typeof cr_is_preview !== "undefined");
+		var self = this;
+		window["c2_callFunction"] = function (name_, params_)
+		{
+			var i, len, v;
+			var fs = pushFuncStack();
+			fs.name = name_.toLowerCase();
+			fs.retVal = 0;
+			if (params_)
+			{
+				fs.params.length = params_.length;
+				for (i = 0, len = params_.length; i < len; ++i)
+				{
+					v = params_[i];
+					if (typeof v === "number" || typeof v === "string")
+						fs.params[i] = v;
+					else if (typeof v === "boolean")
+						fs.params[i] = (v ? 1 : 0);
+					else
+						fs.params[i] = 0;
+				}
+			}
+			else
+			{
+				cr.clearArray(fs.params);
+			}
+			self.runtime.trigger(cr.plugins_.Function.prototype.cnds.OnFunction, self, fs.name);
+			popFuncStack();
+			return fs.retVal;
+		};
+	};
+	function Cnds() {};
+	Cnds.prototype.OnFunction = function (name_)
+	{
+		var fs = getCurrentFuncStack();
+		if (!fs)
+			return false;
+		return cr.equals_nocase(name_, fs.name);
+	};
+	Cnds.prototype.CompareParam = function (index_, cmp_, value_)
+	{
+		var fs = getCurrentFuncStack();
+		if (!fs)
+			return false;
+		index_ = cr.floor(index_);
+		if (index_ < 0 || index_ >= fs.params.length)
+			return false;
+		return cr.do_cmp(fs.params[index_], cmp_, value_);
+	};
+	pluginProto.cnds = new Cnds();
+	function Acts() {};
+	Acts.prototype.CallFunction = function (name_, params_)
+	{
+		var fs = pushFuncStack();
+		fs.name = name_.toLowerCase();
+		fs.retVal = 0;
+		cr.shallowAssignArray(fs.params, params_);
+		var ran = this.runtime.trigger(cr.plugins_.Function.prototype.cnds.OnFunction, this, fs.name);
+		if (isInPreview && !ran)
+		{
+;
+		}
+		popFuncStack();
+	};
+	Acts.prototype.SetReturnValue = function (value_)
+	{
+		var fs = getCurrentFuncStack();
+		if (fs)
+			fs.retVal = value_;
+		else
+;
+	};
+	Acts.prototype.CallExpression = function (unused)
+	{
+	};
+	pluginProto.acts = new Acts();
+	function Exps() {};
+	Exps.prototype.ReturnValue = function (ret)
+	{
+		var fs = getOneAboveFuncStack();
+		if (fs)
+			ret.set_any(fs.retVal);
+		else
+			ret.set_int(0);
+	};
+	Exps.prototype.ParamCount = function (ret)
+	{
+		var fs = getCurrentFuncStack();
+		if (fs)
+			ret.set_int(fs.params.length);
+		else
+		{
+;
+			ret.set_int(0);
+		}
+	};
+	Exps.prototype.Param = function (ret, index_)
+	{
+		index_ = cr.floor(index_);
+		var fs = getCurrentFuncStack();
+		if (fs)
+		{
+			if (index_ >= 0 && index_ < fs.params.length)
+			{
+				ret.set_any(fs.params[index_]);
+			}
+			else
+			{
+;
+				ret.set_int(0);
+			}
+		}
+		else
+		{
+;
+			ret.set_int(0);
+		}
+	};
+	Exps.prototype.Call = function (ret, name_)
+	{
+		var fs = pushFuncStack();
+		fs.name = name_.toLowerCase();
+		fs.retVal = 0;
+		cr.clearArray(fs.params);
+		var i, len;
+		for (i = 2, len = arguments.length; i < len; i++)
+			fs.params.push(arguments[i]);
+		var ran = this.runtime.trigger(cr.plugins_.Function.prototype.cnds.OnFunction, this, fs.name);
+		if (isInPreview && !ran)
+		{
+;
+		}
+		popFuncStack();
+		ret.set_any(fs.retVal);
+	};
+	pluginProto.exps = new Exps();
+}());
+;
+;
 cr.plugins_.Sprite = function(runtime)
 {
 	this.runtime = runtime;
@@ -17569,6 +17768,204 @@ cr.plugins_.Touch = function(runtime)
 }());
 ;
 ;
+cr.behaviors.Fade = function(runtime)
+{
+	this.runtime = runtime;
+};
+(function ()
+{
+	var behaviorProto = cr.behaviors.Fade.prototype;
+	behaviorProto.Type = function(behavior, objtype)
+	{
+		this.behavior = behavior;
+		this.objtype = objtype;
+		this.runtime = behavior.runtime;
+	};
+	var behtypeProto = behaviorProto.Type.prototype;
+	behtypeProto.onCreate = function()
+	{
+	};
+	behaviorProto.Instance = function(type, inst)
+	{
+		this.type = type;
+		this.behavior = type.behavior;
+		this.inst = inst;				// associated object instance to modify
+		this.runtime = type.runtime;
+	};
+	var behinstProto = behaviorProto.Instance.prototype;
+	behinstProto.onCreate = function()
+	{
+		this.activeAtStart = this.properties[0] === 1;
+		this.setMaxOpacity = false;					// used to retrieve maxOpacity once in first 'Start fade' action if initially inactive
+		this.fadeInTime = this.properties[1];
+		this.waitTime = this.properties[2];
+		this.fadeOutTime = this.properties[3];
+		this.destroy = this.properties[4];			// 0 = no, 1 = after fade out
+		this.stage = this.activeAtStart ? 0 : 3;		// 0 = fade in, 1 = wait, 2 = fade out, 3 = done
+		if (this.recycled)
+			this.stageTime.reset();
+		else
+			this.stageTime = new cr.KahanAdder();
+		this.maxOpacity = (this.inst.opacity ? this.inst.opacity : 1.0);
+		if (this.activeAtStart)
+		{
+			if (this.fadeInTime === 0)
+			{
+				this.stage = 1;
+				if (this.waitTime === 0)
+					this.stage = 2;
+			}
+			else
+			{
+				this.inst.opacity = 0;
+				this.runtime.redraw = true;
+			}
+		}
+	};
+	behinstProto.saveToJSON = function ()
+	{
+		return {
+			"fit": this.fadeInTime,
+			"wt": this.waitTime,
+			"fot": this.fadeOutTime,
+			"s": this.stage,
+			"st": this.stageTime.sum,
+			"mo": this.maxOpacity,
+		};
+	};
+	behinstProto.loadFromJSON = function (o)
+	{
+		this.fadeInTime = o["fit"];
+		this.waitTime = o["wt"];
+		this.fadeOutTime = o["fot"];
+		this.stage = o["s"];
+		this.stageTime.reset();
+		this.stageTime.sum = o["st"];
+		this.maxOpacity = o["mo"];
+	};
+	behinstProto.tick = function ()
+	{
+		this.stageTime.add(this.runtime.getDt(this.inst));
+		if (this.stage === 0)
+		{
+			this.inst.opacity = (this.stageTime.sum / this.fadeInTime) * this.maxOpacity;
+			this.runtime.redraw = true;
+			if (this.inst.opacity >= this.maxOpacity)
+			{
+				this.inst.opacity = this.maxOpacity;
+				this.stage = 1;	// wait stage
+				this.stageTime.reset();
+				this.runtime.trigger(cr.behaviors.Fade.prototype.cnds.OnFadeInEnd, this.inst);
+			}
+		}
+		if (this.stage === 1)
+		{
+			if (this.stageTime.sum >= this.waitTime)
+			{
+				this.stage = 2;	// fade out stage
+				this.stageTime.reset();
+				this.runtime.trigger(cr.behaviors.Fade.prototype.cnds.OnWaitEnd, this.inst);
+			}
+		}
+		if (this.stage === 2)
+		{
+			if (this.fadeOutTime !== 0)
+			{
+				this.inst.opacity = this.maxOpacity - ((this.stageTime.sum / this.fadeOutTime) * this.maxOpacity);
+				this.runtime.redraw = true;
+				if (this.inst.opacity < 0)
+				{
+					this.inst.opacity = 0;
+					this.stage = 3;	// done
+					this.stageTime.reset();
+					this.runtime.trigger(cr.behaviors.Fade.prototype.cnds.OnFadeOutEnd, this.inst);
+					if (this.destroy === 1)
+						this.runtime.DestroyInstance(this.inst);
+				}
+			}
+		}
+	};
+	behinstProto.doStart = function ()
+	{
+		this.stage = 0;
+		this.stageTime.reset();
+		if (this.fadeInTime === 0)
+		{
+			this.stage = 1;
+			if (this.waitTime === 0)
+				this.stage = 2;
+		}
+		else
+		{
+			this.inst.opacity = 0;
+			this.runtime.redraw = true;
+		}
+	};
+	function Cnds() {};
+	Cnds.prototype.OnFadeOutEnd = function ()
+	{
+		return true;
+	};
+	Cnds.prototype.OnFadeInEnd = function ()
+	{
+		return true;
+	};
+	Cnds.prototype.OnWaitEnd = function ()
+	{
+		return true;
+	};
+	behaviorProto.cnds = new Cnds();
+	function Acts() {};
+	Acts.prototype.StartFade = function ()
+	{
+		if (!this.activeAtStart && !this.setMaxOpacity)
+		{
+			this.maxOpacity = (this.inst.opacity ? this.inst.opacity : 1.0);
+			this.setMaxOpacity = true;
+		}
+		if (this.stage === 3)
+			this.doStart();
+	};
+	Acts.prototype.RestartFade = function ()
+	{
+		this.doStart();
+	};
+	Acts.prototype.SetFadeInTime = function (t)
+	{
+		if (t < 0)
+			t = 0;
+		this.fadeInTime = t;
+	};
+	Acts.prototype.SetWaitTime = function (t)
+	{
+		if (t < 0)
+			t = 0;
+		this.waitTime = t;
+	};
+	Acts.prototype.SetFadeOutTime = function (t)
+	{
+		if (t < 0)
+			t = 0;
+		this.fadeOutTime = t;
+	};
+	behaviorProto.acts = new Acts();
+	function Exps() {};
+	Exps.prototype.FadeInTime = function (ret)
+	{
+		ret.set_float(this.fadeInTime);
+	};
+	Exps.prototype.WaitTime = function (ret)
+	{
+		ret.set_float(this.waitTime);
+	};
+	Exps.prototype.FadeOutTime = function (ret)
+	{
+		ret.set_float(this.fadeOutTime);
+	};
+	behaviorProto.exps = new Exps();
+}());
+;
+;
 cr.behaviors.Pin = function(runtime)
 {
 	this.runtime = runtime;
@@ -17843,10 +18240,12 @@ cr.behaviors.scrollto = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Touch,
+	cr.plugins_.Function,
 	cr.plugins_.Sprite,
+	cr.plugins_.Touch,
 	cr.behaviors.scrollto,
 	cr.behaviors.Pin,
+	cr.behaviors.Fade,
 	cr.system_object.prototype.cnds.OnLoadFinished,
 	cr.plugins_.Sprite.prototype.acts.SetPos,
 	cr.behaviors.Pin.prototype.acts.Pin,
@@ -17860,9 +18259,15 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.SetBoolInstanceVar,
 	cr.plugins_.Sprite.prototype.cnds.CompareInstanceVar,
 	cr.plugins_.Sprite.prototype.acts.SetX,
+	cr.system_object.prototype.exps.floor,
 	cr.system_object.prototype.exps.lerp,
 	cr.plugins_.Sprite.prototype.exps.X,
 	cr.plugins_.Sprite.prototype.acts.SetY,
+	cr.system_object.prototype.exps.ceil,
 	cr.plugins_.Sprite.prototype.exps.Y,
-	cr.system_object.prototype.cnds.Else
+	cr.system_object.prototype.cnds.Else,
+	cr.plugins_.Function.prototype.acts.CallFunction,
+	cr.plugins_.Function.prototype.cnds.OnFunction,
+	cr.plugins_.Function.prototype.exps.Param,
+	cr.behaviors.Fade.prototype.acts.StartFade
 ];};

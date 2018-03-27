@@ -117,12 +117,22 @@
                     <param id="0" name="Object">btn_back</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-10" name="Set value" sid="338709007522470" type="global">
-                    <param id="0" name="Instance variable">state</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="896787806729851">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="848680832603813" type="global">
+                            <param id="0" name="Instance variable">gameStart</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="338709007522470" type="global">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="324456521664896">
             <conditions>
@@ -253,6 +263,24 @@
                 <action id="-2" name="Set Y" sid="744055438449983" type="win_about">
                     <param id="0" name="Y">lerp(Self.Y, 980, 0.25)</param>
                 </action>
+            </actions>
+        </event-block>
+        <comment>Opsional: Bisa langsung go to next layout, atau dibuat black screen dulu</comment>
+        <event-block sid="329097377281481">
+            <conditions>
+                <condition id="3" name="On touched object" sid="600634451226802" type="Touch">
+                    <param id="0" name="Object">btn_level1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="146610345650979" type="bg4">
+                    <param id="0" name="Y">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="146162065776103" type="global">
+                    <param id="0" name="Instance variable">gameStart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="472709493156981" type="bg4" />
             </actions>
         </event-block>
     </events>

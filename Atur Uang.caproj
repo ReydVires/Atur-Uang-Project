@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
@@ -132,6 +133,7 @@
             <instance-variables>
                 <instance-variable name="sound" sid="247561563540017" type="boolean" />
                 <instance-variable name="state" sid="559316802646646" type="number" />
+                <instance-variable name="gameStart" sid="834968415127385" type="boolean" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222962385953116" speed="5">
@@ -246,6 +248,19 @@
                             <point x="0" y="0" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg4" sid="508945556375077">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="708512599720044">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="866561530013324" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
                 </animation>
             </animation-folder>
         </object-type>

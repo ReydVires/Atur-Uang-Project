@@ -2,5 +2,61 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eLevel 1</name>
-    <events />
+    <events>
+        <event-block sid="493094588889189">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="453688751424316" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="540960564269776" type="camera">
+                    <param id="0" name="X">240</param>
+                    <param id="1" name="Y">320</param>
+                </action>
+                <action id="0" name="Set text" sid="940718565561067" type="Text">
+                    <param id="0" name="Text">&quot;Use use wkwhka hdkjsh dnas ksadi uawan lahsdj sahashdas&quot;</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="662821621471610" type="Text">
+                    <param id="0" name="Pin to">bubble</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="395908911979651" type="Btn_next">
+                    <param id="0" name="Pin to">bg_game1</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="767321848578444" type="NPC">
+                    <param id="0" name="Pin to">bg_game1</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="168546926984553" type="bubble">
+                    <param id="0" name="Pin to">bg_game1</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="619720483211046">
+            <conditions>
+                <condition id="3" name="On touched object" sid="204360709256339" type="Touch">
+                    <param id="0" name="Object">Btn_next</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="234812170624109" type="Btn_next">
+                    <param id="0" name="Instance variable">isTap</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="347530502937140">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="461369494978349" type="Btn_next">
+                    <param id="0" name="Instance variable">isTap</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="520284977564991" type="camera">
+                    <param id="0" name="X">ceil(lerp(Self.X, 240*3, 0.2))</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

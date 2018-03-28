@@ -333,6 +333,15 @@
                     <param id="1" name="Value">Function.Param(0)</param>
                 </action>
                 <action behavior="Fade" id="1" name="Start fade" sid="472709493156981" type="bg4" />
+                <action id="-16" name="Wait" sid="854364751779784" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="955015439103215" type="System">
+                    <param id="0" name="Layout">Level 1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="424658651233746" type="bg4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
             </actions>
         </event-block>
     </events>

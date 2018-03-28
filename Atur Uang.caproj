@@ -45,7 +45,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="bg1" sid="636883634746702">
+        <object-type name="bg_menu" sid="636883634746702">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663289086722025" speed="5">
@@ -53,7 +53,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="bg2" sid="599602773106606">
+        <object-type name="bg_level" sid="599602773106606">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852291010721763" speed="5">
@@ -61,7 +61,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="bg3" sid="613791018020890">
+        <object-type name="bg_theme" sid="613791018020890">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="170036516340504" speed="5">
@@ -146,7 +146,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220035098652379" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\000.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -297,7 +297,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373497299892244" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502564" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Theme 1.png">
                         <collision-poly>
                             <point x="1" y="0" />
                             <point x="1" y="1" />
@@ -317,7 +317,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="926512839155959" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502564" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Theme 2 Locked.png">
                         <collision-poly>
                             <point x="1" y="0" />
                             <point x="1" y="1" />
@@ -337,7 +337,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="104034046500610" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502564" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Theme 3 Locked.png">
                         <collision-poly>
                             <point x="1" y="0" />
                             <point x="1" y="1" />
@@ -368,7 +368,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863768567277139" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background\Background1_InGame.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -426,7 +426,78 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752874817707457" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background\Tutorial.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="title" sid="954339593332588">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="105551908185323" speed="5">
+                    <frame duration="1" hotspotX="0.501199" hotspotY="0.507692" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Atur Uang.png">
+                        <collision-poly>
+                            <point x="0.0359712" y="0.230769" />
+                            <point x="0.498801" y="0.0615385" />
+                            <point x="0.980815" y="0.123077" />
+                            <point x="0.995204" y="0.969231" />
+                            <point x="0.498801" y="0.2" />
+                            <point x="0.00719424" y="0.953846" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="choice_theme" sid="574369684109608">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="173778568980315">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550010622506315" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.514286" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Pilih Tema.png">
+                        <collision-poly>
+                            <point x="0.008" y="0.0571429" />
+                            <point x="0.964" y="0.257143" />
+                            <point x="0.996" y="0.971429" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_choiceTheme" sid="834671604209693">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="593967276566739">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="561814850799215" speed="5">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.511111" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Digunakan Button.png">
+                        <collision-poly>
+                            <point x="0.00952381" y="0.0222222" />
+                            <point x="0.495238" y="0" />
+                            <point x="0.990476" y="0.0222222" />
+                            <point x="0.990476" y="0.977778" />
+                            <point x="0.495238" y="1" />
+                            <point x="0.00952381" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Choice" pingpong="0" repeatcount="1" repeatto="0" sid="616512354658108" speed="5">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.511111" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Pilih Button.png">
+                        <collision-poly>
+                            <point x="0.00952381" y="0.0222222" />
+                            <point x="0.495238" y="0" />
+                            <point x="0.990476" y="0.0222222" />
+                            <point x="0.990476" y="0.977778" />
+                            <point x="0.495238" y="1" />
+                            <point x="0.00952381" y="0.977778" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

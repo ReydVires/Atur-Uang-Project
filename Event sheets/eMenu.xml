@@ -13,27 +13,35 @@
                     <param id="1" name="Y">320</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="555984618090781" type="btn_level1">
-                    <param id="0" name="Pin to">bg2</param>
+                    <param id="0" name="Pin to">bg_level</param>
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="883482388533329" type="btn_level2">
-                    <param id="0" name="Pin to">bg2</param>
+                    <param id="0" name="Pin to">bg_level</param>
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="972467340516499" type="btn_level3">
-                    <param id="0" name="Pin to">bg2</param>
+                    <param id="0" name="Pin to">bg_level</param>
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="807866107363914" type="theme1">
-                    <param id="0" name="Pin to">bg3</param>
+                    <param id="0" name="Pin to">bg_theme</param>
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="642154905516380" type="theme2">
-                    <param id="0" name="Pin to">bg3</param>
+                    <param id="0" name="Pin to">bg_theme</param>
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="421032284647702" type="theme3">
-                    <param id="0" name="Pin to">bg3</param>
+                    <param id="0" name="Pin to">bg_theme</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="270556802146730" type="choice_theme">
+                    <param id="0" name="Pin to">bg_theme</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="300075401806535" type="btn_choiceTheme">
+                    <param id="0" name="Pin to">bg_theme</param>
                     <param id="1" name="Mode">0</param>
                 </action>
             </actions>
@@ -46,7 +54,7 @@
                     </conditions>
                     <actions>
                         <action behavior="Pin" id="0" name="Pin to object" sid="664040015866354" type="btn_back">
-                            <param id="0" name="Pin to">bg2</param>
+                            <param id="0" name="Pin to">bg_level</param>
                             <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
@@ -59,7 +67,7 @@
                     </conditions>
                     <actions>
                         <action behavior="Pin" id="0" name="Pin to object" sid="711693662766813" type="btn_back">
-                            <param id="0" name="Pin to">bg3</param>
+                            <param id="0" name="Pin to">bg_theme</param>
                             <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
@@ -84,6 +92,11 @@
                 <condition id="3" name="On touched object" sid="841148409574267" type="Touch">
                     <param id="0" name="Object">btn_theme</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="411773850194021" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-10" name="Set value" sid="810952683302825" type="global">
@@ -97,8 +110,10 @@
                 <condition id="3" name="On touched object" sid="925709278534117" type="Touch">
                     <param id="0" name="Object">btn_about</param>
                 </condition>
-                <condition id="1" inverted="1" name="Is overlapping another object" sid="810307644207735" type="win_about">
-                    <param id="0" name="Object">btn_about</param>
+                <condition id="-7" name="Compare instance variable" sid="591151152665036" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">3</param>
                 </condition>
             </conditions>
             <actions>
@@ -139,8 +154,10 @@
                 <condition id="3" name="On touched object" sid="261767363516428" type="Touch">
                     <param id="0" name="Object">btn_audio</param>
                 </condition>
-                <condition id="1" inverted="1" name="Is overlapping another object" sid="342137391567917" type="win_about">
-                    <param id="0" name="Object">btn_audio</param>
+                <condition id="-7" name="Compare instance variable" sid="976102538915120" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">3</param>
                 </condition>
             </conditions>
             <actions />
@@ -210,10 +227,10 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Set Y" sid="306083799775672" type="bg2">
+                <action id="-2" name="Set Y" sid="306083799775672" type="bg_level">
                     <param id="0" name="Y">0</param>
                 </action>
-                <action id="-1" name="Set X" sid="933563808314157" type="bg3">
+                <action id="-1" name="Set X" sid="933563808314157" type="bg_theme">
                     <param id="0" name="X">960</param>
                 </action>
                 <action id="-1" name="Set X" sid="935909200436707" type="camera">
@@ -230,10 +247,10 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Set Y" sid="796233047702404" type="bg2">
+                <action id="-2" name="Set Y" sid="796233047702404" type="bg_level">
                     <param id="0" name="Y">930</param>
                 </action>
-                <action id="-1" name="Set X" sid="730295926509666" type="bg3">
+                <action id="-1" name="Set X" sid="730295926509666" type="bg_theme">
                     <param id="0" name="X">480</param>
                 </action>
                 <action id="-1" name="Set X" sid="950655620384090" type="camera">
@@ -251,7 +268,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Set Y" sid="774735051348896" type="win_about">
-                    <param id="0" name="Y">floor(lerp(Self.Y, 320, 0.25))</param>
+                    <param id="0" name="Y">floor(lerp(Self.Y, 350, 0.25))</param>
                 </action>
             </actions>
         </event-block>

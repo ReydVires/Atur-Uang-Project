@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="bg1" uid="0">
+                <instance type="bg_menu" uid="0">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bg2" uid="1">
+                <instance type="bg_level" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -73,7 +73,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bg3" uid="2">
+                <instance type="bg_theme" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -225,7 +225,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>720</x>
-                        <y>344</y>
+                        <y>333</y>
                         <z>0</z>
                         <width>390</width>
                         <height>75</height>
@@ -250,7 +250,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>720</x>
-                        <y>459</y>
+                        <y>448</y>
                         <z>0</z>
                         <width>390</width>
                         <height>75</height>
@@ -275,7 +275,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>720</x>
-                        <y>570</y>
+                        <y>559</y>
                         <z>0</z>
                         <width>390</width>
                         <height>75</height>
@@ -322,13 +322,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1041</x>
-                        <y>400</y>
+                        <y>397</y>
                         <z>0</z>
-                        <width>150</width>
-                        <height>500</height>
+                        <width>136</width>
+                        <height>390</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501999974</hotspotY>
+                        <hotspotY>0.502564132</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -347,13 +347,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1200</x>
-                        <y>400</y>
+                        <y>397</y>
                         <z>0</z>
-                        <width>150</width>
-                        <height>500</height>
+                        <width>136</width>
+                        <height>390</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501999974</hotspotY>
+                        <hotspotY>0.502564132</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -372,13 +372,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1358</x>
-                        <y>400</y>
+                        <y>397</y>
                         <z>0</z>
-                        <width>150</width>
-                        <height>500</height>
+                        <width>136</width>
+                        <height>390</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501999974</hotspotY>
+                        <hotspotY>0.502564132</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -412,6 +412,128 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="title" uid="28">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>127</y>
+                        <z>0</z>
+                        <width>417</width>
+                        <height>65</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501199067</hotspotX>
+                        <hotspotY>0.507692337</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="choice_theme" uid="29">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1200</x>
+                        <y>127</y>
+                        <z>0</z>
+                        <width>250</width>
+                        <height>35</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btn_choiceTheme" uid="30">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1041</x>
+                        <y>645</y>
+                        <z>0</z>
+                        <width>105</width>
+                        <height>45</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.51111114</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btn_choiceTheme" uid="31">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Choice</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1200</x>
+                        <y>645</y>
+                        <z>0</z>
+                        <width>105</width>
+                        <height>45</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.51111114</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btn_choiceTheme" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Choice</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1358</x>
+                        <y>645</y>
+                        <z>0</z>
+                        <width>105</width>
+                        <height>45</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.51111114</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

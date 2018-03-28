@@ -13,7 +13,7 @@
                     <param id="1" name="Y">320</param>
                 </action>
                 <action id="0" name="Set text" sid="940718565561067" type="Text">
-                    <param id="0" name="Text">&quot;Use use wkwhka hdkjsh dnas ksadi uawan lahsdj sahashdas&quot;</param>
+                    <param id="0" name="Text">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at arcu sit amet nibh accumsan faucibus. Proin sem elit, condimentum interdum quam finibus.&quot;</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="662821621471610" type="Text">
                     <param id="0" name="Pin to">bubble</param>

@@ -146,7 +146,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Times New Roman,-29,400,0</font>
+                        <font>Gooseberry Juice,-29,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -160,8 +160,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32</x>
-                        <y>130</y>
+                        <x>36</x>
+                        <y>132</y>
                         <z>0</z>
                         <width>416</width>
                         <height>250</height>

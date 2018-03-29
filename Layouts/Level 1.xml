@@ -39,7 +39,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
+                        <x>480</x>
                         <y>0</y>
                         <z>0</z>
                         <width>480</width>
@@ -61,7 +61,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>480</x>
+                        <x>0</x>
                         <y>0</y>
                         <z>0</z>
                         <width>480</width>
@@ -105,7 +105,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>384</x>
+                        <x>864</x>
                         <y>500</y>
                         <z>0</z>
                         <width>64</width>
@@ -130,7 +130,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>240</x>
+                        <x>720</x>
                         <y>256</y>
                         <z>0</z>
                         <width>416</width>
@@ -160,7 +160,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>36</x>
+                        <x>516</x>
                         <y>132</y>
                         <z>0</z>
                         <width>416</width>
@@ -188,8 +188,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>245</x>
-                        <y>664</y>
+                        <x>240</x>
+                        <y>674</y>
                         <z>0</z>
                         <width>123</width>
                         <height>47</height>

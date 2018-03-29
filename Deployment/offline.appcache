@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1522271983
+#1522364221
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -20,15 +20,18 @@ images/btn_audio-sheet1.png
 images/theme1-sheet0.png
 images/theme2-sheet0.png
 images/theme3-sheet0.png
-images/bg4-sheet0.png
-images/bg_game1-sheet0.png
-images/npc-sheet0.png
-images/bubble-sheet0.png
+images/bg_transition-sheet0.png
+images/bg_ingame-sheet0.png
 images/btn_next-sheet0.png
-images/bg_game2-sheet0.png
+images/bg_instruksi-sheet0.png
 images/title-sheet0.png
 images/choice_theme-sheet0.png
 images/btn_choicetheme-sheet0.png
+images/bg_intro-sheet0.png
+images/spr_market-sheet0.png
+images/money_font.png
+images/bg_inmarket-sheet0.png
+images/obj_barang-sheet0.png
 icon-16.png
 icon-32.png
 icon-114.png

@@ -4,8 +4,8 @@
     <sid>8873350371196689</sid>
     <event-sheet>eMenu</event-sheet>
     <size>
-        <width>2000</width>
-        <height>1280</height>
+        <width>1440</width>
+        <height>800</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -383,7 +383,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bg4" uid="19">
+                <instance type="bg_transition" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -466,7 +466,7 @@
                 <instance type="btn_choiceTheme" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Use</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -491,7 +491,7 @@
                 <instance type="btn_choiceTheme" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Choice</initial-animation>
+                        <initial-animation>Unuse</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -516,7 +516,7 @@
                 <instance type="btn_choiceTheme" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Choice</initial-animation>
+                        <initial-animation>Unuse</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -621,6 +621,8 @@
                         <gameStart>false</gameStart>
                         <money>0</money>
                         <text>true</text>
+                        <goLevel>false</goLevel>
+                        <state_theme>0</state_theme>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

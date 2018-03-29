@@ -12,23 +12,8 @@
                     <param id="0" name="X">240</param>
                     <param id="1" name="Y">320</param>
                 </action>
-                <action id="0" name="Set text" sid="940718565561067" type="Text">
-                    <param id="0" name="Text">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at arcu sit amet nibh accumsan faucibus. Proin sem elit, condimentum interdum quam finibus.&quot;</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="662821621471610" type="Text">
-                    <param id="0" name="Pin to">bubble</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="395908911979651" type="Btn_next">
-                    <param id="0" name="Pin to">bg_game1</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="767321848578444" type="NPC">
-                    <param id="0" name="Pin to">bg_game1</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="168546926984553" type="bubble">
-                    <param id="0" name="Pin to">bg_game1</param>
+                <action behavior="Pin" id="0" name="Pin to object" sid="642801183100978" type="Text">
+                    <param id="0" name="Pin to">bg_ingame</param>
                     <param id="1" name="Mode">0</param>
                 </action>
             </actions>
@@ -36,25 +21,105 @@
         <event-block sid="619720483211046">
             <conditions>
                 <condition id="3" name="On touched object" sid="204360709256339" type="Touch">
-                    <param id="0" name="Object">Btn_next</param>
+                    <param id="0" name="Object">btn_next</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-13" name="Set boolean" sid="234812170624109" type="Btn_next">
+                <action id="-11" name="Add to" sid="842792813461114" type="btn_next">
+                    <param id="0" name="Instance variable">slide</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="234812170624109" type="btn_next">
                     <param id="0" name="Instance variable">isTap</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
+        <comment>Optional: Destroy</comment>
+        <event-block sid="439039776301559">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="229783575745382" type="btn_next">
+                    <param id="0" name="Instance variable">slide</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="577809034530843" type="btn_next">
+                    <param id="0" name="Y">ceil(lerp(Self.Y, 860, 0.25))</param>
+                </action>
+                <action id="-16" name="Wait" sid="506883217388197" type="System">
+                    <param id="0" name="Seconds">0.45</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="654229944089272" type="global">
+                    <param id="0" name="Instance variable">goLevel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="316369368094919" type="btn_next" />
+            </actions>
+        </event-block>
         <event-block sid="347530502937140">
             <conditions>
-                <condition id="-8" name="Is boolean instance variable set" sid="461369494978349" type="Btn_next">
+                <condition id="-8" name="Is boolean instance variable set" sid="461369494978349" type="btn_next">
                     <param id="0" name="Instance variable">isTap</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-1" name="Set X" sid="520284977564991" type="camera">
-                    <param id="0" name="X">ceil(lerp(Self.X, 240*3, 0.2))</param>
+                    <param id="0" name="X">ceil(lerp(Self.X, 240*(1 + Btn_next.slide ), 0.2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="241760425869473">
+            <conditions>
+                <condition id="3" name="On touched object" sid="744297207815083" type="Touch">
+                    <param id="0" name="Object">spr_market</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="390481045071971" type="spr_market">
+                    <param id="0" name="Instance variable">onMarket</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="573314052403901">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="189847569657485" type="spr_market">
+                    <param id="0" name="Instance variable">onMarket</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="570294451288725" type="camera">
+                    <param id="0" name="X">ceil(lerp(Self.X, 240*7, 0.2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="276545525602751">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="893889236299045" type="global">
+                    <param id="0" name="Instance variable">goLevel</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="609276112217031" type="spr_market">
+                    <param id="0" name="Instance variable">onMarket</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="908983463866218" type="camera">
+                    <param id="0" name="X">floor(lerp(Self.X, 240*5, 0.2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="673631920102051">
+            <conditions>
+                <condition id="3" name="On touched object" sid="818915986891043" type="Touch">
+                    <param id="0" name="Object">btn_back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="899128136424600" type="spr_market">
+                    <param id="0" name="Instance variable">onMarket</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>

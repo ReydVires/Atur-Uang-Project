@@ -2,7 +2,7 @@
 <c2project>
     <name>Atur Uang</name>
     <description>Atur Uang Project</description>
-    <version>0.0.8.0</version>
+    <version>0.1.0.0</version>
     <author>Dassarwa Team</author>
     <author-email>ahmad.fire@gmail.com</author-email>
     <author-website>http://</author-website>
@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -30,6 +31,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -182,6 +184,8 @@
                 <instance-variable name="gameStart" sid="834968415127385" type="boolean" />
                 <instance-variable name="money" sid="100849633578465" type="number" />
                 <instance-variable name="text" sid="228847092830316" type="boolean" />
+                <instance-variable name="goLevel" sid="514389114367358" type="boolean" />
+                <instance-variable name="state_theme" sid="228243276249224" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222962385953116" speed="5">
@@ -326,6 +330,18 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="Unlock" pingpong="0" repeatcount="1" repeatto="0" sid="469926652774158" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Theme 2.png">
+                        <collision-poly>
+                            <point x="0.0220588" y="0.00769231" />
+                            <point x="0.977941" y="0.00769231" />
+                            <point x="1" y="0.5" />
+                            <point x="0.977941" y="0.992308" />
+                            <point x="0.0220588" y="0.992308" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="theme3" sid="873804592377733">
@@ -346,9 +362,21 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="Unlock" pingpong="0" repeatcount="1" repeatto="0" sid="245926389153199" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Theme 3.png">
+                        <collision-poly>
+                            <point x="0.0220588" y="0.00769231" />
+                            <point x="0.977941" y="0.00769231" />
+                            <point x="1" y="0.5" />
+                            <point x="0.977941" y="0.992308" />
+                            <point x="0.0220588" y="0.992308" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
-        <object-type name="bg4" sid="508945556375077">
+        <object-type name="bg_transition" sid="508945556375077">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Fade" sid="708512599720044">
@@ -364,37 +392,11 @@
         <object-type name="Function" sid="157558800251310">
             <plugin id="Function" />
         </object-type>
-        <object-type name="bg_game1" sid="275619417967594">
+        <object-type name="bg_ingame" sid="275619417967594">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863768567277139" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background\Background1_InGame.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="NPC" sid="603053321739254">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="507720882485567">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="342190494619510" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="bubble" sid="724637128280782">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="404271235007274">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829113892855114" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -406,10 +408,11 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-        <object-type name="Btn_next" sid="115134914100063">
+        <object-type name="btn_next" sid="115134914100063">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="isTap" sid="137591389088725" type="boolean" />
+                <instance-variable name="slide" sid="669425870360124" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="350602517108164">
@@ -418,11 +421,20 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572097354069922" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.501401" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Button\Lanjut Button.png">
+                        <collision-poly>
+                            <point x="0.0112045" y="0.0408163" />
+                            <point x="0.498599" y="0" />
+                            <point x="0.988796" y="0.0408163" />
+                            <point x="0.988796" y="0.959184" />
+                            <point x="0.498599" y="1" />
+                            <point x="0.0112045" y="0.959184" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="bg_game2" sid="436790601222018">
+        <object-type name="bg_instruksi" sid="436790601222018">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752874817707457" speed="5">
@@ -475,7 +487,19 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="561814850799215" speed="5">
+                <animation framecount="1" loop="0" name="Use" pingpong="0" repeatcount="1" repeatto="0" sid="616512354658108" speed="5">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.511111" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Pilih Button.png">
+                        <collision-poly>
+                            <point x="0.00952381" y="0.0222222" />
+                            <point x="0.495238" y="0" />
+                            <point x="0.990476" y="0.0222222" />
+                            <point x="0.990476" y="0.977778" />
+                            <point x="0.495238" y="1" />
+                            <point x="0.00952381" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Unuse" pingpong="0" repeatcount="1" repeatto="0" sid="561814850799215" speed="5">
                     <frame duration="1" hotspotX="0.504762" hotspotY="0.511111" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Digunakan Button.png">
                         <collision-poly>
                             <point x="0.00952381" y="0.0222222" />
@@ -487,17 +511,56 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="Choice" pingpong="0" repeatcount="1" repeatto="0" sid="616512354658108" speed="5">
-                    <frame duration="1" hotspotX="0.504762" hotspotY="0.511111" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Pilih Button.png">
+            </animation-folder>
+        </object-type>
+        <object-type name="bg_intro" sid="985125914496558">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="714242003571358" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_market" sid="610202344346069">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="onMarket" sid="714164260321875" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="411043249941057" speed="5">
+                    <frame duration="1" hotspotX="0.501629" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Asset Toko\Sampel toko.png">
                         <collision-poly>
-                            <point x="0.00952381" y="0.0222222" />
-                            <point x="0.495238" y="0" />
-                            <point x="0.990476" y="0.0222222" />
-                            <point x="0.990476" y="0.977778" />
-                            <point x="0.495238" y="1" />
-                            <point x="0.00952381" y="0.977778" />
+                            <point x="0.120521" y="0" />
+                            <point x="0.498371" y="0" />
+                            <point x="0.837134" y="0" />
+                            <point x="0.993485" y="0.994186" />
+                            <point x="0.00651466" y="0.994186" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="money_font" sid="830638901364134">
+            <plugin id="Spritefont2" />
+            <texture original-source="D:\GameDevelopment\My Project\Construct2\C2 - Reference\Bear_Adventure\bear-chasechristmas-admob-html5\SPRITES\lastscorefont.png" />
+        </object-type>
+        <object-type name="other_font" sid="565279557052463">
+            <plugin id="Spritefont2" />
+            <texture original-source="D:\GameDevelopment\My Project\Construct2\C2 - Reference\Bear_Adventure\bear-chasechristmas-admob-html5\SPRITES\lastscorefont.png" />
+        </object-type>
+        <object-type name="bg_inmarket" sid="811921051839912">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121586617222784" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_barang" sid="975371063162272">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523249055013336" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

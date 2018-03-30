@@ -556,7 +556,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121586617222784" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background Sekolah1.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -570,13 +570,23 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523249055013336" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
+                <animation framecount="1" loop="0" name="Sold" pingpong="0" repeatcount="1" repeatto="0" sid="954708729253016" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="win_list" sid="637354330580766">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945616885254769" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\List.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.00666667" />
+                            <point x="0.994737" y="0.00666667" />
+                            <point x="0.994737" y="0.993333" />
+                            <point x="0.00526316" y="0.993333" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

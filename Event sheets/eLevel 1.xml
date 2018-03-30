@@ -6,21 +6,29 @@
         <event-block sid="493094588889189">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="453688751424316" type="System" />
+                <condition id="-14" name="Pick by unique ID" sid="631943802876093" type="text_conversation">
+                    <param id="0" name="Unique ID">24</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="5" name="Push" sid="859051035328821" type="Array">
+                <action id="5" name="Push" sid="629228727093295" type="Array">
                     <param id="0" name="Where">1</param>
-                    <param id="1" name="Value">&quot;Pisang&quot;</param>
+                    <param id="1" name="Value">&quot;Snack&quot;</param>
                     <param id="2" name="Axis">0</param>
                 </action>
-                <action id="5" name="Push" sid="121800643655425" type="Array">
+                <action id="5" name="Push" sid="373412343775243" type="Array">
                     <param id="0" name="Where">1</param>
-                    <param id="1" name="Value">&quot;Apel&quot;</param>
+                    <param id="1" name="Value">&quot;Dasi&quot;</param>
                     <param id="2" name="Axis">0</param>
                 </action>
-                <action id="5" name="Push" sid="575949784080372" type="Array">
+                <action id="5" name="Push" sid="507526646145829" type="Array">
                     <param id="0" name="Where">1</param>
-                    <param id="1" name="Value">&quot;Melon&quot;</param>
+                    <param id="1" name="Value">&quot;Topi&quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="719433529628888" type="Array">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Value">&quot;Pulpen&quot;</param>
                     <param id="2" name="Axis">0</param>
                 </action>
                 <action id="-3" name="Set position" sid="540960564269776" type="camera">
@@ -34,6 +42,9 @@
                 <action id="-10" name="Set value" sid="679212240218659" type="global">
                     <param id="0" name="Instance variable">i</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="399239697272826" type="text_conversation">
+                    <param id="0" name="Text">&quot;Nak, ini uang Rp. &quot;&amp;global.money/1000&amp;&quot;.000.  Kelola dengan baik ya dalam 1 minggu. Jangan dihambur-hamburkan.&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -173,7 +184,7 @@
                     <param id="1" name="Value">0</param>
                 </action>
                 <action id="0" name="Set text" sid="927200033370883" type="text_list">
-                    <param id="0" name="Text">&quot;List:&quot;</param>
+                    <param id="0" name="Text">&quot;LIST :&quot;</param>
                 </action>
                 <action id="-10" name="Set value" sid="655921353578359" type="global">
                     <param id="0" name="Instance variable">i</param>
@@ -232,7 +243,6 @@
                 </action>
             </actions>
         </event-block>
-        <comment>Bug di item yang belum diset</comment>
         <event-block sid="643529921362848">
             <conditions>
                 <condition id="0" name="On function" sid="145373973285012" type="Function">
@@ -258,6 +268,10 @@
                         <action id="-13" name="Set boolean" sid="639104255982877" type="obj_barang">
                             <param id="0" name="Instance variable">sold</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="729981518179592" type="obj_barang">
+                            <param id="0" name="Animation">&quot;Sold&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>

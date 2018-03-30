@@ -596,6 +596,14 @@
         <object-type global="1" name="Array" sid="398755597923295">
             <plugin id="Arr" />
         </object-type>
+        <object-type name="text_title" sid="517486115409288">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="363833636333146">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

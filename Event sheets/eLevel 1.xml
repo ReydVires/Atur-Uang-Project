@@ -39,6 +39,10 @@
                     <param id="0" name="Pin to">bg_ingame</param>
                     <param id="1" name="Mode">0</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="593191656223518" type="text_title">
+                    <param id="0" name="Pin to">bg_ingame</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
                 <action id="-10" name="Set value" sid="679212240218659" type="global">
                     <param id="0" name="Instance variable">i</param>
                     <param id="1" name="Value">0</param>

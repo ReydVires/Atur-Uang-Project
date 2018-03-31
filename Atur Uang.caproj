@@ -190,6 +190,8 @@
                 <instance-variable comment="for index looping" name="i" sid="419420404332876" type="number" />
                 <instance-variable comment="max on looping in list" name="listMax" sid="615446697930179" type="number" />
                 <instance-variable comment="test only" name="debug" sid="472794870729587" type="number" />
+                <instance-variable name="listYangDibeli" sid="210927327387098" type="number" />
+                <instance-variable name="currLevel" sid="922883145350640" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222962385953116" speed="5">
@@ -548,7 +550,7 @@
             <plugin id="Spritefont2" />
             <texture original-source="D:\GameDevelopment\My Project\Construct2\C2 - Reference\Bear_Adventure\bear-chasechristmas-admob-html5\SPRITES\lastscorefont.png" />
         </object-type>
-        <object-type name="other_font" sid="565279557052463">
+        <object-type name="day_font" sid="565279557052463">
             <plugin id="Spritefont2" />
             <texture original-source="D:\GameDevelopment\My Project\Construct2\C2 - Reference\Bear_Adventure\bear-chasechristmas-admob-html5\SPRITES\lastscorefont.png" />
         </object-type>
@@ -565,6 +567,7 @@
             <instance-variables>
                 <instance-variable name="harga" sid="694900531561891" type="number" />
                 <instance-variable name="sold" sid="817553776509684" type="boolean" />
+                <instance-variable comment="termasuk di list?" name="isOn" sid="657677964293327" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523249055013336" speed="5">
@@ -604,15 +607,26 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="win_endLevel" sid="387798638115687">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145405214113873" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Menu.xml</layout>
         <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>eMenu.xml</event-sheet>
         <event-sheet>eLevel 1.xml</event-sheet>
+        <event-sheet>eLevel 2.xml</event-sheet>
+        <event-sheet>eGameManager.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="5">

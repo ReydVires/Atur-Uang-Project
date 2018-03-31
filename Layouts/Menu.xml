@@ -9,7 +9,7 @@
     </size>
     <margins>
         <horizontal>500</horizontal>
-        <vertical>500</vertical>
+        <vertical>1000</vertical>
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
@@ -597,10 +597,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240</x>
-                        <y>980</y>
+                        <y>1244</y>
                         <z>0</z>
-                        <width>300</width>
-                        <height>350</height>
+                        <width>480</width>
+                        <height>800</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -626,6 +626,8 @@
                         <i>0</i>
                         <listMax>0</listMax>
                         <debug>0</debug>
+                        <listYangDibeli>0</listYangDibeli>
+                        <currLevel>0</currLevel>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1522409586,
+	"version": 1522483732,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -35,6 +35,7 @@
 		"images/obj_barang-sheet0.png",
 		"images/obj_barang-sheet1.png",
 		"images/win_list-sheet0.png",
+		"images/win_endlevel-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",

@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eMenu</name>
     <events>
+        <comment>Debug: Theme unlock</comment>
         <event-block sid="780998784555002">
             <conditions>
                 <condition id="-25" name="On loader layout complete" sid="678924837601452" type="System" />
@@ -43,6 +44,14 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="300075401806535" type="btn_choiceTheme">
                     <param id="0" name="Pin to">bg_theme</param>
                     <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="153156236696459" type="theme2">
+                    <param id="0" name="Animation">&quot;Unlock&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="690340952682290" type="theme3">
+                    <param id="0" name="Animation">&quot;Unlock&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
             <sub-events>
@@ -154,10 +163,8 @@
                 <condition id="3" name="On touched object" sid="261767363516428" type="Touch">
                     <param id="0" name="Object">btn_audio</param>
                 </condition>
-                <condition id="-7" name="Compare instance variable" sid="976102538915120" type="global">
-                    <param id="0" name="Instance variable">state</param>
-                    <param id="1" name="Comparison">1</param>
-                    <param id="2" name="Value">3</param>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="751638048342025" type="win_about">
+                    <param id="0" name="Object">btn_audio</param>
                 </condition>
             </conditions>
             <actions />
@@ -248,7 +255,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Set Y" sid="796233047702404" type="bg_level">
-                    <param id="0" name="Y">930</param>
+                    <param id="0" name="Y">940</param>
                 </action>
                 <action id="-1" name="Set X" sid="730295926509666" type="bg_theme">
                     <param id="0" name="X">480</param>
@@ -278,7 +285,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Set Y" sid="744055438449983" type="win_about">
-                    <param id="0" name="Y">ceil(lerp(Self.Y, 980, 0.25))</param>
+                    <param id="0" name="Y">ceil(lerp(Self.Y, 1244, 0.18))</param>
                 </action>
             </actions>
         </event-block>
@@ -345,6 +352,10 @@
                     <param id="0" name="Instance variable">gameStart</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-10" name="Set value" sid="153784140617111" type="global">
+                    <param id="0" name="Instance variable">currLevel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="-10" name="Set value" sid="786357005260281" type="global">
                     <param id="0" name="Instance variable">money</param>
                     <param id="1" name="Value">Function.Param(0)</param>
@@ -368,66 +379,96 @@
                     <param id="0" name="Object">btn_choiceTheme</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-10" name="Set value" sid="537988962873991" type="global">
+                    <param id="0" name="Instance variable">state_theme</param>
+                    <param id="1" name="Value">btn_choiceTheme.IID</param>
+                </action>
+                <action id="4" name="Set animation" sid="412074794531833" type="btn_choiceTheme">
+                    <param id="0" name="Animation">&quot;Use&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
             <sub-events>
                 <comment>Thema: Default</comment>
                 <event-block sid="684364086909411">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="255537274606532" type="btn_choiceTheme">
-                            <param id="0" name="Unique ID">30</param>
+                        <condition id="-7" name="Compare instance variable" sid="255537274606532" type="global">
+                            <param id="0" name="Instance variable">state_theme</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="537988962873991" type="global">
-                            <param id="0" name="Instance variable">state_theme</param>
-                            <param id="1" name="Value">0</param>
+                        <action id="0" name="Call function" sid="370495259587728" type="Function">
+                            <param id="0" name="Name">&quot;disableTheme&quot;</param>
+                            <param id="1" name="Parameter {n}">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="412074794531833" type="btn_choiceTheme">
-                            <param id="0" name="Animation">&quot;Use&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="0" name="Call function" sid="840990473190030" type="Function">
+                            <param id="0" name="Name">&quot;disableTheme&quot;</param>
+                            <param id="1" name="Parameter {n}">2</param>
                         </action>
                     </actions>
                 </event-block>
                 <comment>Thema: Pink</comment>
                 <event-block sid="609313160536976">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="664653461743209" type="btn_choiceTheme">
-                            <param id="0" name="Unique ID">31</param>
+                        <condition id="-7" name="Compare instance variable" sid="580543119603570" type="global">
+                            <param id="0" name="Instance variable">state_theme</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="391082150460576" type="global">
-                            <param id="0" name="Instance variable">state_theme</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="0" name="Call function" sid="579216407387260" type="Function">
+                            <param id="0" name="Name">&quot;disableTheme&quot;</param>
+                            <param id="1" name="Parameter {n}">0</param>
                         </action>
-                        <action id="4" name="Set animation" sid="870315391691623" type="btn_choiceTheme">
-                            <param id="0" name="Animation">&quot;Use&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="724801756158433" type="theme2">
-                            <param id="0" name="Animation">&quot;Unlock&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="0" name="Call function" sid="389081276732287" type="Function">
+                            <param id="0" name="Name">&quot;disableTheme&quot;</param>
+                            <param id="1" name="Parameter {n}">2</param>
                         </action>
                     </actions>
                 </event-block>
                 <comment>Thema: Dark</comment>
                 <event-block sid="564734701828749">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="694928747454770" type="btn_choiceTheme">
-                            <param id="0" name="Unique ID">32</param>
+                        <condition id="-7" name="Compare instance variable" sid="274513629193496" type="global">
+                            <param id="0" name="Instance variable">state_theme</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="537680899444500" type="global">
-                            <param id="0" name="Instance variable">state_theme</param>
-                            <param id="1" name="Value">2</param>
+                        <action id="0" name="Call function" sid="180739123766934" type="Function">
+                            <param id="0" name="Name">&quot;disableTheme&quot;</param>
+                            <param id="1" name="Parameter {n}">0</param>
                         </action>
-                        <action id="4" name="Set animation" sid="675380265493803" type="btn_choiceTheme">
-                            <param id="0" name="Animation">&quot;Use&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="0" name="Call function" sid="519459291242196" type="Function">
+                            <param id="0" name="Name">&quot;disableTheme&quot;</param>
+                            <param id="1" name="Parameter {n}">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="707510338234493" type="theme3">
-                            <param id="0" name="Animation">&quot;Unlock&quot;</param>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="743490027670342">
+            <conditions>
+                <condition id="0" name="On function" sid="988012202968596" type="Function">
+                    <param id="0" name="Name">&quot;disableTheme&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="955573639666450">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="844760261292917" type="btn_choiceTheme">
+                            <param id="0" name="Unique ID">Function.Param(0) + 30</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="905042746411067" type="btn_choiceTheme">
+                            <param id="0" name="Animation">&quot;Unuse&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>

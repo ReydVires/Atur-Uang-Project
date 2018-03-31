@@ -50,6 +50,10 @@
                 <action id="0" name="Set text" sid="399239697272826" type="text_conversation">
                     <param id="0" name="Text">&quot;Nak, ini uang Rp. &quot;&amp;global.money/1000&amp;&quot;.000.  Kelola dengan baik ya dalam 1 minggu. Jangan dihambur-hamburkan.&quot;</param>
                 </action>
+                <action id="-10" name="Set value" sid="421178316367363" type="global">
+                    <param id="0" name="Instance variable">listYangDibeli</param>
+                    <param id="1" name="Value">4</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="279610607280651">
@@ -134,7 +138,6 @@
                 </action>
             </actions>
         </event-block>
-        <comment>Try: Pop data</comment>
         <event-block sid="241760425869473">
             <conditions>
                 <condition id="3" name="On touched object" sid="744297207815083" type="Touch">
@@ -181,6 +184,11 @@
                 <condition id="3" name="On touched object" sid="818915986891043" type="Touch">
                     <param id="0" name="Object">btn_back</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="996814638788801" type="global">
+                    <param id="0" name="Instance variable">listYangDibeli</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-13" name="Set boolean" sid="899128136424600" type="spr_market">
@@ -221,6 +229,11 @@
             <conditions>
                 <condition id="3" name="On touched object" sid="259174729432805" type="Touch">
                     <param id="0" name="Object">obj_barang</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="694929855381232" type="global">
+                    <param id="0" name="Instance variable">listYangDibeli</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -277,9 +290,50 @@
                             <param id="0" name="Animation">&quot;Sold&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="-12" name="Subtract from" sid="893036073365143" type="global">
+                            <param id="0" name="Instance variable">listYangDibeli</param>
+                            <param id="1" name="Value">obj_barang.isOn</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="342464181761096">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="897109395993999" type="global">
+                    <param id="0" name="Instance variable">listYangDibeli</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="434957760526017" type="win_endLevel">
+                    <param id="0" name="Y">ceil(lerp(win_endLevel.Y, 350, 0.15))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="135366391276940">
+            <conditions>
+                <condition id="3" name="On touched object" sid="921909272107199" type="Touch">
+                    <param id="0" name="Object">win_endLevel</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="639899294771830" type="bg_transition">
+                    <param id="0" name="Y">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="483172961706394" type="bg_transition" />
+                <action id="-11" name="Add to" sid="201611776842719" type="global">
+                    <param id="0" name="Instance variable">currLevel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="223270335463119" type="System">
+                    <param id="0" name="Seconds">0.6</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="381277498603520" type="System">
+                    <param id="0" name="Layout">&quot;Level &quot;&amp;global.currLevel</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

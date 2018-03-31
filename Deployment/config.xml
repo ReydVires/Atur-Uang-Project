@@ -3,7 +3,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.dassarwa.aturuang"
     versionCode = "10"
-    version     = "0.1.0" >
+    version     = "0.4.5" >
 
 <!-- versionCode is optional and Android only -->
 
@@ -21,9 +21,8 @@
   
   <icon src="icon-128.png" />
   
-  <!-- Testing: Fullscreen, Orientation, KeepRunning -->
+  <!-- Testing: Fullscreen, Orientation -->
   <preference name="Fullscreen" value="true" />
   <preference name="Orientation" value="portrait" />
-  <preference name="KeepRunning" value="false" />
 
 </widget>

@@ -150,7 +150,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="other_font" uid="35">
+                <instance type="day_font" uid="35">
                     <properties>
                         <character-width>64</character-width>
                         <character-height>64</character-height>
@@ -212,6 +212,7 @@
                     <instance-variables>
                         <harga>25000</harga>
                         <sold>false</sold>
+                        <isOn>1</isOn>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -238,6 +239,7 @@
                     <instance-variables>
                         <harga>10000</harga>
                         <sold>false</sold>
+                        <isOn>1</isOn>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -264,6 +266,7 @@
                     <instance-variables>
                         <harga>5000</harga>
                         <sold>false</sold>
+                        <isOn>1</isOn>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -290,6 +293,7 @@
                     <instance-variables>
                         <harga>1000</harga>
                         <sold>false</sold>
+                        <isOn>1</isOn>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -316,6 +320,7 @@
                     <instance-variables>
                         <harga>1000</harga>
                         <sold>false</sold>
+                        <isOn>0</isOn>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -342,6 +347,7 @@
                     <instance-variables>
                         <harga>1000</harga>
                         <sold>false</sold>
+                        <isOn>0</isOn>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -368,6 +374,7 @@
                     <instance-variables>
                         <harga>1000</harga>
                         <sold>false</sold>
+                        <isOn>0</isOn>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -394,6 +401,7 @@
                     <instance-variables>
                         <harga>1000</harga>
                         <sold>false</sold>
+                        <isOn>0</isOn>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -420,6 +428,7 @@
                     <instance-variables>
                         <harga>1000</harga>
                         <sold>false</sold>
+                        <isOn>0</isOn>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -528,11 +537,66 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1086</x>
+                        <x>1091.843505859</x>
                         <y>316</y>
                         <z>0</z>
                         <width>218</width>
                         <height>105</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="win_endLevel" uid="33">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1680</x>
+                        <y>979</y>
+                        <z>0</z>
+                        <width>250</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bg_transition" uid="51">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0.25</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1440</x>
+                        <y>849</y>
+                        <z>0</z>
+                        <width>480</width>
+                        <height>800</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

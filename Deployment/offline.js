@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1522483732,
+	"version": 1522675828,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -30,12 +30,14 @@
 		"images/btn_choicetheme-sheet0.png",
 		"images/bg_intro-sheet0.png",
 		"images/spr_market-sheet0.png",
+		"images/spr_market-sheet1.png",
 		"images/money_font.png",
 		"images/bg_inmarket-sheet0.png",
 		"images/obj_barang-sheet0.png",
 		"images/obj_barang-sheet1.png",
 		"images/win_list-sheet0.png",
 		"images/win_endlevel-sheet0.png",
+		"images/level_decision-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",

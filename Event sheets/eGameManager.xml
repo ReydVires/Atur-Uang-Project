@@ -2,5 +2,241 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>eGameManager</name>
-    <events />
+    <events>
+        <comment>2 Param: delay time &amp; layout name</comment>
+        <event-block sid="926277125091800">
+            <conditions>
+                <condition id="0" name="On function" sid="157807863849145" type="Function">
+                    <param id="0" name="Name">&quot;FadeIn&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="403629042727608" type="bg_transition">
+                    <param id="0" name="Y">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="791775178212571" type="bg_transition" />
+                <action id="-10" name="Set value" sid="865050094467387" type="global">
+                    <param id="0" name="Instance variable">layout_param</param>
+                    <param id="1" name="Value">Function.Param(1)</param>
+                </action>
+                <action id="-16" name="Wait" sid="581436996796185" type="System">
+                    <param id="0" name="Seconds">Function.Param(0)</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="645352584502720" type="System">
+                    <param id="0" name="Layout">global.layout_param</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>2 Param: UID &amp; IID</comment>
+        <event-block sid="150739318072295">
+            <conditions>
+                <condition id="0" name="On function" sid="901166204063926" type="Function">
+                    <param id="0" name="Name">&quot;ActionBarang&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set at X" sid="977643409352153" type="Array">
+                    <param id="0" name="X">Function.Param(1)</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="492645277314593" type="Function">
+                    <param id="0" name="Name">&quot;BarangDibeli&quot;</param>
+                    <param id="1" name="Parameter {n}">Function.Param(0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="554848181734160">
+            <conditions>
+                <condition id="0" name="On function" sid="886310598582688" type="Function">
+                    <param id="0" name="Name">&quot;BarangDibeli&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="260001867381356">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="878049526005383" type="obj_barang">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="934207104323379" type="obj_barang">
+                            <param id="0" name="Instance variable">sold</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="456736783960124" type="global">
+                            <param id="0" name="Instance variable">money</param>
+                            <param id="1" name="Value">obj_barang.harga</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="831971829561376" type="obj_barang">
+                            <param id="0" name="Instance variable">sold</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="612137915796533" type="obj_barang">
+                            <param id="0" name="Animation">&quot;Sold&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="777309879786521" type="global">
+                            <param id="0" name="Instance variable">listYangDibeli</param>
+                            <param id="1" name="Value">obj_barang.isOn</param>
+                        </action>
+                        <action id="0" name="Set text" sid="495149681001431" type="text_list">
+                            <param id="0" name="Text">&quot;LIST :&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="155475277111505" type="global">
+                            <param id="0" name="Instance variable">i</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="925376519335929">
+                            <conditions>
+                                <condition id="-10" name="For" sid="771955874746652" type="System">
+                                    <param id="0" name="Name">&quot;printList&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">Array.Width - 1</param>
+                                </condition>
+                                <condition id="6" inverted="1" name="Is empty" sid="883438263805230" type="Array" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Append text" sid="214806820062773" type="text_list">
+                                    <param id="0" name="Text">newline&amp;&quot;- &quot;&amp;Array.At(global.i)</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="899191948374720" type="global">
+                                    <param id="0" name="Instance variable">i</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>2 Param: UID &amp; Animation</comment>
+        <comment>Barang digunakan atau tidak</comment>
+        <event-block sid="741813042531370">
+            <conditions>
+                <condition id="0" name="On function" sid="434286978710966" type="Function">
+                    <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="972468558976942">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="975285083138116" type="obj_barang">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="888439160644755" type="obj_barang">
+                            <param id="0" name="Instance variable">isOn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="626523485154406" type="obj_barang">
+                            <param id="0" name="Instance variable">isOn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="934596717618278" type="obj_barang">
+                            <param id="0" name="Animation">Function.Param(1)</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="596534547201663">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="279833492664255" type="obj_barang">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="752203576976380" type="obj_barang">
+                            <param id="0" name="Instance variable">isOn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="597277824136317" type="obj_barang">
+                            <param id="0" name="Instance variable">isOn</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="870322994417487" type="obj_barang">
+                            <param id="0" name="Animation">Function.Param(1)</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>2 Param: UID 1 &amp; UID 2</comment>
+        <event-block sid="252154488925664">
+            <conditions>
+                <condition id="0" name="On function" sid="192494896019566" type="Function">
+                    <param id="0" name="Name">&quot;SwapObj&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="744255522982863">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="919167821919207" type="obj_barang">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="756090673122256" type="global">
+                            <param id="0" name="Instance variable">temp1_blockY</param>
+                            <param id="1" name="Value">obj_barang.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="412392280803033" type="global">
+                            <param id="0" name="Instance variable">temp1_blockX</param>
+                            <param id="1" name="Value">obj_barang.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="812600992401317">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="811162705092251" type="obj_barang">
+                            <param id="0" name="Unique ID">Function.Param(1)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="843396657039741" type="global">
+                            <param id="0" name="Instance variable">temp2_blockX</param>
+                            <param id="1" name="Value">obj_barang.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="720762664948031" type="global">
+                            <param id="0" name="Instance variable">temp2_blockY</param>
+                            <param id="1" name="Value">obj_barang.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="752458262983431">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="142994341811840" type="obj_barang">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="223680366067487" type="obj_barang">
+                            <param id="0" name="X">global.temp2_blockX</param>
+                            <param id="1" name="Y">global.temp2_blockY</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="737959223879814">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="665632638749627" type="obj_barang">
+                            <param id="0" name="Unique ID">Function.Param(1)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="440789731272543" type="obj_barang">
+                            <param id="0" name="X">global.temp1_blockX</param>
+                            <param id="1" name="Y">global.temp1_blockY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
 </c2eventsheet>

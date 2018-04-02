@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ePregame</name>
+    <events>
+        <include>eGameManager</include>
+        <event-block sid="194899519497842">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="667371714778028" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="197496640534286" type="camera">
+                    <param id="0" name="X">240</param>
+                    <param id="1" name="Y">400</param>
+                </action>
+                <action id="0" name="Set text" sid="671341488125253" type="text_conversation">
+                    <param id="0" name="Text">&quot;Nak, ini uang Rp. &quot;&amp;global.money/1000&amp;&quot;.000.  Kelola dengan baik ya dalam 1 minggu. Jangan dihambur-hamburkan.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="925864767212701">
+            <conditions>
+                <condition id="3" name="On touched object" sid="708981666767957" type="Touch">
+                    <param id="0" name="Object">btn_next</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="579205907123117" type="btn_next">
+                    <param id="0" name="Instance variable">slide</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="783119249372688">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="927787457755948" type="btn_next">
+                    <param id="0" name="Instance variable">slide</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="790595682650634" type="camera">
+                    <param id="0" name="X">ceil(lerp(Self.X, 240*3, 0.2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="822542263466618">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="100517639147416" type="btn_next">
+                    <param id="0" name="Instance variable">slide</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="590097852126514" type="btn_next">
+                    <param id="0" name="Y">ceil(lerp(Self.Y, 864, 0.2))</param>
+                </action>
+                <action id="-16" name="Wait" sid="563800770823396" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Call function" sid="653278715992444" type="Function">
+                    <param id="0" name="Name">&quot;FadeIn&quot;</param>
+                    <param id="1" name="Parameter {n}">0.5{###}&quot;InGame&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

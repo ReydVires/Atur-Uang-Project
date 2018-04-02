@@ -43,7 +43,7 @@
                     <actions>
                         <action id="5" name="Push" sid="268846343898953" type="Array">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;Snack&quot;</param>
+                            <param id="1" name="Value">&quot;Kentang Goreng&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="5" name="Push" sid="821298104746501" type="Array">
@@ -83,22 +83,22 @@
                     <actions>
                         <action id="5" name="Push" sid="668380532051824" type="Array">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;D&quot;</param>
+                            <param id="1" name="Value">&quot;Sepatu&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="5" name="Push" sid="653569245024032" type="Array">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;C&quot;</param>
+                            <param id="1" name="Value">&quot;Snack&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="5" name="Push" sid="610709426162407" type="Array">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;B&quot;</param>
+                            <param id="1" name="Value">&quot;Minyak Goreng&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="5" name="Push" sid="126855328583572" type="Array">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;A&quot;</param>
+                            <param id="1" name="Value">&quot;Sabun&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="-10" name="Set value" sid="697652905413712" type="global">
@@ -108,6 +108,14 @@
                         <action id="0" name="Call function" sid="507860896707273" type="Function">
                             <param id="0" name="Name">&quot;SwapObj&quot;</param>
                             <param id="1" name="Parameter {n}">73{###}71</param>
+                        </action>
+                        <action id="0" name="Call function" sid="191246139700175" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">71{###}&quot;Snack&quot;{###}1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="895517998597519" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">76{###}&quot;Pulpen&quot;{###}0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -127,26 +135,31 @@
                     <actions>
                         <action id="5" name="Push" sid="449415176843821" type="Array">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;E&quot;</param>
+                            <param id="1" name="Value">&quot;Sayuran&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="5" name="Push" sid="231824374763464" type="Array">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;F&quot;</param>
+                            <param id="1" name="Value">&quot;Beras&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="5" name="Push" sid="622945225295445" type="Array">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;G&quot;</param>
+                            <param id="1" name="Value">&quot;Ikan&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="5" name="Push" sid="731370174685089" type="Array">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Value">&quot;Bumbu&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="-10" name="Set value" sid="742447766557851" type="global">
                             <param id="0" name="Instance variable">listYangDibeli</param>
-                            <param id="1" name="Value">3</param>
+                            <param id="1" name="Value">4</param>
                         </action>
                         <action id="0" name="Call function" sid="186003478678163" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">72{###}&quot;Default&quot;</param>
+                            <param id="1" name="Parameter {n}">72{###}&quot;PisangIjo&quot;{###}1</param>
                         </action>
                         <action id="0" name="Call function" sid="301268972530389" type="Function">
                             <param id="0" name="Name">&quot;SwapObj&quot;</param>

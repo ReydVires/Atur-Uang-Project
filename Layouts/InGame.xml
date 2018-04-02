@@ -237,7 +237,7 @@
                 <instance type="obj_barang" uid="69">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Pisang</initial-animation>
+                        <initial-animation>Topi</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -264,7 +264,7 @@
                 <instance type="obj_barang" uid="70">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>PisangIjo</initial-animation>
+                        <initial-animation>Dasi</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -291,7 +291,7 @@
                 <instance type="obj_barang" uid="71">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Pisang</initial-animation>
+                        <initial-animation>Pulpen</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -318,7 +318,7 @@
                 <instance type="obj_barang" uid="72">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>PisangIjo</initial-animation>
+                        <initial-animation>Kentang</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -345,7 +345,7 @@
                 <instance type="obj_barang" uid="73">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Penghapus</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -372,7 +372,7 @@
                 <instance type="obj_barang" uid="74">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Pisang</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -399,7 +399,7 @@
                 <instance type="obj_barang" uid="75">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Flashdisk</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -426,7 +426,7 @@
                 <instance type="obj_barang" uid="76">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Snack</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -453,7 +453,7 @@
                 <instance type="obj_barang" uid="77">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Roti</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -479,7 +479,7 @@
                 </instance>
                 <instance type="text_list" uid="78">
                     <properties>
-                        <text>LIST :</text>
+                        <text>LIST BARANG:</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-19,400,0</font>
                         <color>0,0,0</color>
@@ -497,6 +497,63 @@
                         <z>0</z>
                         <width>162</width>
                         <height>131</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="text_title" uid="79">
+                    <properties>
+                        <text>KANTIN</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-73,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>720</x>
+                        <y>70</y>
+                        <z>0</z>
+                        <width>364</width>
+                        <height>105</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="text_harga" uid="80">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>503</x>
+                        <y>-62</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

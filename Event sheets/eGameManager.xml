@@ -80,7 +80,7 @@
                             <param id="1" name="Value">obj_barang.isOn</param>
                         </action>
                         <action id="0" name="Set text" sid="495149681001431" type="text_list">
-                            <param id="0" name="Text">&quot;LIST :&quot;</param>
+                            <param id="0" name="Text">&quot;LIST BARANG:&quot;</param>
                         </action>
                         <action id="-10" name="Set value" sid="155475277111505" type="global">
                             <param id="0" name="Instance variable">i</param>
@@ -111,7 +111,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <comment>2 Param: UID &amp; Animation</comment>
+        <comment>3 Param: UID, Animation, isOn:int</comment>
         <comment>Barang digunakan atau tidak</comment>
         <event-block sid="741813042531370">
             <conditions>
@@ -126,40 +126,13 @@
                         <condition id="-14" name="Pick by unique ID" sid="975285083138116" type="obj_barang">
                             <param id="0" name="Unique ID">Function.Param(0)</param>
                         </condition>
-                        <condition id="-7" name="Compare instance variable" sid="888439160644755" type="obj_barang">
-                            <param id="0" name="Instance variable">isOn</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="-10" name="Set value" sid="626523485154406" type="obj_barang">
                             <param id="0" name="Instance variable">isOn</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">Function.Param(2)</param>
                         </action>
                         <action id="4" name="Set animation" sid="934596717618278" type="obj_barang">
-                            <param id="0" name="Animation">Function.Param(1)</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="596534547201663">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="279833492664255" type="obj_barang">
-                            <param id="0" name="Unique ID">Function.Param(0)</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="752203576976380" type="obj_barang">
-                            <param id="0" name="Instance variable">isOn</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="597277824136317" type="obj_barang">
-                            <param id="0" name="Instance variable">isOn</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="870322994417487" type="obj_barang">
                             <param id="0" name="Animation">Function.Param(1)</param>
                             <param id="1" name="From">1</param>
                         </action>

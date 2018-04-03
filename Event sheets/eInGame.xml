@@ -129,8 +129,15 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="236728014640677" type="spr_market">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="0" name="Animation">&quot;Supermarket&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="804354807372897" type="bg_inmarket">
+                            <param id="0" name="Animation">&quot;Supermarket&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="119469745999668" type="text_title">
+                            <param id="0" name="Text">&quot;SMARKET&quot;</param>
                         </action>
                         <action id="5" name="Push" sid="668380532051824" type="Array">
                             <param id="0" name="Where">1</param>
@@ -580,7 +587,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Set Y" sid="236077240823257" type="win_list">
-                    <param id="0" name="Y">ceil(lerp(Self.Y, 75, 0.2))</param>
+                    <param id="0" name="Y">ceil(lerp(Self.Y, 92, 0.2))</param>
                 </action>
             </actions>
         </event-block>
@@ -594,7 +601,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Set Y" sid="977913368460878" type="win_list">
-                    <param id="0" name="Y">floor(lerp(Self.Y, -55, 0.2))</param>
+                    <param id="0" name="Y">floor(lerp(Self.Y, -46, 0.2))</param>
                 </action>
             </actions>
         </event-block>

@@ -65,13 +65,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240</x>
-                        <y>494</y>
+                        <y>459</y>
                         <z>0</z>
-                        <width>457</width>
-                        <height>311</height>
+                        <width>480</width>
+                        <height>380</height>
                         <depth>0</depth>
-                        <hotspotX>0.501094103</hotspotX>
-                        <hotspotY>0.501607716</hotspotY>
+                        <hotspotX>0.502083361</hotspotX>
+                        <hotspotY>0.502631605</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -79,7 +79,7 @@
                 <instance type="bg_inmarket" uid="61">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Sekolah</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -813,13 +813,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>385</x>
-                        <y>75</y>
+                        <y>92</y>
                         <z>0</z>
                         <width>190</width>
-                        <height>150</height>
+                        <height>183</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.502732217</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -842,10 +842,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>299</x>
-                        <y>5</y>
+                        <x>301</x>
+                        <y>9</y>
                         <z>0</z>
-                        <width>162</width>
+                        <width>166.466430664</width>
                         <height>131</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

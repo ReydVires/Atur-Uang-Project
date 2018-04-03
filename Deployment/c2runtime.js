@@ -20361,10 +20361,10 @@ cr.behaviors.scrollto = function(runtime)
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
 	cr.plugins_.Function,
-	cr.plugins_.Touch,
+	cr.plugins_.Spritefont2,
 	cr.plugins_.Sprite,
 	cr.plugins_.Text,
-	cr.plugins_.Spritefont2,
+	cr.plugins_.Touch,
 	cr.behaviors.scrollto,
 	cr.behaviors.Pin,
 	cr.behaviors.Fade,

@@ -31,12 +31,17 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="783119249372688">
+        <event-block any="1" sid="783119249372688">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="927787457755948" type="btn_next">
                     <param id="0" name="Instance variable">slide</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="734279809507857" type="btn_next">
+                    <param id="0" name="Instance variable">slide</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
                 </condition>
             </conditions>
             <actions>

@@ -480,7 +480,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550010622506315" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.514286" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Pilih Tema.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.527778" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Pilih Tema.png">
                         <collision-poly>
                             <point x="0.008" y="0.0571429" />
                             <point x="0.964" y="0.257143" />
@@ -550,16 +550,30 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Sekolah" pingpong="0" repeatcount="1" repeatto="0" sid="506110782543833" speed="5">
-                    <frame duration="1" hotspotX="0.501094" hotspotY="0.501608" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\DESAIN UPDATE\Sekolah.png">
+                    <frame duration="1" hotspotX="0.502083" hotspotY="0.502632" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Hari 1\Sekolah.png">
                         <collision-poly>
-                            <point x="0.354486" y="0.347267" />
-                            <point x="0.498906" y="0.00321543" />
-                            <point x="0.636761" y="0.33119" />
+                            <point x="0.308653" y="0.542004" />
+                            <point x="0.494739" y="0.140058" />
+                            <point x="0.682594" y="0.536453" />
                             <point x="0.949672" y="0.530547" />
                             <point x="0.960613" y="1" />
                             <point x="0.498906" y="1" />
                             <point x="0.0525164" y="1" />
-                            <point x="0.0393873" y="0.524116" />
+                            <point x="0.0393873" y="0.571484" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Supermarket" pingpong="0" repeatcount="1" repeatto="0" sid="708742300309206" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Hari 2\Supermarket.png">
+                        <collision-poly>
+                            <point x="0.0583333" y="0.0736842" />
+                            <point x="0.329167" y="0.0657895" />
+                            <point x="0.4" y="0.415789" />
+                            <point x="0.9875" y="0.489474" />
+                            <point x="0.910417" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0604167" y="1" />
+                            <point x="0.04375" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -576,8 +590,11 @@
         <object-type name="bg_inmarket" sid="811921051839912">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121586617222784" speed="5">
+                <animation framecount="1" loop="0" name="Sekolah" pingpong="0" repeatcount="1" repeatto="0" sid="121586617222784" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background Sekolah1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Supermarket" pingpong="0" repeatcount="1" repeatto="0" sid="705454170943798" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Hari 2\Supermarket1.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -648,7 +665,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945616885254769" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\List.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502732" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\List.png">
                         <collision-poly>
                             <point x="0.00526316" y="0.00666667" />
                             <point x="0.994737" y="0.00666667" />
@@ -705,7 +722,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529007381543360" speed="5">
-                    <frame duration="1" hotspotX="0.501199" hotspotY="0.507692" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Atur Uang.png">
+                    <frame duration="1" hotspotX="0.50237" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Pilih tingkatan.png">
                         <collision-poly>
                             <point x="0.0359712" y="0.230769" />
                             <point x="0.498801" y="0.0615385" />

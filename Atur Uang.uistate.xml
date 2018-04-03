@@ -11,11 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="4">InGame</layout>
-        <layout active="1" order="5">Menu</layout>
+        <layout order="5">Menu</layout>
         <layout order="6">Pregame</layout>
         <event-sheet order="0">eGameManager</event-sheet>
         <event-sheet order="1">ePregame</event-sheet>
-        <event-sheet order="2">eMenu</event-sheet>
+        <event-sheet active="1" order="2">eMenu</event-sheet>
         <event-sheet order="3">eInGame</event-sheet>
     </open-tabs>
     <properties>

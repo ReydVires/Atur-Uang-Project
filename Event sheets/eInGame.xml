@@ -61,6 +61,10 @@
                     <param id="0" name="Name">&quot;SetText&quot;</param>
                     <param id="1" name="Parameter {n}">33{###}77</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="803722850995008" type="text_list">
+                    <param id="0" name="Pin to">win_list</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
             <sub-events>
                 <comment>Selalu obj_barang yang biasa dipakai adalah  IID 0 s.d 3/4 atau UID 69 s.d 72</comment>
@@ -124,6 +128,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="4" name="Set animation" sid="236728014640677" type="spr_market">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="5" name="Push" sid="668380532051824" type="Array">
                             <param id="0" name="Where">1</param>
                             <param id="1" name="Value">&quot;Sepatu&quot;</param>
@@ -150,11 +158,11 @@
                         </action>
                         <action id="0" name="Call function" sid="106210420239231" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">71{###}&quot;Snack&quot;{###}1{###}9999{###}22</param>
+                            <param id="1" name="Parameter {n}">71{###}&quot;Snack&quot;{###}1{###}3100{###}22</param>
                         </action>
                         <action id="0" name="Call function" sid="583027227754490" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">76{###}&quot;Pulpen&quot;{###}0{###}15500{###}27</param>
+                            <param id="1" name="Parameter {n}">76{###}&quot;Pulpen&quot;{###}0{###}18500{###}27</param>
                         </action>
                         <action id="0" name="Call function" sid="507860896707273" type="Function">
                             <param id="0" name="Name">&quot;SwapObj&quot;</param>
@@ -254,6 +262,147 @@
                         <action id="0" name="Call function" sid="755166155161021" type="Function">
                             <param id="0" name="Name">&quot;SwapObj&quot;</param>
                             <param id="1" name="Parameter {n}">69{###}77</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="145132783160631">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="374193295971172" type="global">
+                            <param id="0" name="Instance variable">tingkatan</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;mudah&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="144233349617250" type="global">
+                            <param id="0" name="Instance variable">currLevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Push" sid="127210517121305" type="Array">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Value">&quot;C&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="5" name="Push" sid="432015410743723" type="Array">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Value">&quot;B&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="5" name="Push" sid="875035596507488" type="Array">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Value">&quot;A&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="748623679760468" type="global">
+                            <param id="0" name="Instance variable">listYangDibeli</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="0" name="Call function" sid="464178372038139" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">72{###}&quot;PisangIjo&quot;{###}0{###}4750{###}23</param>
+                        </action>
+                        <action id="0" name="Call function" sid="974817568924644" type="Function">
+                            <param id="0" name="Name">&quot;SwapObj&quot;</param>
+                            <param id="1" name="Parameter {n}">72{###}69</param>
+                        </action>
+                        <action id="0" name="Call function" sid="809102673671126" type="Function">
+                            <param id="0" name="Name">&quot;SwapObj&quot;</param>
+                            <param id="1" name="Parameter {n}">69{###}77</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="518448153255619">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="180418874993561" type="global">
+                            <param id="0" name="Instance variable">tingkatan</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;mudah&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="682762353916020" type="global">
+                            <param id="0" name="Instance variable">currLevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Push" sid="765315784612297" type="Array">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Value">&quot;C&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="5" name="Push" sid="484454164026420" type="Array">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Value">&quot;B&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="5" name="Push" sid="875761354868176" type="Array">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Value">&quot;A&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="760998546973939" type="global">
+                            <param id="0" name="Instance variable">listYangDibeli</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="0" name="Call function" sid="391361449973479" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">72{###}&quot;PisangIjo&quot;{###}0{###}8050{###}23</param>
+                        </action>
+                        <action id="0" name="Call function" sid="889359895669831" type="Function">
+                            <param id="0" name="Name">&quot;SwapObj&quot;</param>
+                            <param id="1" name="Parameter {n}">72{###}76</param>
+                        </action>
+                        <action id="0" name="Call function" sid="401274578540473" type="Function">
+                            <param id="0" name="Name">&quot;SwapObj&quot;</param>
+                            <param id="1" name="Parameter {n}">69{###}76</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="718537663523766">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="793165034537506" type="global">
+                            <param id="0" name="Instance variable">tingkatan</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;mudah&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="327187193563850" type="global">
+                            <param id="0" name="Instance variable">currLevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Push" sid="661341492055757" type="Array">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Value">&quot;C&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="5" name="Push" sid="795705486047413" type="Array">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Value">&quot;B&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="5" name="Push" sid="152630890696217" type="Array">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Value">&quot;A&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="479795500573052" type="global">
+                            <param id="0" name="Instance variable">listYangDibeli</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="0" name="Call function" sid="767864427444829" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">72{###}&quot;PisangIjo&quot;{###}0{###}12750{###}23</param>
+                        </action>
+                        <action id="0" name="Call function" sid="651953730391122" type="Function">
+                            <param id="0" name="Name">&quot;SwapObj&quot;</param>
+                            <param id="1" name="Parameter {n}">72{###}76</param>
+                        </action>
+                        <action id="0" name="Call function" sid="675638055490609" type="Function">
+                            <param id="0" name="Name">&quot;SwapObj&quot;</param>
+                            <param id="1" name="Parameter {n}">69{###}75</param>
                         </action>
                     </actions>
                 </event-block>
@@ -400,6 +549,52 @@
                 <action id="-13" name="Set boolean" sid="531204446869376" type="win_endLevel">
                     <param id="0" name="Instance variable">isTap</param>
                     <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="112945627054585">
+            <conditions>
+                <condition id="3" name="On touched object" sid="493359945966901" type="Touch">
+                    <param id="0" name="Object">win_list</param>
+                </condition>
+                <condition id="-7" inverted="1" name="Compare instance variable" sid="621962006667545" type="global">
+                    <param id="0" name="Instance variable">listYangDibeli</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="930682668245100" type="win_list">
+                    <param id="0" name="Instance variable">isDrop</param>
+                    <param id="1" name="Value">win_list.isDrop * (-1)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="118543944211486">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="263226172008713" type="win_list">
+                    <param id="0" name="Instance variable">isDrop</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="236077240823257" type="win_list">
+                    <param id="0" name="Y">ceil(lerp(Self.Y, 75, 0.2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="256655246326353">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="870434965321124" type="win_list">
+                    <param id="0" name="Instance variable">isDrop</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="977913368460878" type="win_list">
+                    <param id="0" name="Y">floor(lerp(Self.Y, -55, 0.2))</param>
                 </action>
             </actions>
         </event-block>

@@ -45,12 +45,26 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="583292873092667">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="741520896852168" type="btn_next">
+                    <param id="0" name="Instance variable">slide</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="482916634013746" type="text_conversation">
+                    <param id="0" name="Text">&quot;Baik ayah dan ibu, akan aku kelola dengan baik uang ini.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="822542263466618">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="100517639147416" type="btn_next">
                     <param id="0" name="Instance variable">slide</param>
                     <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">1</param>
+                    <param id="2" name="Value">2</param>
                 </condition>
             </conditions>
             <actions>

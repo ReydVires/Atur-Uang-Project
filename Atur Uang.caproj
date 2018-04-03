@@ -214,7 +214,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="927889870067801" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Button\Mudah Button.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\DESAIN UPDATE\Mudah Button.png">
                         <collision-poly>
                             <point x="0.0025641" y="0.0133333" />
                             <point x="0.5" y="0" />
@@ -236,7 +236,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="178138133462863" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Button\Sedang Button.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\DESAIN UPDATE\Sedang Button.png">
                         <collision-poly>
                             <point x="0.0025641" y="0.0133333" />
                             <point x="0.5" y="0" />
@@ -258,7 +258,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762711679702898" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Button\Sulit Button.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\DESAIN UPDATE\Sulit Button.png">
                         <collision-poly>
                             <point x="0.0025641" y="0.0133333" />
                             <point x="0.5" y="0" />
@@ -433,7 +433,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572097354069922" speed="5">
-                    <frame duration="1" hotspotX="0.501401" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Button\Lanjut Button.png">
+                    <frame duration="1" hotspotX="0.502747" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\DESAIN UPDATE\Lanjut Button New.png">
                         <collision-poly>
                             <point x="0.0112045" y="0.0408163" />
                             <point x="0.498599" y="0" />
@@ -500,7 +500,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Unuse" pingpong="0" repeatcount="1" repeatto="0" sid="616512354658108" speed="5">
-                    <frame duration="1" hotspotX="0.504762" hotspotY="0.511111" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Pilih Button.png">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.511111" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\DESAIN UPDATE\Pilih Button.png">
                         <collision-poly>
                             <point x="0.00952381" y="0.0222222" />
                             <point x="0.495238" y="0" />
@@ -512,7 +512,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Use" pingpong="0" repeatcount="1" repeatto="0" sid="561814850799215" speed="5">
-                    <frame duration="1" hotspotX="0.504762" hotspotY="0.511111" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Digunakan Button.png">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.511111" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\DESAIN UPDATE\Digunakan Button.png">
                         <collision-poly>
                             <point x="0.00952381" y="0.0222222" />
                             <point x="0.495238" y="0" />
@@ -550,7 +550,18 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Sekolah" pingpong="0" repeatcount="1" repeatto="0" sid="506110782543833" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.501094" hotspotY="0.501608" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\DESAIN UPDATE\Sekolah.png">
+                        <collision-poly>
+                            <point x="0.354486" y="0.347267" />
+                            <point x="0.498906" y="0.00321543" />
+                            <point x="0.636761" y="0.33119" />
+                            <point x="0.949672" y="0.530547" />
+                            <point x="0.960613" y="1" />
+                            <point x="0.498906" y="1" />
+                            <point x="0.0525164" y="1" />
+                            <point x="0.0393873" y="0.524116" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -632,6 +643,9 @@
         </object-type>
         <object-type name="win_list" sid="637354330580766">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="isDrop" sid="862296068424088" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945616885254769" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\List.png">
@@ -647,6 +661,11 @@
         </object-type>
         <object-type name="text_list" sid="129963833667481">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="949776328252188">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type global="1" name="Array" sid="398755597923295">
             <plugin id="Arr" />
@@ -666,11 +685,11 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145405214113873" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\DESAIN UPDATE\Hari Selanjutnya.png">
                         <collision-poly>
-                            <point x="0.232" y="0.732" />
-                            <point x="0.816" y="0.724" />
-                            <point x="0.808" y="0.928" />
+                            <point x="0.22" y="0.7" />
+                            <point x="0.788" y="0.704" />
+                            <point x="0.784" y="0.928" />
                             <point x="0.224" y="0.936" />
                         </collision-poly>
                     </frame>

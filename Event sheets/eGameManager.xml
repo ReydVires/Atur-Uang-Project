@@ -111,7 +111,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <comment>3 Param: UID, Animation, isOn:int</comment>
+        <comment>5 Param: UID obj, Animation, isOn:int, harga:int, UID text</comment>
         <comment>Barang digunakan atau tidak</comment>
         <event-block sid="741813042531370">
             <conditions>
@@ -126,15 +126,25 @@
                         <condition id="-14" name="Pick by unique ID" sid="975285083138116" type="obj_barang">
                             <param id="0" name="Unique ID">Function.Param(0)</param>
                         </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="757966279656234" type="text_harga">
+                            <param id="0" name="Unique ID">Function.Param(4)</param>
+                        </condition>
                     </conditions>
                     <actions>
+                        <action id="4" name="Set animation" sid="934596717618278" type="obj_barang">
+                            <param id="0" name="Animation">Function.Param(1)</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="-10" name="Set value" sid="626523485154406" type="obj_barang">
                             <param id="0" name="Instance variable">isOn</param>
                             <param id="1" name="Value">Function.Param(2)</param>
                         </action>
-                        <action id="4" name="Set animation" sid="934596717618278" type="obj_barang">
-                            <param id="0" name="Animation">Function.Param(1)</param>
-                            <param id="1" name="From">1</param>
+                        <action id="-10" name="Set value" sid="287971946722946" type="obj_barang">
+                            <param id="0" name="Instance variable">harga</param>
+                            <param id="1" name="Value">Function.Param(3)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="729486301536106" type="text_harga">
+                            <param id="0" name="Text">obj_barang.harga</param>
                         </action>
                     </actions>
                 </event-block>
@@ -206,6 +216,36 @@
                         <action id="-3" name="Set position" sid="440789731272543" type="obj_barang">
                             <param id="0" name="X">global.temp1_blockX</param>
                             <param id="1" name="Y">global.temp1_blockY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>2 Param: UID Text, UID Obj</comment>
+        <event-block sid="541311374016899">
+            <conditions>
+                <condition id="0" name="On function" sid="438406577169040" type="Function">
+                    <param id="0" name="Name">&quot;SetText&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="530449388723750">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="524883849670603" type="obj_barang">
+                            <param id="0" name="Unique ID">Function.Param(1)</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="512188909484071" type="text_harga">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="646338455736581" type="text_harga">
+                            <param id="0" name="Pin to">obj_barang</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="632851756467144" type="text_harga">
+                            <param id="0" name="Text">obj_barang.harga</param>
                         </action>
                     </actions>
                 </event-block>

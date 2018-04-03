@@ -701,6 +701,11 @@
         </object-type>
         <object-type name="text_harga" sid="341188985689013">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="321601424753252">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families />

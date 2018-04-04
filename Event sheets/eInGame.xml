@@ -141,17 +141,17 @@
                         </action>
                         <action id="5" name="Push" sid="668380532051824" type="Array">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;Sepatu&quot;</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="5" name="Push" sid="653569245024032" type="Array">
-                            <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;Snack&quot;</param>
+                            <param id="1" name="Value">&quot;Sendal Jepit Hijau&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="5" name="Push" sid="610709426162407" type="Array">
                             <param id="0" name="Where">1</param>
                             <param id="1" name="Value">&quot;Minyak Goreng&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="5" name="Push" sid="653569245024032" type="Array">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Value">&quot;Es Krim&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="5" name="Push" sid="126855328583572" type="Array">
@@ -165,15 +165,31 @@
                         </action>
                         <action id="0" name="Call function" sid="106210420239231" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">71{###}&quot;Snack&quot;{###}1{###}3100{###}22</param>
+                            <param id="1" name="Parameter {n}">69{###}&quot;Sabun&quot;{###}1{###}2000{###}80</param>
                         </action>
                         <action id="0" name="Call function" sid="583027227754490" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">76{###}&quot;Pulpen&quot;{###}0{###}18500{###}27</param>
+                            <param id="1" name="Parameter {n}">70{###}&quot;EsKrim&quot;{###}1{###}3000{###}21</param>
+                        </action>
+                        <action id="0" name="Call function" sid="890482408656526" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">71{###}&quot;MinyakGoreng&quot;{###}1{###}12000{###}22</param>
+                        </action>
+                        <action id="0" name="Call function" sid="510845229199031" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">72{###}&quot;SendalJepit_Hijau&quot;{###}1{###}7000{###}23</param>
                         </action>
                         <action id="0" name="Call function" sid="507860896707273" type="Function">
                             <param id="0" name="Name">&quot;SwapObj&quot;</param>
                             <param id="1" name="Parameter {n}">73{###}71</param>
+                        </action>
+                        <action id="0" name="Call function" sid="580755386085098" type="Function">
+                            <param id="0" name="Name">&quot;SwapObj&quot;</param>
+                            <param id="1" name="Parameter {n}">77{###}69</param>
+                        </action>
+                        <action id="0" name="Call function" sid="997984409648354" type="Function">
+                            <param id="0" name="Name">&quot;SwapObj&quot;</param>
+                            <param id="1" name="Parameter {n}">76{###}70</param>
                         </action>
                     </actions>
                 </event-block>

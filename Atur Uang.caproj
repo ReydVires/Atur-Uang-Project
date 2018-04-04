@@ -656,6 +656,71 @@
                 <animation framecount="1" loop="0" name="Flashdisk" pingpong="0" repeatcount="1" repeatto="0" sid="982796004226488" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Hari 1 - Sekolah\Flashdisk.png" />
                 </animation>
+                <animation framecount="1" loop="0" name="MinyakGoreng" pingpong="0" repeatcount="1" repeatto="0" sid="421134553846821" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GDC Product\Project\Hari 2\Objek\Minyak Goreng.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.140625" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.765625" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.203125" y="0.796875" />
+                            <point x="0.203125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Sabun" pingpong="0" repeatcount="1" repeatto="0" sid="582215359875682" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GDC Product\Project\Hari 2\Objek\Sabun Batang.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0.140625" />
+                            <point x="0.828125" y="0.171875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="EsKrim" pingpong="0" repeatcount="1" repeatto="0" sid="883011381888768" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GDC Product\Project\Hari 2\Objek\Es Krim.png">
+                        <collision-poly>
+                            <point x="0.234375" y="0.234375" />
+                            <point x="0.5" y="0.015625" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.71875" y="0.5" />
+                            <point x="0.65625" y="0.65625" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.296875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="SendalJepit_Hijau" pingpong="0" repeatcount="1" repeatto="0" sid="186709851731788" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GDC Product\Project\Hari 2\Objek\Sendal Jepit Hijau.png">
+                        <collision-poly>
+                            <point x="0.109375" y="0.109375" />
+                            <point x="0.890625" y="0.109375" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="SendalJepit_Pink" pingpong="0" repeatcount="1" repeatto="0" sid="332689225618662" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GDC Product\Project\Hari 2\Objek\Sendal Jepit Pink.png">
+                        <collision-poly>
+                            <point x="0.109375" y="0.109375" />
+                            <point x="0.890625" y="0.109375" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="win_list" sid="637354330580766">

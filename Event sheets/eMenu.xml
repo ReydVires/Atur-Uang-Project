@@ -46,6 +46,10 @@
                     <param id="0" name="Pin to">bg_theme</param>
                     <param id="1" name="Mode">0</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="542033697249295" type="coin_font">
+                    <param id="0" name="Pin to">bg_theme</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
                 <action id="4" name="Set animation" sid="153156236696459" type="theme2">
                     <param id="0" name="Animation">&quot;Unlock&quot;</param>
                     <param id="1" name="From">1</param>

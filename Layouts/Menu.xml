@@ -563,6 +563,39 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="coin_font" uid="34">
+                    <properties>
+                        <character-width>64</character-width>
+                        <character-height>64</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,:;?!-~&amp;()\/+=$&lt;&gt;^%*{}[]</character-set>
+                        <text>5000</text>
+                        <scale>0.5</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>-10</character-spacing>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1320.322998047</x>
+                        <y>16.103668213</y>
+                        <z>0</z>
+                        <width>160</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -659,6 +692,7 @@
                         <temp1_blockY>0</temp1_blockY>
                         <temp2_blockX>0</temp2_blockX>
                         <temp2_blockY>0</temp2_blockY>
+                        <coin>0</coin>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

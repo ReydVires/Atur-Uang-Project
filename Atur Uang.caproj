@@ -198,6 +198,7 @@
                 <instance-variable name="temp1_blockY" sid="699212203695376" type="number" />
                 <instance-variable name="temp2_blockX" sid="497293433009095" type="number" />
                 <instance-variable name="temp2_blockY" sid="164075519344899" type="number" />
+                <instance-variable name="coin" sid="834686900479271" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222962385953116" speed="5">
@@ -932,6 +933,15 @@
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
+        </object-type>
+        <object-type name="coin_font" sid="777424595612787">
+            <plugin id="Spritefont2" />
+            <behaviors>
+                <behavior-type name="Pin" sid="124402687480178">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="G:\GDC Product\FallTell\Pengumuman\ScoreFont.png" />
         </object-type>
     </object-folder>
     <families />

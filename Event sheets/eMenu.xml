@@ -50,11 +50,11 @@
                     <param id="0" name="Pin to">bg_theme</param>
                     <param id="1" name="Mode">0</param>
                 </action>
-                <action id="4" name="Set animation" sid="153156236696459" type="theme2">
+                <action disabled="1" id="4" name="Set animation" sid="153156236696459" type="theme2">
                     <param id="0" name="Animation">&quot;Unlock&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="4" name="Set animation" sid="690340952682290" type="theme3">
+                <action disabled="1" id="4" name="Set animation" sid="690340952682290" type="theme3">
                     <param id="0" name="Animation">&quot;Unlock&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -399,10 +399,6 @@
                     <param id="0" name="Instance variable">state_theme</param>
                     <param id="1" name="Value">btn_choiceTheme.IID</param>
                 </action>
-                <action id="4" name="Set animation" sid="412074794531833" type="btn_choiceTheme">
-                    <param id="0" name="Animation">&quot;Use&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
             </actions>
             <sub-events>
                 <comment>Thema: Default</comment>
@@ -415,6 +411,26 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="4" name="Set animation" sid="727567967007689" type="bg_level">
+                            <param id="0" name="Animation">&quot;siang&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="823780596455256" type="bg_menu">
+                            <param id="0" name="Animation">&quot;siang&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="350442433469993" type="bg_theme">
+                            <param id="0" name="Animation">&quot;siang&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="412074794531833" type="btn_choiceTheme">
+                            <param id="0" name="Animation">&quot;Use&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="844391579516468" type="global">
+                            <param id="0" name="Instance variable">theme_bg</param>
+                            <param id="1" name="Value">&quot;siang&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="370495259587728" type="Function">
                             <param id="0" name="Name">&quot;disableTheme&quot;</param>
                             <param id="1" name="Parameter {n}">1</param>
@@ -433,8 +449,31 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
+                        <condition id="2" name="Is playing" sid="200668928964781" type="theme2">
+                            <param id="0" name="Animation">&quot;unlock&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
+                        <action id="4" name="Set animation" sid="175594972340415" type="bg_level">
+                            <param id="0" name="Animation">&quot;sore&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="641413446123849" type="bg_menu">
+                            <param id="0" name="Animation">&quot;sore&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="433111148682373" type="bg_theme">
+                            <param id="0" name="Animation">&quot;sore&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="407749998351164" type="btn_choiceTheme">
+                            <param id="0" name="Animation">&quot;Use&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="457941012722946" type="global">
+                            <param id="0" name="Instance variable">theme_bg</param>
+                            <param id="1" name="Value">&quot;sore&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="579216407387260" type="Function">
                             <param id="0" name="Name">&quot;disableTheme&quot;</param>
                             <param id="1" name="Parameter {n}">0</param>
@@ -453,8 +492,31 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">2</param>
                         </condition>
+                        <condition id="2" name="Is playing" sid="186591403474480" type="theme3">
+                            <param id="0" name="Animation">&quot;unlock&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
+                        <action id="4" name="Set animation" sid="525212097321902" type="bg_level">
+                            <param id="0" name="Animation">&quot;malam&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="104599696624212" type="bg_menu">
+                            <param id="0" name="Animation">&quot;malam&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="819699414107978" type="bg_theme">
+                            <param id="0" name="Animation">&quot;malam&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="287901404030117" type="btn_choiceTheme">
+                            <param id="0" name="Animation">&quot;Use&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="589061901617326" type="global">
+                            <param id="0" name="Instance variable">theme_bg</param>
+                            <param id="1" name="Value">&quot;malam&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="180739123766934" type="Function">
                             <param id="0" name="Name">&quot;disableTheme&quot;</param>
                             <param id="1" name="Parameter {n}">0</param>
@@ -462,6 +524,47 @@
                         <action id="0" name="Call function" sid="519459291242196" type="Function">
                             <param id="0" name="Name">&quot;disableTheme&quot;</param>
                             <param id="1" name="Parameter {n}">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Kondisi membuka tema</comment>
+                <event-block sid="331767527087702">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="201723773710612" type="theme3">
+                            <param id="0" name="Animation">&quot;lock&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="850890797882659" type="btn_choiceTheme">
+                            <param id="0" name="Unique ID">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="407712438468255" type="global">
+                            <param id="0" name="Instance variable">coin</param>
+                            <param id="1" name="Value">1000</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="459078190502664" type="theme3">
+                            <param id="0" name="Animation">&quot;unlock&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="278582931675276">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="316747280785572" type="theme2">
+                            <param id="0" name="Animation">&quot;lock&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="249632719084443" type="btn_choiceTheme">
+                            <param id="0" name="Unique ID">31</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="528611066062144" type="global">
+                            <param id="0" name="Instance variable">coin</param>
+                            <param id="1" name="Value">1000</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="537620667533514" type="theme2">
+                            <param id="0" name="Animation">&quot;unlock&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -489,6 +592,16 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="391695569423289">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="954397252790443" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="524518138699938" type="coin_font">
+                    <param id="0" name="Text">global.coin</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

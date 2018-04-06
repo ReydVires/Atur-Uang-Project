@@ -568,7 +568,7 @@
                         <character-width>64</character-width>
                         <character-height>64</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,:;?!-~&amp;()\/+=$&lt;&gt;^%*{}[]</character-set>
-                        <text>5000</text>
+                        <text>0</text>
                         <scale>0.5</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -692,7 +692,8 @@
                         <temp1_blockY>0</temp1_blockY>
                         <temp2_blockX>0</temp2_blockX>
                         <temp2_blockY>0</temp2_blockY>
-                        <coin>0</coin>
+                        <coin>5000</coin>
+                        <theme_bg>siang</theme_bg>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

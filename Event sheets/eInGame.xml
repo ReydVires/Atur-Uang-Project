@@ -76,6 +76,10 @@
                 <action id="0" name="Set text" sid="963664061507912" type="text_congrats">
                     <param id="0" name="Text">&quot;SELAMAT!&quot;&amp;newline&amp;&quot;KAMU BERHASIL DI HARI &quot;&amp;(global.currLevel)&amp;newline</param>
                 </action>
+                <action id="4" name="Set animation" sid="397978902473550" type="bg_ingame">
+                    <param id="0" name="Animation">global.theme_bg</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
             <sub-events>
                 <comment>Selalu obj_barang yang biasa dipakai adalah  IID 0 s.d 3/4 atau UID 69 s.d 72</comment>
@@ -842,6 +846,9 @@
                 <action id="-10" name="Set value" sid="201298781033502" type="global">
                     <param id="0" name="Instance variable">coin</param>
                     <param id="1" name="Value">global.money</param>
+                </action>
+                <action id="0" name="Set text" sid="273508246659117" type="coin_font">
+                    <param id="0" name="Text">global.coin</param>
                 </action>
             </actions>
         </event-block>

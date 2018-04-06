@@ -52,24 +52,42 @@
         <object-type name="bg_menu" sid="636883634746702">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663289086722025" speed="5">
+                <animation framecount="1" loop="0" name="siang" pingpong="0" repeatcount="1" repeatto="0" sid="663289086722025" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background\Background1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="sore" pingpong="0" repeatcount="1" repeatto="0" sid="992962353454807" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="G:\GDC Product\Project\Background2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="malam" pingpong="0" repeatcount="1" repeatto="0" sid="249698457631722" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="G:\GDC Product\Project\Background3.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="bg_level" sid="599602773106606">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852291010721763" speed="5">
+                <animation framecount="1" loop="0" name="siang" pingpong="0" repeatcount="1" repeatto="0" sid="852291010721763" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background\Background1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="sore" pingpong="0" repeatcount="1" repeatto="0" sid="490446491563345" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="G:\GDC Product\Project\Background2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="malam" pingpong="0" repeatcount="1" repeatto="0" sid="118054378122695" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="G:\GDC Product\Project\Background3.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="bg_theme" sid="613791018020890">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="170036516340504" speed="5">
+                <animation framecount="1" loop="0" name="siang" pingpong="0" repeatcount="1" repeatto="0" sid="170036516340504" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background\Background1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="sore" pingpong="0" repeatcount="1" repeatto="0" sid="618710650901859" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="G:\GDC Product\Project\Background2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="malam" pingpong="0" repeatcount="1" repeatto="0" sid="366749335631323" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="G:\GDC Product\Project\Background3.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -189,6 +207,7 @@
                 <instance-variable name="temp2_blockX" sid="497293433009095" type="number" />
                 <instance-variable name="temp2_blockY" sid="164075519344899" type="number" />
                 <instance-variable name="coin" sid="834686900479271" type="number" />
+                <instance-variable name="theme_bg" sid="987253327489231" type="string" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222962385953116" speed="5">
@@ -323,7 +342,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="926512839155959" speed="5">
+                <animation framecount="1" loop="0" name="lock" pingpong="0" repeatcount="1" repeatto="0" sid="926512839155959" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.502564" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Theme 2 Locked.png">
                         <collision-poly>
                             <point x="1" y="0" />
@@ -355,7 +374,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="104034046500610" speed="5">
+                <animation framecount="1" loop="0" name="lock" pingpong="0" repeatcount="1" repeatto="0" sid="104034046500610" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.502564" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Theme 3 Locked.png">
                         <collision-poly>
                             <point x="1" y="0" />
@@ -398,8 +417,20 @@
         <object-type name="bg_ingame" sid="275619417967594">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863768567277139" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background\Background1_InGame.png" />
+                <animation framecount="1" loop="0" name="siang" pingpong="0" repeatcount="1" repeatto="0" sid="863768567277139" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background\Background1_InGame.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="sore" pingpong="0" repeatcount="1" repeatto="0" sid="524289183067260" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="G:\GDC Product\Project\Background2_InGame.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="malam" pingpong="0" repeatcount="1" repeatto="0" sid="195060532322383" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="G:\GDC Product\Project\Background3_InGame.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

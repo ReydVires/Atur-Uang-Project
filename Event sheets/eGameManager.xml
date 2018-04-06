@@ -251,22 +251,5 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <comment>Buat get money di akhir game, coin untuk beli tema (Nanti bisa dihapus)</comment>
-        <event-block sid="267280894032004">
-            <conditions>
-                <condition id="0" name="On function" sid="435930497863642" type="Function">
-                    <param id="0" name="Name">&quot;GetCoin&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="925086953151991" type="coin_font">
-                    <param id="0" name="Text">global.coin</param>
-                </action>
-                <action id="-10" name="Set value" sid="407259233361393" type="global">
-                    <param id="0" name="Instance variable">coin</param>
-                    <param id="1" name="Value">Function.Param(0)</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>

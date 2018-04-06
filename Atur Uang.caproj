@@ -11,6 +11,7 @@
     <saved-with-version>25500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -43,7 +44,7 @@
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
-        <prop name="Preview browser">Firefox</prop>
+        <prop name="Preview browser">Edge</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -162,18 +163,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="651584528818531" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Button\Back Button.png">
-                        <collision-poly>
-                            <point x="0.14" y="0.14" />
-                            <point x="0.5" y="0" />
-                            <point x="0.86" y="0.14" />
-                            <point x="1" y="0.5" />
-                            <point x="0.86" y="0.86" />
-                            <point x="0.5" y="1" />
-                            <point x="0.14" y="0.86" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Button\Back Button.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -592,6 +582,62 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="Les" pingpong="0" repeatcount="1" repeatto="0" sid="902905297567039" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Tempat Les.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.378947" />
+                            <point x="0.5" y="0.168421" />
+                            <point x="0.677083" y="0.407895" />
+                            <point x="0.677083" y="0.5" />
+                            <point x="0.95" y="0.936842" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0375" y="0.952632" />
+                            <point x="0.3" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Restoran" pingpong="0" repeatcount="1" repeatto="0" sid="790271611321936" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 5\Restoran.png">
+                        <collision-poly>
+                            <point x="0.354167" y="0.447368" />
+                            <point x="0.5" y="0.144737" />
+                            <point x="0.645833" y="0.447368" />
+                            <point x="0.783333" y="0.5" />
+                            <point x="0.9625" y="0.952632" />
+                            <point x="0.5" y="1" />
+                            <point x="0.10625" y="0.865789" />
+                            <point x="0.222917" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="K_Binatang" pingpong="0" repeatcount="1" repeatto="0" sid="536993971244223" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 6\Kebun Binatang.png">
+                        <collision-poly>
+                            <point x="0.241667" y="0.305263" />
+                            <point x="0.5" y="0.244737" />
+                            <point x="0.770833" y="0.289474" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.9375" y="0.921053" />
+                            <point x="0.5" y="0.997368" />
+                            <point x="0.0916667" y="0.884211" />
+                            <point x="0.1375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="TokoBuku" pingpong="0" repeatcount="1" repeatto="0" sid="359740347627907" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 7\Toko Buku.png">
+                        <collision-poly>
+                            <point x="0.266667" y="0.336842" />
+                            <point x="0.5" y="0.0947368" />
+                            <point x="0.733333" y="0.336842" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.775" y="0.715789" />
+                            <point x="0.5" y="1" />
+                            <point x="0.229167" y="0.710526" />
+                            <point x="0.220833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="money_font" sid="830638901364134">
@@ -609,10 +655,29 @@
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background Sekolah1.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="Supermarket" pingpong="0" repeatcount="1" repeatto="0" sid="705454170943798" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Hari 2\Supermarket1.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Supermarket1.png">
+                        <collision-poly>
+                            <point x="0.00208333" y="0.00124844" />
+                            <point x="0.997917" y="0.00124844" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Pasar" pingpong="0" repeatcount="1" repeatto="0" sid="310389879490252" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 3\Pasar1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Les" pingpong="0" repeatcount="1" repeatto="0" sid="703748099963155" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 4\Tempat Les 1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Restoran" pingpong="0" repeatcount="1" repeatto="0" sid="102157455822265" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 5\Restoran1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="K_Binatang" pingpong="0" repeatcount="1" repeatto="0" sid="648599163581400" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 6\Kebun Binatang1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="TokoBuku" pingpong="0" repeatcount="1" repeatto="0" sid="712884847565480" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 7\Toko Buku1.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -625,7 +690,18 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523249055013336" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 7\Objek\Tas.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.203125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.796875" y="0.203125" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Sold" pingpong="0" repeatcount="1" repeatto="0" sid="954708729253016" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -847,6 +923,387 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="Buku" pingpong="0" repeatcount="1" repeatto="0" sid="849189757793279" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 4\Objek\Buku Catatan.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.203125" />
+                            <point x="0.5" y="0.046875" />
+                            <point x="0.734375" y="0.265625" />
+                            <point x="0.859375" y="0.5" />
+                            <point x="0.78125" y="0.78125" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.265625" y="0.734375" />
+                            <point x="0.15625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Ayam_Goreng" pingpong="0" repeatcount="1" repeatto="0" sid="316462009075237" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 4\Objek\Ayam Goreng.png">
+                        <collision-poly>
+                            <point x="0.140625" y="0.140625" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.71875" y="0.5" />
+                            <point x="0.90625" y="0.90625" />
+                            <point x="0.5" y="0.6875" />
+                            <point x="0.359375" y="0.640625" />
+                            <point x="0.171875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Telor_Ceplok" pingpong="0" repeatcount="1" repeatto="0" sid="881358924746976" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 4\Objek\Telur Ceplok.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.765625" y="0.234375" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.90625" y="0.90625" />
+                            <point x="0.5" y="0.921875" />
+                            <point x="0.140625" y="0.859375" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Soda" pingpong="0" repeatcount="1" repeatto="0" sid="377658959975712" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 4\Objek\Minuman Soda.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.78125" y="0.78125" />
+                            <point x="0.5" y="1" />
+                            <point x="0.21875" y="0.78125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Onigiri" pingpong="0" repeatcount="1" repeatto="0" sid="568056858081308" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 4\Objek\Onigiri.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.953125" y="0.5" />
+                            <point x="0.890625" y="0.890625" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.109375" y="0.890625" />
+                            <point x="0.046875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Susu" pingpong="0" repeatcount="1" repeatto="0" sid="154326883833870" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 4\Objek\Susu.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.28125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Saos" pingpong="0" repeatcount="1" repeatto="0" sid="905808771183205" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 4\Objek\Saus.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.265625" />
+                            <point x="0.65625" y="0.34375" />
+                            <point x="0.71875" y="0.5" />
+                            <point x="0.71875" y="0.71875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Baso_Sate" pingpong="0" repeatcount="1" repeatto="0" sid="166509139469812" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 4\Objek\Baso Sate.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.328125" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.703125" y="0.703125" />
+                            <point x="0.5" y="0.828125" />
+                            <point x="0.25" y="0.75" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Thai_Tea" pingpong="0" repeatcount="1" repeatto="0" sid="990222098193123" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 5\Objek\Thai Tea.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.328125" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.328125" y="0.671875" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Nasi_Ayam" pingpong="0" repeatcount="1" repeatto="0" sid="406979113755331" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 5\Objek\Nasi Ayam.png">
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.34375" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.15625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Kopi" pingpong="0" repeatcount="1" repeatto="0" sid="360397529287843" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 5\Objek\Kopi.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0.015625" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.265625" y="0.734375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="EsKrim2" pingpong="0" repeatcount="1" repeatto="0" sid="881182825021931" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 5\Objek\Eskrim.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.71875" y="0.5" />
+                            <point x="0.703125" y="0.703125" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.28125" y="0.71875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Sushi" pingpong="0" repeatcount="1" repeatto="0" sid="991839193330111" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 5\Objek\Sushi.png">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.65625" y="0.34375" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.703125" y="0.703125" />
+                            <point x="0.5" y="0.828125" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0.140625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Hotdog" pingpong="0" repeatcount="1" repeatto="0" sid="939910745154022" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 5\Objek\Hot Dog.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.3125" />
+                            <point x="0.734375" y="0.265625" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.71875" y="0.71875" />
+                            <point x="0.5" y="0.734375" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Tiket" pingpong="0" repeatcount="1" repeatto="0" sid="142972463079753" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 6\Objek\Tiket.png">
+                        <collision-poly>
+                            <point x="0.265625" y="0.265625" />
+                            <point x="0.734375" y="0.265625" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.265625" y="0.734375" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Topi_Hewan" pingpong="0" repeatcount="1" repeatto="0" sid="649209018238145" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 6\Objek\Topi.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.203125" />
+                            <point x="0.765625" y="0.234375" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.78125" y="0.78125" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.1875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Foto_Badak" pingpong="0" repeatcount="1" repeatto="0" sid="665590433135829" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 6\Objek\Foto Badak.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15625" y="0.84375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Foto_Gajah" pingpong="0" repeatcount="1" repeatto="0" sid="900438894034966" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 6\Objek\Foto Gajah.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15625" y="0.84375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Foto_Harimau" pingpong="0" repeatcount="1" repeatto="0" sid="708392990760510" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 6\Objek\Foto Harimau.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15625" y="0.84375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Wortel" pingpong="0" repeatcount="1" repeatto="0" sid="165724955373663" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 6\Objek\Wortel.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.078125" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.703125" y="0.5" />
+                            <point x="0.640625" y="0.640625" />
+                            <point x="0.5" y="0.859375" />
+                            <point x="0.3125" y="0.6875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Apel" pingpong="0" repeatcount="1" repeatto="0" sid="313267963556493" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 6\Objek\Apel.png">
+                        <collision-poly>
+                            <point x="0.34375" y="0.34375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.65625" y="0.34375" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.8125" y="0.8125" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.1875" y="0.8125" />
+                            <point x="0.15625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Makanan_Binatang" pingpong="0" repeatcount="1" repeatto="0" sid="212496991659346" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.46875" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 6\Objek\Makanan Binatang.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.828125" y="0.5" />
+                            <point x="0.921875" y="0.921875" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.078125" y="0.921875" />
+                            <point x="0.171875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Tas" pingpong="0" repeatcount="1" repeatto="0" sid="550257102958355" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 7\Objek\Tas.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.203125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.796875" y="0.203125" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Penggaris" pingpong="0" repeatcount="1" repeatto="0" sid="328894903473417" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 7\Objek\Penggaris.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.375" />
+                            <point x="0.90625" y="0.09375" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.5" y="0.59375" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Gunting" pingpong="0" repeatcount="1" repeatto="0" sid="221294113716549" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 7\Objek\Gunting.png">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.34375" />
+                            <point x="0.859375" y="0.140625" />
+                            <point x="0.578125" y="0.5" />
+                            <point x="0.59375" y="0.59375" />
+                            <point x="0.5" y="0.640625" />
+                            <point x="0.4375" y="0.5625" />
+                            <point x="0.453125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Kertas" pingpong="0" repeatcount="1" repeatto="0" sid="711364022013780" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 7\Objek\Kertas.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0.015625" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.15625" y="0.84375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="BukuMTK" pingpong="0" repeatcount="1" repeatto="0" sid="887815979976706" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 7\Objek\Buku MTK.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.125" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="BukuGEO" pingpong="0" repeatcount="1" repeatto="0" sid="476309368447876" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 7\Objek\Buku GEO.png">
+                        <collision-poly>
+                            <point x="0.09375" y="0.09375" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.09375" y="0.90625" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="BukuPKN" pingpong="0" repeatcount="1" repeatto="0" sid="594903772440854" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Hari 7\Objek\Buku PKN.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.125" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="win_list" sid="637354330580766">
@@ -943,6 +1400,17 @@
             </behaviors>
             <texture original-source="G:\GDC Product\FallTell\Pengumuman\ScoreFont.png" />
         </object-type>
+        <object-type name="text_congrats" sid="850909186726074">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="977903533205034">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Browser" sid="274143019923941">
+            <plugin id="Browser" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -963,6 +1431,7 @@
             </properties>
         </global-instance>
         <global-instance type="Function" uid="20" />
+        <global-instance type="Browser" uid="36" />
     </global-instances>
     <sounds-folder />
     <music-folder />

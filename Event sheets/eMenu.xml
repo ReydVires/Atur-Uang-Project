@@ -4,7 +4,7 @@
     <name>eMenu</name>
     <events>
         <include>eGameManager</include>
-        <comment>Debug: Theme unlock</comment>
+        <comment>Set the money after win in last</comment>
         <event-block sid="780998784555002">
             <conditions>
                 <condition id="-25" name="On loader layout complete" sid="678924837601452" type="System" />
@@ -61,6 +61,9 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="511517743975024" type="level_decision">
                     <param id="0" name="Pin to">bg_level</param>
                     <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-36" name="Save" sid="983426303869324" type="System">
+                    <param id="0" name="Slot">&quot;main_menu&quot;</param>
                 </action>
             </actions>
             <sub-events>

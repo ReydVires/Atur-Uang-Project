@@ -10,13 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="4">InGame</layout>
-        <layout active="1" order="5">Menu</layout>
-        <layout order="6">Pregame</layout>
-        <event-sheet order="0">eGameManager</event-sheet>
-        <event-sheet order="1">ePregame</event-sheet>
-        <event-sheet order="2">eMenu</event-sheet>
-        <event-sheet order="3">eInGame</event-sheet>
+        <layout order="5">InGame</layout>
+        <layout order="6">Menu</layout>
+        <layout order="7">Pregame</layout>
+        <event-sheet order="1">eGameManager</event-sheet>
+        <event-sheet active="1" order="2">ePregame</event-sheet>
+        <event-sheet order="3">eMenu</event-sheet>
+        <event-sheet order="4">eInGame</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -64,5 +64,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/win_list/" />
         <folder expanded="1" path="animation-folder/win_endLevel/" />
         <folder expanded="1" path="animation-folder/level_decision/" />
+        <folder expanded="1" path="animation-folder/obj_chara/" />
+        <folder expanded="1" path="animation-folder/obj_bubble/" />
     </folders-expanded>
 </c2uistate>

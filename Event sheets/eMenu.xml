@@ -50,14 +50,6 @@
                     <param id="0" name="Pin to">bg_theme</param>
                     <param id="1" name="Mode">0</param>
                 </action>
-                <action disabled="1" id="4" name="Set animation" sid="153156236696459" type="theme2">
-                    <param id="0" name="Animation">&quot;Unlock&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action disabled="1" id="4" name="Set animation" sid="690340952682290" type="theme3">
-                    <param id="0" name="Animation">&quot;Unlock&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="511517743975024" type="level_decision">
                     <param id="0" name="Pin to">bg_level</param>
                     <param id="1" name="Mode">0</param>
@@ -528,6 +520,7 @@
                     </actions>
                 </event-block>
                 <comment>Kondisi membuka tema</comment>
+                <comment>Ada Harga</comment>
                 <event-block sid="331767527087702">
                     <conditions>
                         <condition id="2" name="Is playing" sid="201723773710612" type="theme3">
@@ -536,11 +529,16 @@
                         <condition id="-14" name="Pick by unique ID" sid="850890797882659" type="btn_choiceTheme">
                             <param id="0" name="Unique ID">32</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="285656330061712" type="global">
+                            <param id="0" name="Instance variable">coin</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">25000</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-12" name="Subtract from" sid="407712438468255" type="global">
                             <param id="0" name="Instance variable">coin</param>
-                            <param id="1" name="Value">1000</param>
+                            <param id="1" name="Value">25000</param>
                         </action>
                         <action id="4" name="Set animation" sid="459078190502664" type="theme3">
                             <param id="0" name="Animation">&quot;unlock&quot;</param>
@@ -556,11 +554,16 @@
                         <condition id="-14" name="Pick by unique ID" sid="249632719084443" type="btn_choiceTheme">
                             <param id="0" name="Unique ID">31</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="431357442179766" type="global">
+                            <param id="0" name="Instance variable">coin</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">5000</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-12" name="Subtract from" sid="528611066062144" type="global">
                             <param id="0" name="Instance variable">coin</param>
-                            <param id="1" name="Value">1000</param>
+                            <param id="1" name="Value">5000</param>
                         </action>
                         <action id="4" name="Set animation" sid="537620667533514" type="theme2">
                             <param id="0" name="Animation">&quot;unlock&quot;</param>
@@ -599,7 +602,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="524518138699938" type="coin_font">
-                    <param id="0" name="Text">global.coin</param>
+                    <param id="0" name="Text">&quot;RP&quot;&amp;global.coin</param>
                 </action>
             </actions>
         </event-block>

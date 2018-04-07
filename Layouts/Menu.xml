@@ -584,10 +584,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1320.322998047</x>
-                        <y>16.103668213</y>
+                        <x>1242</x>
+                        <y>16</y>
                         <z>0</z>
-                        <width>160</width>
+                        <width>193</width>
                         <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -692,7 +692,7 @@
                         <temp1_blockY>0</temp1_blockY>
                         <temp2_blockX>0</temp2_blockX>
                         <temp2_blockY>0</temp2_blockY>
-                        <coin>5000</coin>
+                        <coin>30000</coin>
                         <theme_bg>siang</theme_bg>
                     </instance-variables>
                     <blend-mode>0</blend-mode>

@@ -54,6 +54,10 @@
                     <param id="0" name="Pin to">bg_level</param>
                     <param id="1" name="Mode">0</param>
                 </action>
+                <action id="0" name="Request URL" sid="625622230368183" type="AJAX">
+                    <param id="0" name="Tag">&quot;database&quot;</param>
+                    <param id="1" name="URL">&quot;database.json&quot;</param>
+                </action>
                 <action id="-36" name="Save" sid="983426303869324" type="System">
                     <param id="0" name="Slot">&quot;main_menu&quot;</param>
                 </action>
@@ -603,6 +607,21 @@
             <actions>
                 <action id="0" name="Set text" sid="524518138699938" type="coin_font">
                     <param id="0" name="Text">&quot;RP&quot;&amp;global.coin</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="919018805774445">
+            <conditions>
+                <condition id="0" name="On completed" sid="418293443343439" type="AJAX">
+                    <param id="0" name="Tag">&quot;database&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-30" name="Set from JSON" sid="640231851139680" type="global">
+                    <param id="0" name="JSON">AJAX.LastData</param>
+                </action>
+                <action id="0" name="Alert" sid="378893263760355" type="Browser">
+                    <param id="0" name="Message">&quot;woy&quot;</param>
                 </action>
             </actions>
         </event-block>

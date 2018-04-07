@@ -843,6 +843,16 @@
                 <action id="-16" name="Wait" sid="430397643846811" type="System">
                     <param id="0" name="Seconds">0.25</param>
                 </action>
+                <action id="-10" name="Set value" sid="664937558851789" type="global">
+                    <param id="0" name="Instance variable">coin</param>
+                    <param id="1" name="Value">global.money</param>
+                </action>
+                <action id="2" name="Post to URL" sid="879104459561037" type="AJAX">
+                    <param id="0" name="Tag">&quot;database&quot;</param>
+                    <param id="1" name="URL">&quot;database.json&quot;</param>
+                    <param id="2" name="Data">&quot;global.coin&quot;</param>
+                    <param id="3" name="Method">&quot;POST&quot;</param>
+                </action>
                 <action id="-37" name="Load" sid="241387696806012" type="System">
                     <param id="0" name="Slot">&quot;main_menu&quot;</param>
                 </action>

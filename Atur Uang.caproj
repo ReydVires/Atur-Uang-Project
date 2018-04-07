@@ -182,7 +182,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="651584528818531" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Button\Back Button.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\NEW\Button Back.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1440,11 +1440,77 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+<<<<<<< HEAD
         <object-type name="AJAX" sid="718411023588473">
             <plugin id="AJAX" />
         </object-type>
         <object-type name="Browser" sid="295184971266734">
             <plugin id="Browser" />
+=======
+        <object-type name="obj_chara" sid="465354066823776">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Anak" pingpong="0" repeatcount="1" repeatto="0" sid="686059073833330" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504348" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\NEW\Anak.png">
+                        <collision-poly>
+                            <point x="0.138889" y="0.130435" />
+                            <point x="0.5" y="0.026087" />
+                            <point x="0.87037" y="0.121739" />
+                            <point x="0.981481" y="0.495652" />
+                            <point x="0.833333" y="0.843478" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.921739" />
+                            <point x="0.037037" y="0.495652" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Ortu" pingpong="0" repeatcount="1" repeatto="0" sid="792262939490952" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\NEW\Orang tua.png">
+                        <collision-poly>
+                            <point x="0.114407" y="0.182432" />
+                            <point x="0.5" y="0.554054" />
+                            <point x="0.957627" y="0.0675676" />
+                            <point x="0.949153" y="0.5" />
+                            <point x="0.898305" y="0.837838" />
+                            <point x="0.5" y="0.567568" />
+                            <point x="0.0932203" y="0.851351" />
+                            <point x="0.0211864" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_bubble" sid="808067728711072">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="491623796763017" speed="5">
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\NEW\Bubble Chat.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.906054" y="0.807692" />
+                            <point x="0.498956" y="0.893162" />
+                            <point x="0.0939457" y="0.807692" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Reverse" pingpong="0" repeatcount="1" repeatto="0" sid="958876412189922" speed="5">
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0.5" />
+                            <point x="0.906054" y="0.807692" />
+                            <point x="0.501044" y="0.893162" />
+                            <point x="0.0939457" y="0.807692" />
+                            <point x="0" y="0.5" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+>>>>>>> ed351c0ef3dceb5e8c67e75367ad4aac1cbcfb56
         </object-type>
     </object-folder>
     <families />

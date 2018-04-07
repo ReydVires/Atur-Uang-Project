@@ -62,6 +62,10 @@
                 <action id="0" name="Set text" sid="482916634013746" type="text_conversation">
                     <param id="0" name="Text">&quot;Baik ayah dan ibu, akan aku kelola dengan baik uang ini.&quot;</param>
                 </action>
+                <action id="4" name="Set animation" sid="430246416813410" type="obj_bubble">
+                    <param id="0" name="Animation">&quot;Reverse&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="822542263466618">

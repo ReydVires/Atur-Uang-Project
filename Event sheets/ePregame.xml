@@ -16,6 +16,9 @@
                 <action id="0" name="Set text" sid="671341488125253" type="text_conversation">
                     <param id="0" name="Text">&quot;Nak, ini uang Rp. &quot;&amp;global.money/1000&amp;&quot;.000.  Kelola dengan baik ya dalam 1 minggu. Jangan dihambur-hamburkan.&quot;</param>
                 </action>
+                <action id="0" name="Set text" sid="242027752138474" type="text_conversation2">
+                    <param id="0" name="Text">&quot;Pada level ini kamu akan diberikan uang dengan jumlah Rp&quot;&amp;global.money/1000&amp;&quot;.000 untuk waktu satu minggu dan akan ada barang yang Wajib kamu beli&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="925864767212701">

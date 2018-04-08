@@ -476,7 +476,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752874817707457" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background\Tutorial.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\NEW2\INSTRUKSI.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -506,7 +506,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550010622506315" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.527778" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Pilih Tema.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.522727" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\NEW2\Pilih Tema.png">
                         <collision-poly>
                             <point x="0.008" y="0.0571429" />
                             <point x="0.964" y="0.257143" />
@@ -1439,7 +1439,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529007381543360" speed="5">
-                    <frame duration="1" hotspotX="0.50237" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Pilih tingkatan.png">
+                    <frame duration="1" hotspotX="0.502326" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\NEW2\Pilih Tingkatan.png">
                         <collision-poly>
                             <point x="0.0359712" y="0.230769" />
                             <point x="0.498801" y="0.0615385" />
@@ -1550,6 +1550,51 @@
         <object-type name="LocalStorage" sid="689705932000487">
             <plugin id="LocalStorage" />
         </object-type>
+        <object-type name="obj_coin_" sid="191667957210645">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519775250171616" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.514286" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\NEW2\Uang Icon.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.142857" />
+                            <point x="0.485714" y="0" />
+                            <point x="0.857143" y="0.142857" />
+                            <point x="1" y="0.485714" />
+                            <point x="0.857143" y="0.857143" />
+                            <point x="0.485714" y="1" />
+                            <point x="0.142857" y="0.857143" />
+                            <point x="0" y="0.485714" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_intro_" sid="258546132152880">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="276271881096095" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\NEW2\INTRO.png">
+                        <collision-poly>
+                            <point x="0.0046729" y="0.0188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971963" y="0.113208" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.96729" y="0.867925" />
+                            <point x="0.5" y="0.169811" />
+                            <point x="0.0046729" y="0.981132" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text_conversation2" sid="737768946104142">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="185655231662373">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1585,6 +1630,5 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
-        <file name="database.json" />
     </files-folder>
 </c2project>

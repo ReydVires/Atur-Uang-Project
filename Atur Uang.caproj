@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -209,6 +210,8 @@
                 <instance-variable name="temp2_blockY" sid="164075519344899" type="number" />
                 <instance-variable name="coin" sid="834686900479271" type="number" />
                 <instance-variable name="theme_bg" sid="987253327489231" type="string" />
+                <instance-variable name="theme_sold1" sid="515430442204535" type="boolean" />
+                <instance-variable name="theme_sold2" sid="381703076714897" type="boolean" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222962385953116" speed="5">
@@ -543,6 +546,30 @@
                             <point x="0.990476" y="0.977778" />
                             <point x="0.495238" y="1" />
                             <point x="0.00952381" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="lock1" pingpong="0" repeatcount="1" repeatto="0" sid="741834702666228" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="G:\GDC Product\Project\NEW\Button 5rb.png">
+                        <collision-poly>
+                            <point x="0.00961538" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.990385" y="0.0222222" />
+                            <point x="0.990385" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00961538" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="lock2" pingpong="0" repeatcount="1" repeatto="0" sid="348137536731996" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="G:\GDC Product\Project\NEW\Button 25rb.png">
+                        <collision-poly>
+                            <point x="0.00961538" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.990385" y="0.0222222" />
+                            <point x="0.990385" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00961538" y="0.977778" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1391,6 +1418,16 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="menang" pingpong="0" repeatcount="1" repeatto="0" sid="601349569489613" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GDC Product\Project\NEW\Ending Menang.png">
+                        <collision-poly>
+                            <point x="0.117442" y="0.765117" />
+                            <point x="0.467441" y="0.764535" />
+                            <point x="0.466279" y="0.897093" />
+                            <point x="0.116279" y="0.895349" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="level_decision" sid="378542180787794">
@@ -1440,13 +1477,6 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-<<<<<<< HEAD
-        <object-type name="AJAX" sid="718411023588473">
-            <plugin id="AJAX" />
-        </object-type>
-        <object-type name="Browser" sid="295184971266734">
-            <plugin id="Browser" />
-=======
         <object-type name="obj_chara" sid="465354066823776">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1510,7 +1540,15 @@
                     </frame>
                 </animation>
             </animation-folder>
->>>>>>> ed351c0ef3dceb5e8c67e75367ad4aac1cbcfb56
+        </object-type>
+        <object-type name="AJAX" sid="264990356674163">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type name="Browser" sid="778275198891728">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="LocalStorage" sid="689705932000487">
+            <plugin id="LocalStorage" />
         </object-type>
     </object-folder>
     <families />
@@ -1532,8 +1570,9 @@
             </properties>
         </global-instance>
         <global-instance type="Function" uid="20" />
-        <global-instance type="AJAX" uid="36" />
-        <global-instance type="Browser" uid="37" />
+        <global-instance type="AJAX" uid="39" />
+        <global-instance type="Browser" uid="40" />
+        <global-instance type="LocalStorage" uid="41" />
     </global-instances>
     <sounds-folder />
     <music-folder />

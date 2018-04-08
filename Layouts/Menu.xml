@@ -458,7 +458,7 @@
                 <instance type="btn_choiceTheme" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Unuse</initial-animation>
+                        <initial-animation>lock1</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -471,10 +471,10 @@
                         <x>1200</x>
                         <y>645</y>
                         <z>0</z>
-                        <width>105</width>
+                        <width>104</width>
                         <height>45</height>
                         <depth>0</depth>
-                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.51111114</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -483,7 +483,7 @@
                 <instance type="btn_choiceTheme" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Unuse</initial-animation>
+                        <initial-animation>lock2</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -496,10 +496,10 @@
                         <x>1358</x>
                         <y>645</y>
                         <z>0</z>
-                        <width>105</width>
+                        <width>104</width>
                         <height>45</height>
                         <depth>0</depth>
-                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.51111114</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -692,8 +692,10 @@
                         <temp1_blockY>0</temp1_blockY>
                         <temp2_blockX>0</temp2_blockX>
                         <temp2_blockY>0</temp2_blockY>
-                        <coin>30000</coin>
+                        <coin>40000</coin>
                         <theme_bg>siang</theme_bg>
+                        <theme_sold1>false</theme_sold1>
+                        <theme_sold2>false</theme_sold2>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

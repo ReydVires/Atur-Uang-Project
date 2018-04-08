@@ -7,7 +7,7 @@
         <comment>Set the money after win in last</comment>
         <event-block sid="780998784555002">
             <conditions>
-                <condition id="-25" name="On loader layout complete" sid="678924837601452" type="System" />
+                <condition id="-2" name="On start of layout" sid="678924837601452" type="System" />
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="508047923304701" type="camera">
@@ -54,12 +54,81 @@
                     <param id="0" name="Pin to">bg_level</param>
                     <param id="1" name="Mode">0</param>
                 </action>
-                <action id="0" name="Request URL" sid="625622230368183" type="AJAX">
-                    <param id="0" name="Tag">&quot;database&quot;</param>
-                    <param id="1" name="URL">&quot;database.json&quot;</param>
+                <action id="-10" name="Set value" sid="478367492299065" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">0</param>
                 </action>
-                <action id="-36" name="Save" sid="983426303869324" type="System">
-                    <param id="0" name="Slot">&quot;main_menu&quot;</param>
+                <action id="-10" name="Set value" sid="141282134827621" type="global">
+                    <param id="0" name="Instance variable">money</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="616164390670700" type="global">
+                    <param id="0" name="Instance variable">state_theme</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="708334613956699" type="global">
+                    <param id="0" name="Instance variable">i</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="832388096812892" type="global">
+                    <param id="0" name="Instance variable">listMax</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="531412422486491" type="global">
+                    <param id="0" name="Instance variable">debug</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="737362762546167" type="global">
+                    <param id="0" name="Instance variable">listYangDibeli</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="247280238839640" type="global">
+                    <param id="0" name="Instance variable">currLevel</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="466110481328731" type="global">
+                    <param id="0" name="Instance variable">temp1_blockX</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="323052353005032" type="global">
+                    <param id="0" name="Instance variable">temp1_blockY</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="909997563330613" type="global">
+                    <param id="0" name="Instance variable">temp2_blockX</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="951075063807409" type="global">
+                    <param id="0" name="Instance variable">temp2_blockY</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="925762019816211" type="global">
+                    <param id="0" name="Instance variable">sound</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="186857344326954" type="global">
+                    <param id="0" name="Instance variable">gameStart</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="980846003571972" type="global">
+                    <param id="0" name="Instance variable">text</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="397051597600690" type="global">
+                    <param id="0" name="Instance variable">goLevel</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="236222755126530" type="bg_level">
+                    <param id="0" name="Animation">global.theme_bg</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="178946741584760" type="bg_menu">
+                    <param id="0" name="Animation">global.theme_bg</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="843655163197038" type="bg_theme">
+                    <param id="0" name="Animation">global.theme_bg</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
             <sub-events>
@@ -88,6 +157,60 @@
                             <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="675842825218678">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="412781953007368" type="global">
+                            <param id="0" name="Instance variable">theme_sold1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="770487791226407">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="455001486116611" type="btn_choiceTheme">
+                                    <param id="0" name="Unique ID">31</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="390888800988690" type="btn_choiceTheme">
+                                    <param id="0" name="Animation">&quot;Unuse&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="981460482636615" type="theme2">
+                                    <param id="0" name="Animation">&quot;Unlock&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="227408101754864">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="414728496808100" type="global">
+                            <param id="0" name="Instance variable">theme_sold2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="904382416487791">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="257850621818821" type="btn_choiceTheme">
+                                    <param id="0" name="Unique ID">32</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="115050706822180" type="btn_choiceTheme">
+                                    <param id="0" name="Animation">&quot;Unuse&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="962615264769940" type="theme3">
+                                    <param id="0" name="Animation">&quot;Unlock&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -548,6 +671,14 @@
                             <param id="0" name="Animation">&quot;unlock&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="431919283810498" type="btn_choiceTheme">
+                            <param id="0" name="Animation">&quot;Unuse&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="149084769688744" type="global">
+                            <param id="0" name="Instance variable">theme_sold2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="278582931675276">
@@ -573,6 +704,14 @@
                             <param id="0" name="Animation">&quot;unlock&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="849131057325807" type="btn_choiceTheme">
+                            <param id="0" name="Animation">&quot;Unuse&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="844369091703518" type="global">
+                            <param id="0" name="Instance variable">theme_sold1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -591,12 +730,22 @@
                             <param id="0" name="Unique ID">Function.Param(0) + 30</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="905042746411067" type="btn_choiceTheme">
-                            <param id="0" name="Animation">&quot;Unuse&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="920751908563273">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="518379292229841" type="btn_choiceTheme">
+                                    <param id="0" name="Animation">&quot;Use&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="905042746411067" type="btn_choiceTheme">
+                                    <param id="0" name="Animation">&quot;Unuse&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -607,21 +756,6 @@
             <actions>
                 <action id="0" name="Set text" sid="524518138699938" type="coin_font">
                     <param id="0" name="Text">&quot;RP&quot;&amp;global.coin</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="919018805774445">
-            <conditions>
-                <condition id="0" name="On completed" sid="418293443343439" type="AJAX">
-                    <param id="0" name="Tag">&quot;database&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-30" name="Set from JSON" sid="640231851139680" type="global">
-                    <param id="0" name="JSON">AJAX.LastData</param>
-                </action>
-                <action id="0" name="Alert" sid="378893263760355" type="Browser">
-                    <param id="0" name="Message">&quot;woy&quot;</param>
                 </action>
             </actions>
         </event-block>

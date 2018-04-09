@@ -234,6 +234,12 @@
                     <param id="0" name="Instance variable">state</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="0" name="Play" sid="464429524922446" type="Audio">
+                    <param id="0" name="Audio file">game-sound-selection</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-7</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="655804336846292">
@@ -251,6 +257,12 @@
                 <action id="-10" name="Set value" sid="810952683302825" type="global">
                     <param id="0" name="Instance variable">state</param>
                     <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Play" sid="328131922792643" type="Audio">
+                    <param id="0" name="Audio file">game-sound-selection</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-7</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -270,6 +282,12 @@
                     <param id="0" name="Instance variable">state</param>
                     <param id="1" name="Value">3</param>
                 </action>
+                <action id="0" name="Play" sid="224083873532934" type="Audio">
+                    <param id="0" name="Audio file">game-sound-selection</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-7</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block any="1" sid="474414093771999">
@@ -281,7 +299,14 @@
                     <param id="0" name="Object">btn_back</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="625764238797008" type="Audio">
+                    <param id="0" name="Audio file">game-sound-selection</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-7</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="896787806729851">
                     <conditions>
@@ -307,7 +332,14 @@
                     <param id="0" name="Object">btn_audio</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="353357310192630" type="Audio">
+                    <param id="0" name="Audio file">game-sound-selection</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-7</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="937649645142275">
                     <conditions>
@@ -505,15 +537,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="25" name="Play at object" sid="685994037558315" type="Audio">
-                    <param id="0" name="Audio file">game-sound-correct</param>
-                    <param id="1" name="Loop">0</param>
-                    <param id="2" name="Volume">0</param>
-                    <param id="3" name="Object">obj_barang</param>
-                    <param id="4" name="Inner angle">360</param>
-                    <param id="5" name="Outer angle">360</param>
-                    <param id="6" name="Outer gain">0</param>
-                    <param id="7" name="Tag (optional)">&quot;Tap&quot;</param>
+                <action id="0" name="Play" sid="505493355716728" type="Audio">
+                    <param id="0" name="Audio file">game-sound-selection</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-7</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
                 <action id="-13" name="Set boolean" sid="146162065776103" type="global">
                     <param id="0" name="Instance variable">gameStart</param>
@@ -541,6 +569,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="583257110121734" type="Audio">
+                    <param id="0" name="Audio file">game-sound-selection</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-7</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                </action>
                 <action id="-10" name="Set value" sid="537988962873991" type="global">
                     <param id="0" name="Instance variable">state_theme</param>
                     <param id="1" name="Value">btn_choiceTheme.IID</param>

@@ -10,13 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="3">InGame</layout>
-        <layout order="4">Menu</layout>
-        <layout order="6">Pregame</layout>
-        <event-sheet order="0">ePregame</event-sheet>
-        <event-sheet order="1">eInGame</event-sheet>
-        <event-sheet order="2">eMenu</event-sheet>
-        <event-sheet order="5">eGameManager</event-sheet>
+        <layout order="4">InGame</layout>
+        <layout active="1" order="5">Menu</layout>
+        <layout order="7">Pregame</layout>
+        <event-sheet order="1">ePregame</event-sheet>
+        <event-sheet order="2">eInGame</event-sheet>
+        <event-sheet order="3">eMenu</event-sheet>
+        <event-sheet order="6">eGameManager</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

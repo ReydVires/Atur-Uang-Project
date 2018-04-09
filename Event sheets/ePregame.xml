@@ -32,6 +32,12 @@
                     <param id="0" name="Instance variable">slide</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="0" name="Play" sid="781155812747542" type="Audio">
+                    <param id="0" name="Audio file">game-sound-selection</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-7</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block any="1" sid="783119249372688">

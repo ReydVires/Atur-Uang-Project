@@ -1637,12 +1637,15 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="game-sound-selection.m4a" />
+        <file name="game-sound-selection.ogg" />
+        <file name="game-sound-correct.m4a" />
+        <file name="game-sound-correct.ogg" />
+    </sounds-folder>
     <music-folder>
         <file name="Teamwork.m4a" />
         <file name="Teamwork.ogg" />
-        <file name="game-sound-correct.m4a" />
-        <file name="game-sound-correct.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

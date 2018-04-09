@@ -71,6 +71,16 @@
                             <param id="0" name="Instance variable">sold</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="25" name="Play at object" sid="125309140501272" type="Audio">
+                            <param id="0" name="Audio file">game-sound-correct</param>
+                            <param id="1" name="Loop">0</param>
+                            <param id="2" name="Volume">0</param>
+                            <param id="3" name="Object">obj_barang</param>
+                            <param id="4" name="Inner angle">360</param>
+                            <param id="5" name="Outer angle">360</param>
+                            <param id="6" name="Outer gain">0</param>
+                            <param id="7" name="Tag (optional)">&quot;Tap&quot;</param>
+                        </action>
                         <action id="4" name="Set animation" sid="612137915796533" type="obj_barang">
                             <param id="0" name="Animation">&quot;Sold&quot;</param>
                             <param id="1" name="From">1</param>

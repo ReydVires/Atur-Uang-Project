@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1523238200,
+	"version": 1523371592,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -52,6 +52,8 @@
 		"media/game-sound-selection.ogg",
 		"media/game-sound-correct.m4a",
 		"media/game-sound-correct.ogg",
+		"media/cha-ching.m4a",
+		"media/cha-ching.ogg",
 		"media/teamwork.m4a",
 		"media/teamwork.ogg",
 		"icon-16.png",

@@ -72,9 +72,9 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="0" name="Play" sid="918209802247980" type="Audio">
-                            <param id="0" name="Audio file">game-sound-correct</param>
+                            <param id="0" name="Audio file">cha-ching</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-7</param>
+                            <param id="3" name="Volume">-15</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="4" name="Set animation" sid="612137915796533" type="obj_barang">

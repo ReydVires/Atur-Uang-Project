@@ -10,8 +10,11 @@
                 <condition id="-2" name="On start of layout" sid="678924837601452" type="System" />
             </conditions>
             <actions>
-                <action id="4" name="Preload" sid="184804789673919" type="Audio">
+                <action id="0" name="Play" sid="465030618753313" type="Audio">
                     <param id="0" name="Audio file">Teamwork</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;Teamwork&quot;</param>
                 </action>
                 <action id="-3" name="Set position" sid="508047923304701" type="camera">
                     <param id="0" name="X">240</param>
@@ -133,12 +136,6 @@
                     <param id="0" name="Animation">global.theme_bg</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="0" name="Play" sid="465030618753313" type="Audio">
-                    <param id="0" name="Audio file">Teamwork</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;Teamwork&quot;</param>
-                </action>
             </actions>
             <sub-events>
                 <event-block sid="677480495109162">
@@ -237,7 +234,7 @@
                 <action id="0" name="Play" sid="464429524922446" type="Audio">
                     <param id="0" name="Audio file">game-sound-selection</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-7</param>
+                    <param id="3" name="Volume">-12</param>
                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
             </actions>
@@ -258,10 +255,10 @@
                     <param id="0" name="Instance variable">state</param>
                     <param id="1" name="Value">2</param>
                 </action>
-                <action id="0" name="Play" sid="328131922792643" type="Audio">
+                <action id="0" name="Play" sid="788659617547349" type="Audio">
                     <param id="0" name="Audio file">game-sound-selection</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-7</param>
+                    <param id="3" name="Volume">-12</param>
                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
             </actions>
@@ -282,10 +279,10 @@
                     <param id="0" name="Instance variable">state</param>
                     <param id="1" name="Value">3</param>
                 </action>
-                <action id="0" name="Play" sid="224083873532934" type="Audio">
+                <action id="0" name="Play" sid="792549189968428" type="Audio">
                     <param id="0" name="Audio file">game-sound-selection</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-7</param>
+                    <param id="3" name="Volume">-12</param>
                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
             </actions>
@@ -300,10 +297,10 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="625764238797008" type="Audio">
+                <action id="0" name="Play" sid="291743401839170" type="Audio">
                     <param id="0" name="Audio file">game-sound-selection</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-7</param>
+                    <param id="3" name="Volume">-12</param>
                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
             </actions>
@@ -333,10 +330,10 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="353357310192630" type="Audio">
+                <action id="0" name="Play" sid="228526158169767" type="Audio">
                     <param id="0" name="Audio file">game-sound-selection</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-7</param>
+                    <param id="3" name="Volume">-12</param>
                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
             </actions>
@@ -537,10 +534,10 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="505493355716728" type="Audio">
+                <action id="0" name="Play" sid="132201734436087" type="Audio">
                     <param id="0" name="Audio file">game-sound-selection</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-7</param>
+                    <param id="3" name="Volume">-12</param>
                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
                 <action id="-13" name="Set boolean" sid="146162065776103" type="global">
@@ -569,10 +566,10 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="583257110121734" type="Audio">
+                <action id="0" name="Play" sid="357320513851645" type="Audio">
                     <param id="0" name="Audio file">game-sound-selection</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-7</param>
+                    <param id="3" name="Volume">-12</param>
                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
                 <action id="-10" name="Set value" sid="537988962873991" type="global">

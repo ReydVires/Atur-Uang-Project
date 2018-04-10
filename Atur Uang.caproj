@@ -47,7 +47,7 @@
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
-        <prop name="Preview browser">Firefox</prop>
+        <prop name="Preview browser">Edge</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -1642,6 +1642,8 @@
         <file name="game-sound-selection.ogg" />
         <file name="game-sound-correct.m4a" />
         <file name="game-sound-correct.ogg" />
+        <file name="cha-ching.m4a" />
+        <file name="cha-ching.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Teamwork.m4a" />

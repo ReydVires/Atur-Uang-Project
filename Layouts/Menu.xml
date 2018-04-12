@@ -702,6 +702,7 @@
                         <theme_bg>siang</theme_bg>
                         <theme_sold1>false</theme_sold1>
                         <theme_sold2>false</theme_sold2>
+                        <btn_theme>0</btn_theme>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

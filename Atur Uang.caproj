@@ -213,6 +213,7 @@
                 <instance-variable name="theme_bg" sid="987253327489231" type="string" />
                 <instance-variable name="theme_sold1" sid="515430442204535" type="boolean" />
                 <instance-variable name="theme_sold2" sid="381703076714897" type="boolean" />
+                <instance-variable name="btn_theme" sid="266207739454146" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222962385953116" speed="5">

@@ -340,6 +340,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <harga>250</harga>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
@@ -365,6 +368,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <harga>1000</harga>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
@@ -568,7 +574,7 @@
                         <character-width>64</character-width>
                         <character-height>64</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,:;?!-~&amp;()\/+=$&lt;&gt;^%*{}[]</character-set>
-                        <text>0</text>
+                        <text>9999 COINS</text>
                         <scale>0.5</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -584,10 +590,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1242</x>
+                        <x>1197</x>
                         <y>16</y>
                         <z>0</z>
-                        <width>193</width>
+                        <width>236</width>
                         <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -692,7 +698,7 @@
                         <temp1_blockY>0</temp1_blockY>
                         <temp2_blockX>0</temp2_blockX>
                         <temp2_blockY>0</temp2_blockY>
-                        <coin>40000</coin>
+                        <coin>10</coin>
                         <theme_bg>siang</theme_bg>
                         <theme_sold1>false</theme_sold1>
                         <theme_sold2>false</theme_sold2>

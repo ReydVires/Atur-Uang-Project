@@ -10,12 +10,6 @@
                 <condition id="-2" name="On start of layout" sid="678924837601452" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="465030618753313" type="Audio">
-                    <param id="0" name="Audio file">Teamwork</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">10</param>
-                    <param id="1" name="Tag (optional)">&quot;Teamwork&quot;</param>
-                </action>
                 <action id="-3" name="Set position" sid="508047923304701" type="camera">
                     <param id="0" name="X">240</param>
                     <param id="1" name="Y">320</param>
@@ -564,6 +558,9 @@
                 <condition id="3" name="On touched object" sid="152022694093312" type="Touch">
                     <param id="0" name="Object">btn_choiceTheme</param>
                 </condition>
+                <condition id="2" inverted="1" name="Is playing" sid="438455687072399" type="btn_choiceTheme">
+                    <param id="0" name="Animation">&quot;Use&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="357320513851645" type="Audio">
@@ -717,13 +714,13 @@
                         <condition id="-7" name="Compare instance variable" sid="285656330061712" type="global">
                             <param id="0" name="Instance variable">coin</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">25000</param>
+                            <param id="2" name="Value">theme3.harga</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-12" name="Subtract from" sid="407712438468255" type="global">
                             <param id="0" name="Instance variable">coin</param>
-                            <param id="1" name="Value">25000</param>
+                            <param id="1" name="Value">theme3.harga</param>
                         </action>
                         <action id="4" name="Set animation" sid="459078190502664" type="theme3">
                             <param id="0" name="Animation">&quot;unlock&quot;</param>
@@ -750,13 +747,13 @@
                         <condition id="-7" name="Compare instance variable" sid="431357442179766" type="global">
                             <param id="0" name="Instance variable">coin</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">5000</param>
+                            <param id="2" name="Value">theme2.harga</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-12" name="Subtract from" sid="528611066062144" type="global">
                             <param id="0" name="Instance variable">coin</param>
-                            <param id="1" name="Value">5000</param>
+                            <param id="1" name="Value">theme2.harga</param>
                         </action>
                         <action id="4" name="Set animation" sid="537620667533514" type="theme2">
                             <param id="0" name="Animation">&quot;unlock&quot;</param>
@@ -813,7 +810,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="524518138699938" type="coin_font">
-                    <param id="0" name="Text">&quot;RP&quot;&amp;global.coin</param>
+                    <param id="0" name="Text">global.coin&amp;&quot; COINS&quot;</param>
                 </action>
             </actions>
         </event-block>

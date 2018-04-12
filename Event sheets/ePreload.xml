@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ePreload</name>
+    <events>
+        <event-block sid="844334632398456">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="266614089009111" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Preload" sid="943229491093489" type="Audio">
+                    <param id="0" name="Audio file">Teamwork</param>
+                </action>
+                <action id="4" name="Preload" sid="517990998255756" type="Audio">
+                    <param id="0" name="Audio file">cha-ching</param>
+                </action>
+                <action id="4" name="Preload" sid="610655259472758" type="Audio">
+                    <param id="0" name="Audio file">game-sound-correct</param>
+                </action>
+                <action id="4" name="Preload" sid="576238501266418" type="Audio">
+                    <param id="0" name="Audio file">game-sound-selection</param>
+                </action>
+                <action id="-16" name="Wait" sid="572224636994875" type="System">
+                    <param id="0" name="Seconds">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="222229240401667">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="518365848854162" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="188342093528489" type="Audio">
+                    <param id="0" name="Audio file">Teamwork</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">30</param>
+                    <param id="1" name="Tag (optional)">&quot;Teamwork&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="912589757443858" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+                <action id="-16" name="Wait" sid="307673880132628" type="System">
+                    <param id="0" name="Seconds">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

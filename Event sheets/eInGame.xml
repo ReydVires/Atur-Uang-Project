@@ -67,14 +67,14 @@
                 </action>
                 <action id="-3" name="Set position" sid="698209595476201" type="text_congrats">
                     <param id="0" name="X">240</param>
-                    <param id="1" name="Y">936</param>
+                    <param id="1" name="Y">946</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="235428822717209" type="text_congrats">
                     <param id="0" name="Pin to">win_endLevel</param>
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="0" name="Set text" sid="963664061507912" type="text_congrats">
-                    <param id="0" name="Text">&quot;SELAMAT!&quot;&amp;newline&amp;&quot;KAMU BERHASIL DI HARI &quot;&amp;(global.currLevel)&amp;newline</param>
+                    <param id="0" name="Text">newline&amp;&quot;SELAMAT!&quot;&amp;newline&amp;&quot;KAMU BERHASIL&quot;&amp;newline&amp;&quot;DI HARI &quot;&amp;(global.currLevel)</param>
                 </action>
                 <action id="4" name="Set animation" sid="397978902473550" type="bg_ingame">
                     <param id="0" name="Animation">global.theme_bg</param>
@@ -256,7 +256,7 @@
                         </action>
                         <action id="5" name="Push" sid="231824374763464" type="Array">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;Beras&quot;</param>
+                            <param id="1" name="Value">&quot;Beras Putih&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="5" name="Push" sid="622945225295445" type="Array">
@@ -505,7 +505,7 @@
                         </action>
                         <action id="5" name="Push" sid="875761354868176" type="Array">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Value">&quot;Topi&quot;</param>
+                            <param id="1" name="Value">&quot;Topi Hewan&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="-10" name="Set value" sid="760998546973939" type="global">
@@ -750,19 +750,6 @@
                     <param id="0" name="Y">ceil(lerp(win_endLevel.Y, 350, 0.15))</param>
                 </action>
             </actions>
-            <sub-events>
-                <comment>Pas klik, level terlihat nambah [Solve sementara]</comment>
-                <event-block sid="594360301632389">
-                    <conditions>
-                        <condition id="-4" name="Trigger once while true" sid="588708848941955" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="1" name="Append text" sid="883748571719484" type="text_congrats">
-                            <param id="0" name="Text">&quot;Sisa: Rp&quot;&amp;global.money</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
         <event-block sid="859832575149209">
             <conditions>
@@ -783,7 +770,7 @@
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="0" name="Set text" sid="785825143889218" type="text_congrats">
-                    <param id="0" name="Text">&quot;SELAMAT!&quot;&amp;newline&amp;&quot;KAMU BERHASIL MENYELESAIKAN&quot;&amp;newline&amp;&quot;MISI!&quot;</param>
+                    <param id="0" name="Text">&quot;SELAMAT!&quot;&amp;newline&amp;&quot;KAMU BERHASIL MENYELESAIKAN MISI!&quot;&amp;newline&amp;newline&amp;&quot;Total uang tersisa Rp&quot;&amp;global.money&amp;newline&amp;&quot;Menjadi &quot;&amp;floor(global.money / 1000)&amp;&quot; Coins&quot;</param>
                 </action>
                 <action id="-2" name="Set Y" sid="195321352906673" type="win_endLevel">
                     <param id="0" name="Y">ceil(lerp(win_endLevel.Y, 350, 0.15))</param>
@@ -870,7 +857,7 @@
                 </action>
                 <action id="-11" name="Add to" sid="975551208121212" type="global">
                     <param id="0" name="Instance variable">coin</param>
-                    <param id="1" name="Value">global.money</param>
+                    <param id="1" name="Value">floor(global.money / 1000)</param>
                 </action>
             </actions>
         </event-block>

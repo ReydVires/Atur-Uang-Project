@@ -10,13 +10,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="4">InGame</layout>
-        <layout active="1" order="5">Menu</layout>
-        <layout order="7">Pregame</layout>
-        <event-sheet order="1">ePregame</event-sheet>
-        <event-sheet order="2">eInGame</event-sheet>
-        <event-sheet order="3">eMenu</event-sheet>
-        <event-sheet order="6">eGameManager</event-sheet>
+        <layout order="1">Preload</layout>
+        <layout order="5">InGame</layout>
+        <layout active="1" order="6">Menu</layout>
+        <layout order="8">Pregame</layout>
+        <event-sheet order="0">ePregame</event-sheet>
+        <event-sheet order="2">ePreload</event-sheet>
+        <event-sheet order="3">eInGame</event-sheet>
+        <event-sheet order="4">eMenu</event-sheet>
+        <event-sheet order="7">eGameManager</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -27,8 +29,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />

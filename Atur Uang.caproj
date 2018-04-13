@@ -199,6 +199,7 @@
                 <instance-variable name="goLevel" sid="514389114367358" type="boolean" />
                 <instance-variable name="state_theme" sid="228243276249224" type="number" />
                 <instance-variable comment="for index looping" name="i" sid="419420404332876" type="number" />
+                <instance-variable comment="increment index" name="j" sid="370650905943006" type="number" />
                 <instance-variable comment="max on looping in list" name="listMax" sid="615446697930179" type="number" />
                 <instance-variable comment="test only" name="debug" sid="472794870729587" type="number" />
                 <instance-variable name="listYangDibeli" sid="210927327387098" type="number" />
@@ -214,6 +215,8 @@
                 <instance-variable name="theme_sold1" sid="515430442204535" type="boolean" />
                 <instance-variable name="theme_sold2" sid="381703076714897" type="boolean" />
                 <instance-variable name="btn_theme" sid="266207739454146" type="number" />
+                <instance-variable comment="Dihitung per hari" name="totalHarga" sid="535376870142444" type="number" />
+                <instance-variable comment="Sudahkah dihitung jumhal harga obj?" name="isCounted" sid="948848110937198" type="boolean" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222962385953116" speed="5">
@@ -722,7 +725,7 @@
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assetes\Background Sekolah1.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="Supermarket" pingpong="0" repeatcount="1" repeatto="0" sid="705454170943798" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Supermarket1.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\NEW3\Supermarket1.png">
                         <collision-poly>
                             <point x="0.00208333" y="0.00124844" />
                             <point x="0.997917" y="0.00124844" />
@@ -974,12 +977,22 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="menang" pingpong="0" repeatcount="1" repeatto="0" sid="601349569489613" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GDC Product\Project\NEW\Ending Menang.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\NEW3\Reward.png">
                         <collision-poly>
-                            <point x="0.117442" y="0.765117" />
-                            <point x="0.467441" y="0.764535" />
-                            <point x="0.466279" y="0.897093" />
-                            <point x="0.116279" y="0.895349" />
+                            <point x="0.327907" y="0.769767" />
+                            <point x="0.669768" y="0.769768" />
+                            <point x="0.669767" y="0.890698" />
+                            <point x="0.325581" y="0.890697" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="kalah" pingpong="0" repeatcount="1" repeatto="0" sid="240012343024506" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Kalah.png">
+                        <collision-poly>
+                            <point x="0.212" y="0.704" />
+                            <point x="0.784" y="0.704" />
+                            <point x="0.78" y="0.916" />
+                            <point x="0.216" y="0.916" />
                         </collision-poly>
                     </frame>
                 </animation>

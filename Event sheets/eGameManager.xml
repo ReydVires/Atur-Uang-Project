@@ -257,5 +257,50 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="827610019703062">
+            <conditions>
+                <condition id="-11" name="For Each" sid="224139368066695" type="System">
+                    <param id="0" name="Object">obj_barang</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="527612924396569" type="global">
+                    <param id="0" name="Instance variable">j</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">global.listYangDibeli</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="296389943610833" type="global">
+                    <param id="0" name="Instance variable">isCounted</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="517730439696203" type="obj_barang">
+                    <param id="0" name="Instance variable">isOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="320907352709390" type="global">
+                    <param id="0" name="Instance variable">totalHarga</param>
+                    <param id="1" name="Value">obj_barang.harga</param>
+                </action>
+                <action id="-11" name="Add to" sid="500256265409318" type="global">
+                    <param id="0" name="Instance variable">j</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="785074622315122">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="685376894668598" type="global">
+                    <param id="0" name="Instance variable">j</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">global.listYangDibeli</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="169478999817890" type="global">
+                    <param id="0" name="Instance variable">isCounted</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

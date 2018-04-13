@@ -13,6 +13,18 @@
                     <param id="0" name="Instance variable">i</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-10" name="Set value" sid="753031934871958" type="global">
+                    <param id="0" name="Instance variable">j</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="694948945539328" type="global">
+                    <param id="0" name="Instance variable">totalHarga</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="441174873388309" type="global">
+                    <param id="0" name="Instance variable">isCounted</param>
+                    <param id="1" name="Value">0</param>
+                </action>
                 <action id="1" name="Set size" sid="593549963998952" type="Array">
                     <param id="0" name="Width">0</param>
                     <param id="1" name="Height">1</param>

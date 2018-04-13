@@ -688,6 +688,7 @@
                         <goLevel>false</goLevel>
                         <state_theme>0</state_theme>
                         <i>0</i>
+                        <j>0</j>
                         <listMax>0</listMax>
                         <debug>0</debug>
                         <listYangDibeli>0</listYangDibeli>
@@ -698,11 +699,13 @@
                         <temp1_blockY>0</temp1_blockY>
                         <temp2_blockX>0</temp2_blockX>
                         <temp2_blockY>0</temp2_blockY>
-                        <coin>10</coin>
+                        <coin>0</coin>
                         <theme_bg>siang</theme_bg>
                         <theme_sold1>false</theme_sold1>
                         <theme_sold2>false</theme_sold2>
                         <btn_theme>0</btn_theme>
+                        <totalHarga>0</totalHarga>
+                        <isCounted>false</isCounted>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

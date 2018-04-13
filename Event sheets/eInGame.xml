@@ -709,6 +709,11 @@
                     <param id="1" name="Comparison">1</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="-7" inverted="1" name="Compare instance variable" sid="696865901572663" type="global">
+                    <param id="0" name="Instance variable">money</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">global.totalHarga</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-13" name="Set boolean" sid="662367001256964" type="spr_market">
@@ -736,11 +741,41 @@
                 <condition id="1" inverted="1" name="Is overlapping another object" sid="292633261323459" type="win_list">
                     <param id="0" name="Object">obj_barang</param>
                 </condition>
+                <condition id="-7" inverted="1" name="Compare instance variable" sid="559078551049692" type="global">
+                    <param id="0" name="Instance variable">money</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">global.totalHarga</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Call function" sid="390688911285313" type="Function">
                     <param id="0" name="Name">&quot;ActionBarang&quot;</param>
                     <param id="1" name="Parameter {n}">obj_barang.UID{###}obj_barang.IID</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="733756127742684">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="178718352948046" type="global">
+                    <param id="0" name="Instance variable">money</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">global.totalHarga</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="565045287650237" type="win_endLevel">
+                    <param id="0" name="Animation">&quot;kalah&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="318052997665885" type="text_congrats">
+                    <param id="0" name="Text">&quot;MAAF!&quot;&amp;newline&amp;&quot;KAMU BELUM BERHASIL MENYELESAIKAN&quot;&amp;newline&amp;&quot;MISI!&quot;&amp;newline&amp;newline&amp;&quot;Total uang tersisa Rp&quot;&amp;global.money</param>
+                </action>
+                <action id="-2" name="Set Y" sid="449649150480315" type="win_endLevel">
+                    <param id="0" name="Y">ceil(lerp(win_endLevel.Y, 350, 0.15))</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="348205994652234" type="global">
+                    <param id="0" name="Instance variable">gameStart</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -789,6 +824,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Next level</comment>
         <event-block sid="684924166265553">
             <conditions>
                 <condition id="3" name="On touched object" sid="852635958828662" type="Touch">
@@ -801,6 +837,11 @@
                     <param id="0" name="Instance variable">currLevel</param>
                     <param id="1" name="Comparison">2</param>
                     <param id="2" name="Value">7</param>
+                </condition>
+                <condition id="-7" inverted="1" name="Compare instance variable" sid="400627342676541" type="global">
+                    <param id="0" name="Instance variable">money</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">global.totalHarga</param>
                 </condition>
             </conditions>
             <actions>
@@ -827,7 +868,33 @@
                 </action>
             </actions>
         </event-block>
-        <comment>Reset All State</comment>
+        <comment>Restart</comment>
+        <event-block sid="742666341437898">
+            <conditions>
+                <condition id="3" name="On touched object" sid="744057517116999" type="Touch">
+                    <param id="0" name="Object">win_endLevel</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="170245959575517" type="global">
+                    <param id="0" name="Instance variable">money</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">global.totalHarga</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="807663417775569" type="win_endLevel">
+                    <param id="0" name="Instance variable">isTap</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="910553875579024" type="Audio">
+                    <param id="0" name="Audio file">game-sound-correct</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-37" name="Load" sid="668053159107318" type="System">
+                    <param id="0" name="Slot">&quot;saveLevel&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>Save money to AJAX or JSON, then load after save state</comment>
         <event-block sid="631797663604025">
             <conditions>
@@ -882,6 +949,11 @@
                     <param id="0" name="Instance variable">listYangDibeli</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" inverted="1" name="Compare instance variable" sid="670925751514734" type="global">
+                    <param id="0" name="Instance variable">money</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">global.totalHarga</param>
                 </condition>
             </conditions>
             <actions>

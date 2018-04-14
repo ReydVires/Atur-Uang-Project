@@ -220,7 +220,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <harga>25000</harga>
+                        <harga>10000</harga>
                         <sold>false</sold>
                         <isOn>1</isOn>
                     </instance-variables>
@@ -247,7 +247,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <harga>20000</harga>
+                        <harga>4000</harga>
                         <sold>false</sold>
                         <isOn>1</isOn>
                     </instance-variables>
@@ -274,7 +274,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <harga>15000</harga>
+                        <harga>1000</harga>
                         <sold>false</sold>
                         <isOn>1</isOn>
                     </instance-variables>
@@ -301,7 +301,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <harga>10000</harga>
+                        <harga>5000</harga>
                         <sold>false</sold>
                         <isOn>1</isOn>
                     </instance-variables>
@@ -328,7 +328,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <harga>5000</harga>
+                        <harga>1500</harga>
                         <sold>false</sold>
                         <isOn>0</isOn>
                     </instance-variables>
@@ -382,7 +382,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <harga>5000</harga>
+                        <harga>25000</harga>
                         <sold>false</sold>
                         <isOn>0</isOn>
                     </instance-variables>
@@ -436,7 +436,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <harga>5000</harga>
+                        <harga>6500</harga>
                         <sold>false</sold>
                         <isOn>0</isOn>
                     </instance-variables>

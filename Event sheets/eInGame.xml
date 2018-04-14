@@ -208,19 +208,19 @@
                         </action>
                         <action id="0" name="Call function" sid="137939687844255" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">73{###}&quot;Telur&quot;{###}0{###}7000{###}24</param>
+                            <param id="1" name="Parameter {n}">73{###}&quot;Telur&quot;{###}0{###}18000{###}24</param>
                         </action>
                         <action id="0" name="Call function" sid="110288195233434" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">74{###}&quot;PisangIjo&quot;{###}0{###}7000{###}25</param>
+                            <param id="1" name="Parameter {n}">74{###}&quot;PisangIjo&quot;{###}0{###}7500{###}25</param>
                         </action>
                         <action id="0" name="Call function" sid="338002552271403" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">75{###}&quot;SendalJepit_Pink&quot;{###}0{###}7000{###}26</param>
+                            <param id="1" name="Parameter {n}">75{###}&quot;SendalJepit_Pink&quot;{###}0{###}10000{###}26</param>
                         </action>
                         <action id="0" name="Call function" sid="727355929420562" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">77{###}&quot;Kentang&quot;{###}0{###}7000{###}33</param>
+                            <param id="1" name="Parameter {n}">77{###}&quot;Kentang&quot;{###}0{###}1500{###}33</param>
                         </action>
                         <action id="0" name="Call function" sid="507860896707273" type="Function">
                             <param id="0" name="Name">&quot;SwapObj&quot;</param>
@@ -291,7 +291,7 @@
                         </action>
                         <action id="0" name="Call function" sid="398142217417321" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">70{###}&quot;Ikan&quot;{###}1{###}5500{###}21</param>
+                            <param id="1" name="Parameter {n}">70{###}&quot;Ikan&quot;{###}1{###}15000{###}21</param>
                         </action>
                         <action id="0" name="Call function" sid="894936917785213" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
@@ -299,15 +299,19 @@
                         </action>
                         <action id="0" name="Call function" sid="552937358812723" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">72{###}&quot;Brokoli&quot;{###}1{###}4000{###}23</param>
+                            <param id="1" name="Parameter {n}">72{###}&quot;Brokoli&quot;{###}1{###}2000{###}23</param>
                         </action>
                         <action id="0" name="Call function" sid="186003478678163" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">75{###}&quot;Beras_Hitam&quot;{###}0{###}12500{###}26</param>
+                            <param id="1" name="Parameter {n}">75{###}&quot;Beras_Hitam&quot;{###}0{###}5000{###}26</param>
                         </action>
                         <action id="0" name="Call function" sid="211859120143888" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
                             <param id="1" name="Parameter {n}">73{###}&quot;Pokcoy&quot;{###}0{###}3500{###}24</param>
+                        </action>
+                        <action id="0" name="Call function" sid="666847036197871" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">77{###}&quot;Susu&quot;{###}0{###}4000{###}33</param>
                         </action>
                         <action id="0" name="Call function" sid="301268972530389" type="Function">
                             <param id="0" name="Name">&quot;SwapObj&quot;</param>
@@ -374,19 +378,35 @@
                         </action>
                         <action id="0" name="Call function" sid="807692499180886" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">69{###}&quot;Ayam_Goreng&quot;{###}1{###}10500{###}80</param>
+                            <param id="1" name="Parameter {n}">69{###}&quot;Ayam_Goreng&quot;{###}1{###}10000{###}80</param>
                         </action>
                         <action id="0" name="Call function" sid="485972688972056" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">70{###}&quot;Soda&quot;{###}1{###}5000{###}21</param>
+                            <param id="1" name="Parameter {n}">70{###}&quot;Soda&quot;{###}1{###}3000{###}21</param>
                         </action>
                         <action id="0" name="Call function" sid="439181910242324" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">71{###}&quot;Telor_Ceplok&quot;{###}1{###}4700{###}22</param>
+                            <param id="1" name="Parameter {n}">71{###}&quot;Telor_Ceplok&quot;{###}1{###}3000{###}22</param>
                         </action>
                         <action id="0" name="Call function" sid="771059891819611" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">72{###}&quot;Buku&quot;{###}1{###}5000{###}23</param>
+                            <param id="1" name="Parameter {n}">72{###}&quot;Buku&quot;{###}1{###}3000{###}23</param>
+                        </action>
+                        <action id="0" name="Call function" sid="992513953250722" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">73{###}&quot;Gunting&quot;{###}0{###}7500{###}24</param>
+                        </action>
+                        <action id="0" name="Call function" sid="711889299299872" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">74{###}&quot;Onigiri&quot;{###}0{###}9000{###}25</param>
+                        </action>
+                        <action id="0" name="Call function" sid="868598576939575" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">75{###}&quot;BukuPKN&quot;{###}0{###}16000{###}26</param>
+                        </action>
+                        <action id="0" name="Call function" sid="340955900816861" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">77{###}&quot;Tas&quot;{###}0{###}40000{###}33</param>
                         </action>
                         <action id="0" name="Call function" sid="935741821296642" type="Function">
                             <param id="0" name="Name">&quot;SwapObj&quot;</param>
@@ -443,11 +463,11 @@
                         </action>
                         <action id="0" name="Call function" sid="802095953547133" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">69{###}&quot;Nasi_Ayam&quot;{###}1{###}13500{###}80</param>
+                            <param id="1" name="Parameter {n}">69{###}&quot;Nasi_Ayam&quot;{###}1{###}12500{###}80</param>
                         </action>
                         <action id="0" name="Call function" sid="630869191306518" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">70{###}&quot;Thai_Tea&quot;{###}1{###}10000{###}21</param>
+                            <param id="1" name="Parameter {n}">70{###}&quot;Thai_Tea&quot;{###}1{###}12500{###}21</param>
                         </action>
                         <action id="0" name="Call function" sid="464178372038139" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
@@ -460,6 +480,18 @@
                         <action id="0" name="Call function" sid="180435552781806" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
                             <param id="1" name="Parameter {n}">72{###}&quot;Sushi&quot;{###}0{###}8000{###}23</param>
+                        </action>
+                        <action id="0" name="Call function" sid="785059697973662" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">73{###}&quot;Jagung&quot;{###}0{###}7500{###}24</param>
+                        </action>
+                        <action id="0" name="Call function" sid="347720853183999" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">75{###}&quot;EsKrim2&quot;{###}0{###}8000{###}26</param>
+                        </action>
+                        <action id="0" name="Call function" sid="700860880491657" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">76{###}&quot;Onigiri&quot;{###}0{###}9000{###}27</param>
                         </action>
                         <action id="0" name="Call function" sid="974817568924644" type="Function">
                             <param id="0" name="Name">&quot;SwapObj&quot;</param>
@@ -526,19 +558,39 @@
                         </action>
                         <action id="0" name="Call function" sid="559245791227855" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">69{###}&quot;Topi_Hewan&quot;{###}1{###}13500{###}80</param>
+                            <param id="1" name="Parameter {n}">69{###}&quot;Topi_Hewan&quot;{###}1{###}10000{###}80</param>
                         </action>
                         <action id="0" name="Call function" sid="767540373883784" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">70{###}&quot;Wortel&quot;{###}1{###}10000{###}21</param>
+                            <param id="1" name="Parameter {n}">70{###}&quot;Wortel&quot;{###}1{###}5000{###}21</param>
                         </action>
                         <action id="0" name="Call function" sid="112048592931715" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">71{###}&quot;Foto_Harimau&quot;{###}1{###}21000{###}22</param>
+                            <param id="1" name="Parameter {n}">71{###}&quot;Foto_Harimau&quot;{###}1{###}15000{###}22</param>
                         </action>
                         <action id="0" name="Call function" sid="545739225477328" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">72{###}&quot;Tiket&quot;{###}1{###}8000{###}23</param>
+                            <param id="1" name="Parameter {n}">72{###}&quot;Tiket&quot;{###}1{###}10000{###}23</param>
+                        </action>
+                        <action id="0" name="Call function" sid="870209096812872" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">74{###}&quot;Apel&quot;{###}0{###}8000{###}25</param>
+                        </action>
+                        <action id="0" name="Call function" sid="309731841873257" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">73{###}&quot;Baso_Sate&quot;{###}0{###}8500{###}24</param>
+                        </action>
+                        <action id="0" name="Call function" sid="327689505937671" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">75{###}&quot;EsKrim2&quot;{###}0{###}8000{###}26</param>
+                        </action>
+                        <action id="0" name="Call function" sid="860259975702909" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">76{###}&quot;Foto_Badak&quot;{###}0{###}19000{###}27</param>
+                        </action>
+                        <action id="0" name="Call function" sid="988131961229080" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">77{###}&quot;Foto_Gajah&quot;{###}0{###}16000{###}33</param>
                         </action>
                         <action id="0" name="Call function" sid="889359895669831" type="Function">
                             <param id="0" name="Name">&quot;SwapObj&quot;</param>
@@ -599,11 +651,11 @@
                         </action>
                         <action id="0" name="Call function" sid="893059651026511" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">69{###}&quot;BukuMTK&quot;{###}1{###}33500{###}80</param>
+                            <param id="1" name="Parameter {n}">69{###}&quot;BukuMTK&quot;{###}1{###}20000{###}80</param>
                         </action>
                         <action id="0" name="Call function" sid="706959521470081" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
-                            <param id="1" name="Parameter {n}">70{###}&quot;Kertas&quot;{###}1{###}1000{###}21</param>
+                            <param id="1" name="Parameter {n}">70{###}&quot;Kertas&quot;{###}1{###}10000{###}21</param>
                         </action>
                         <action id="0" name="Call function" sid="584689837322680" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
@@ -612,6 +664,22 @@
                         <action id="0" name="Call function" sid="767864427444829" type="Function">
                             <param id="0" name="Name">&quot;SetBarang&quot;</param>
                             <param id="1" name="Parameter {n}">72{###}&quot;EsKrim2&quot;{###}0{###}7500{###}23</param>
+                        </action>
+                        <action id="0" name="Call function" sid="385629722035484" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">73{###}&quot;Penggaris&quot;{###}0{###}5000{###}24</param>
+                        </action>
+                        <action id="0" name="Call function" sid="627859260803346" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">74{###}&quot;BukuPKN&quot;{###}0{###}19000{###}25</param>
+                        </action>
+                        <action id="0" name="Call function" sid="602222449172772" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">75{###}&quot;BukuGEO&quot;{###}0{###}21000{###}26</param>
+                        </action>
+                        <action id="0" name="Call function" sid="134778265464628" type="Function">
+                            <param id="0" name="Name">&quot;SetBarang&quot;</param>
+                            <param id="1" name="Parameter {n}">76{###}&quot;Tas&quot;{###}0{###}40000{###}27</param>
                         </action>
                         <action id="0" name="Call function" sid="675638055490609" type="Function">
                             <param id="0" name="Name">&quot;SwapObj&quot;</param>
@@ -931,12 +999,13 @@
                 <action id="-16" name="Wait" sid="430397643846811" type="System">
                     <param id="0" name="Seconds">0.25</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="286338056459732" type="System">
-                    <param id="0" name="Layout">Menu</param>
-                </action>
                 <action id="-11" name="Add to" sid="975551208121212" type="global">
                     <param id="0" name="Instance variable">coin</param>
                     <param id="1" name="Value">floor(global.money / 1000)</param>
+                </action>
+                <action id="-10" name="Set value" sid="647765385298835" type="global">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">2</param>
                 </action>
             </actions>
         </event-block>

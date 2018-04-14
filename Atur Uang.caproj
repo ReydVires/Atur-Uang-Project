@@ -561,7 +561,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="lock1" pingpong="0" repeatcount="1" repeatto="0" sid="741834702666228" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="G:\GDC Product\Project\NEW\Button 5rb.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Button.png">
                         <collision-poly>
                             <point x="0.00961538" y="0.0222222" />
                             <point x="0.5" y="0" />
@@ -573,7 +573,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="lock2" pingpong="0" repeatcount="1" repeatto="0" sid="348137536731996" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="G:\GDC Product\Project\NEW\Button 25rb.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\GameDevelopment\My Project\Construct2\Atur Uang Project\Assets\Button 2.png">
                         <collision-poly>
                             <point x="0.00961538" y="0.0222222" />
                             <point x="0.5" y="0" />
